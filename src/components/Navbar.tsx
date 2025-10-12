@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -8,20 +7,28 @@ import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import lazuliLogo from "@/assets/lazuli-logo.png";
-
 export default function Navbar() {
-  const { t } = useLanguage();
+  const {
+    t
+  } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  
-  const navLinks = [
-    { name: t.nav.home, path: "/" },
-    { name: t.nav.apartments, path: "/apartments" },
-    { name: t.nav.amenities, path: "/amenities" },
-    { name: t.nav.gallery, path: "/gallery" },
-    { name: t.nav.contact, path: "/contact" }
-  ];
-
+  const navLinks = [{
+    name: t.nav.home,
+    path: "/"
+  }, {
+    name: t.nav.apartments,
+    path: "/apartments"
+  }, {
+    name: t.nav.amenities,
+    path: "/amenities"
+  }, {
+    name: t.nav.gallery,
+    path: "/gallery"
+  }, {
+    name: t.nav.contact,
+    path: "/contact"
+  }];
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 20;
@@ -32,16 +39,11 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
-  
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-3 shadow-md" : "bg-transparent py-5")}>
       <nav className="container flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <Link to="/" className="flex items-center">
-            <img 
-              src={lazuliLogo} 
-              alt="Lazuli Marsa Alam" 
-              className="h-16 w-auto object-contain"
-            />
+            
           </Link>
           <LanguageSelector />
         </div>
@@ -79,11 +81,7 @@ export default function Navbar() {
               <div className="flex justify-between items-center mb-8">
                 <div className="flex items-center space-x-4">
                   <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-                    <img 
-                      src={lazuliLogo} 
-                      alt="Lazuli Marsa Alam" 
-                      className="h-14 w-auto object-contain"
-                    />
+                    <img src={lazuliLogo} alt="Lazuli Marsa Alam" className="h-14 w-auto object-contain" />
                   </Link>
                   <LanguageSelector />
                 </div>
