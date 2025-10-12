@@ -100,29 +100,29 @@ export default function Index() {
         {/* Welcome Section */}
         <section id="welcome" className="section">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="animate-fade-in [animation-delay:100ms]">
-                <span className="text-sm text-primary font-medium uppercase tracking-wider">
+                <span className="text-xs sm:text-sm text-primary font-medium uppercase tracking-wider">
                   {t.home.welcome.subtitle}
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-4 sm:mb-6">
                   {t.home.welcome.title}
                 </h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
                   {t.home.welcome.description1}
                 </p>
-                <p className="text-muted-foreground mb-8">
+                <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
                   {t.home.welcome.description2}
                 </p>
-                <Button asChild className="btn-primary">
+                <Button asChild className="btn-primary w-full sm:w-auto h-11 sm:h-10">
                   <Link to="/about">
                     {t.home.welcome.learnMore} <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
               
-              <div className="relative animate-fade-in [animation-delay:300ms]">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="relative animate-fade-in [animation-delay:300ms] mt-8 lg:mt-0">
+                <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=700&h=525&fit=crop&fm=webp&q=80"
                     alt="Seaside view"
@@ -130,7 +130,7 @@ export default function Index() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-6 -left-6 w-2/3 rounded-2xl overflow-hidden shadow-xl">
+                <div className="hidden sm:block absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 w-2/3 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                   <img 
                     src="https://images.unsplash.com/photo-1545579133-99bb5ab189bd?w=450&h=350&fit=crop&fm=webp&q=80"
                     alt="Luxury apartment interior"
@@ -138,7 +138,7 @@ export default function Index() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -top-6 -right-6 w-1/2 rounded-2xl overflow-hidden shadow-xl">
+                <div className="hidden sm:block absolute -top-4 sm:-top-6 -right-4 sm:-right-6 w-1/2 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                   <img 
                     src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=350&h=250&fit=crop&fm=webp&q=80"
                     alt="Pool view"
@@ -152,26 +152,26 @@ export default function Index() {
         </section>
         
         {/* Booking Form Section */}
-        <section className="relative py-20 bg-gradient-to-r from-sea-light to-white dark:from-sea-dark dark:to-background overflow-hidden">
+        <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-sea-light to-white dark:from-sea-dark dark:to-background overflow-hidden">
           <div className="container relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="animate-fade-in">
-                <span className="text-sm text-primary font-medium uppercase tracking-wider">
+                <span className="text-xs sm:text-sm text-primary font-medium uppercase tracking-wider">
                   {t.home.booking.subtitle}
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-4 sm:mb-6">
                   {t.home.booking.title}
                 </h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
                   {t.home.booking.description}
                 </p>
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                   {t.home.booking.benefits.map((item, index) => (
-                    <li key={index} className="flex items-center">
-                      <div className="h-5 w-5 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-3">
+                    <li key={index} className="flex items-start">
+                      <div className="h-5 w-5 flex-shrink-0 rounded-full bg-primary/10 text-primary flex items-center justify-center mr-3 mt-0.5">
                         <ArrowRight className="h-3 w-3" />
                       </div>
-                      {item}
+                      <span className="text-sm sm:text-base">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -191,19 +191,19 @@ export default function Index() {
         {/* Featured Apartments */}
         <section className="section">
           <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
-              <span className="text-sm text-primary font-medium uppercase tracking-wider">
+            <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 animate-fade-in px-4">
+              <span className="text-xs sm:text-sm text-primary font-medium uppercase tracking-wider">
                 {t.home.featuredApartments.subtitle}
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3 sm:mb-4">
                 {t.home.featuredApartments.title}
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-sm sm:text-base text-muted-foreground">
                 {t.home.featuredApartments.description}
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {featuredApartments.map((apartment, index) => (
                 <div key={apartment.id} className="animate-fade-in" style={{ animationDelay: `${(index + 1) * 100}ms` }}>
                   <ApartmentCard apartment={apartment} />
@@ -211,8 +211,8 @@ export default function Index() {
               ))}
             </div>
             
-            <div className="text-center mt-12">
-              <Button asChild className="btn-primary">
+            <div className="text-center mt-8 sm:mt-12 px-4">
+              <Button asChild className="btn-primary w-full sm:w-auto h-11 sm:h-10">
                 <Link to="/apartments">
                   {t.home.featuredApartments.viewAll} <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -227,30 +227,30 @@ export default function Index() {
         {/* Features Section */}
         <section className="section bg-card">
           <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-12 animate-fade-in">
-              <span className="text-sm text-primary font-medium uppercase tracking-wider">
+            <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 animate-fade-in px-4">
+              <span className="text-xs sm:text-sm text-primary font-medium uppercase tracking-wider">
                 {t.home.amenities.subtitle}
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-3 sm:mb-4">
                 {t.home.amenities.title}
               </h2>
-              <p className="text-muted-foreground">
+              <p className="text-sm sm:text-base text-muted-foreground">
                 {t.home.amenities.description}
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
               {features.map((feature, index) => (
                 <div 
                   key={index} 
-                  className="glass-card p-6 rounded-xl animate-fade-in flex flex-col items-center text-center"
+                  className="glass-card p-5 sm:p-6 rounded-xl animate-fade-in flex flex-col items-center text-center"
                   style={{ animationDelay: `${(index + 1) * 100}ms` }}
                 >
-                  <div className="mb-4 p-3 rounded-full bg-primary/10">
+                  <div className="mb-3 sm:mb-4 p-2.5 sm:p-3 rounded-full bg-primary/10">
                     {feature.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-1.5 sm:mb-2">{feature.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -258,16 +258,16 @@ export default function Index() {
         </section>
         
         {/* CTA Section */}
-        <section className="relative py-24 bg-primary/5">
+        <section className="relative py-16 sm:py-20 lg:py-24 bg-primary/5">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center animate-fade-in">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <div className="max-w-3xl mx-auto text-center animate-fade-in px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 {t.home.cta.title}
               </h2>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
                 {t.home.cta.description}
               </p>
-              <Button asChild size="lg" className="btn-primary">
+              <Button asChild size="lg" className="btn-primary w-full sm:w-auto h-12 sm:h-11">
                 <Link to="/booking">{t.home.cta.bookNow}</Link>
               </Button>
             </div>

@@ -42,15 +42,15 @@ export default function BookingForm() {
   return (
     <form 
       onSubmit={handleSubmit} 
-      className="glass-card p-6 space-y-6 animate-fade-in [animation-delay:200ms]"
+      className="glass-card p-4 sm:p-6 space-y-4 sm:space-y-6 animate-fade-in [animation-delay:200ms]"
     >
-      <h3 className="text-2xl font-bold text-center mb-6">{t.bookingForm.title}</h3>
+      <h3 className="text-xl sm:text-2xl font-bold text-center mb-4 sm:mb-6">{t.bookingForm.title}</h3>
       
-      <div className="space-y-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="space-y-3 sm:space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           {/* Check-in Date */}
           <div className="space-y-2">
-            <label htmlFor="check-in" className="block text-sm font-medium">
+            <label htmlFor="check-in" className="block text-xs sm:text-sm font-medium">
               {t.bookingForm.checkIn}
             </label>
             <Popover>
@@ -59,11 +59,11 @@ export default function BookingForm() {
                   id="check-in"
                   variant="outline"
                   className={cn(
-                    "w-full justify-start text-left font-normal",
+                    "w-full justify-start text-left font-normal h-11 text-sm sm:text-base",
                     !startDate && "text-muted-foreground"
                   )}
                 >
-                  <CalendarIcon className="mr-2 h-4 w-4" />
+                  <CalendarIcon className="mr-2 h-4 w-4 flex-shrink-0" />
                   {startDate ? format(startDate, "PPP") : <span>{t.bookingForm.selectDate}</span>}
                 </Button>
               </PopoverTrigger>
@@ -82,7 +82,7 @@ export default function BookingForm() {
           
           {/* Check-out Date */}
           <div className="space-y-2">
-            <label htmlFor="check-out" className="block text-sm font-medium">
+            <label htmlFor="check-out" className="block text-xs sm:text-sm font-medium">
               {t.bookingForm.checkOut}
             </label>
             <Popover>
@@ -91,11 +91,11 @@ export default function BookingForm() {
                   id="check-out"
                   variant="outline"
                   className={cn(
-                    "w-full justify-start text-left font-normal",
+                    "w-full justify-start text-left font-normal h-11 text-sm sm:text-base",
                     !endDate && "text-muted-foreground"
                   )}
                 >
-                  <CalendarIcon className="mr-2 h-4 w-4" />
+                  <CalendarIcon className="mr-2 h-4 w-4 flex-shrink-0" />
                   {endDate ? format(endDate, "PPP") : <span>{t.bookingForm.selectDate}</span>}
                 </Button>
               </PopoverTrigger>
@@ -113,14 +113,14 @@ export default function BookingForm() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           {/* Adults */}
           <div className="space-y-2">
-            <label htmlFor="adults" className="block text-sm font-medium">
+            <label htmlFor="adults" className="block text-xs sm:text-sm font-medium">
               {t.bookingForm.adults}
             </label>
             <Select value={adults} onValueChange={setAdults}>
-              <SelectTrigger id="adults" className="w-full">
+              <SelectTrigger id="adults" className="w-full h-11">
                 <SelectValue placeholder="Select" />
               </SelectTrigger>
               <SelectContent>
@@ -135,11 +135,11 @@ export default function BookingForm() {
           
           {/* Children */}
           <div className="space-y-2">
-            <label htmlFor="children" className="block text-sm font-medium">
+            <label htmlFor="children" className="block text-xs sm:text-sm font-medium">
               {t.bookingForm.children}
             </label>
             <Select value={children} onValueChange={setChildren}>
-              <SelectTrigger id="children" className="w-full">
+              <SelectTrigger id="children" className="w-full h-11">
                 <SelectValue placeholder="Select" />
               </SelectTrigger>
               <SelectContent>
@@ -154,7 +154,7 @@ export default function BookingForm() {
         </div>
       </div>
       
-      <Button type="submit" className="w-full btn-primary relative">
+      <Button type="submit" className="w-full btn-primary relative h-11 sm:h-10 text-sm sm:text-base">
         {submitted ? (
           <>
             <Check className="mr-2 h-4 w-4" />
