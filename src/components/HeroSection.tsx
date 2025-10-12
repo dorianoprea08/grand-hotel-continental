@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
+import lazuliLogo from "@/assets/lazuli-logo.png";
 
 export default function HeroSection() {
   const { t } = useLanguage();
@@ -44,6 +45,13 @@ export default function HeroSection() {
         style={{ transform: `translateY(${contentY}px)` }}
       >
         <div className="max-w-3xl animate-fade-in">
+          <div className="flex justify-center mb-8">
+            <img 
+              src={lazuliLogo} 
+              alt="Lazuli Marsa Alam" 
+              className="h-32 md:h-40 w-auto object-contain drop-shadow-2xl"
+            />
+          </div>
           <span className="inline-block text-white/90 text-lg mb-4 tracking-wide border-b border-white/30 pb-2">
             {t.hero.subtitle}
           </span>
