@@ -7,7 +7,7 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import lazuliLogo from "@/assets/lazuli-logo.jpg";
+import lazuliLogo from "@/assets/lazuli-logo.png";
 
 export default function Navbar() {
   const { t } = useLanguage();
@@ -39,8 +39,8 @@ export default function Navbar() {
           <Link to="/" className="flex items-center">
             <img 
               src={lazuliLogo} 
-              alt="Lazuli Beach Club" 
-              className="h-12 w-auto object-contain"
+              alt="Lazuli Marsa Alam" 
+              className="h-16 w-auto object-contain"
             />
           </Link>
           <LanguageSelector />
@@ -81,8 +81,8 @@ export default function Navbar() {
                   <Link to="/" onClick={() => setMobileMenuOpen(false)}>
                     <img 
                       src={lazuliLogo} 
-                      alt="Lazuli Beach Club" 
-                      className="h-10 w-auto object-contain"
+                      alt="Lazuli Marsa Alam" 
+                      className="h-14 w-auto object-contain"
                     />
                   </Link>
                   <LanguageSelector />
