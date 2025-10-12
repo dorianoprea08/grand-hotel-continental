@@ -49,6 +49,9 @@ export default function HeroSection() {
             <img 
               src={lazuliLogo} 
               alt="Lazuli Marsa Alam" 
+              width="160"
+              height="160"
+              fetchPriority="high"
               className="h-32 md:h-40 w-auto object-contain drop-shadow-2xl"
             />
           </div>

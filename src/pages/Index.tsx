@@ -19,7 +19,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 180,
     capacity: 2,
     size: 45,
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=450&fit=crop&fm=webp&q=80",
     location: "Beachfront",
     features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
   },
@@ -30,7 +30,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 250,
     capacity: 4,
     size: 75,
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=450&fit=crop&fm=webp&q=80",
     location: "Second row",
     features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Washing Machine"]
   },
@@ -41,7 +41,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 150,
     capacity: 2,
     size: 35,
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=600&h=450&fit=crop&fm=webp&q=80",
     location: "Beachfront",
     features: ["Wi-Fi", "Kitchenette", "Bathroom", "Air Conditioning", "TV"]
   }
@@ -124,22 +124,25 @@ export default function Index() {
               <div className="relative animate-fade-in [animation-delay:300ms]">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=600&fit=crop"
-                    alt="Seaside view" 
+                    src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=700&h=525&fit=crop&fm=webp&q=80"
+                    alt="Seaside view"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 w-2/3 rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1545579133-99bb5ab189bd?w=400&h=300&fit=crop"
-                    alt="Luxury apartment interior" 
+                    src="https://images.unsplash.com/photo-1545579133-99bb5ab189bd?w=450&h=350&fit=crop&fm=webp&q=80"
+                    alt="Luxury apartment interior"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute -top-6 -right-6 w-1/2 rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=300&fit=crop"
-                    alt="Pool view" 
+                    src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=350&h=250&fit=crop&fm=webp&q=80"
+                    alt="Pool view"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>

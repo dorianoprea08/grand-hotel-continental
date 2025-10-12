@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: "Sophia Martinez",
     location: "New York, USA",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces&fm=webp&q=80",
     content: "My family and I had the most wonderful stay at MareSereno. The apartment was immaculate, with breathtaking sea views. The staff went above and beyond to make our vacation special.",
     rating: 5
   },
@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     id: 2,
     name: "Marco Rossi",
     location: "Rome, Italy",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces&fm=webp&q=80",
     content: "Absolutely perfect location, steps away from the beach. The apartment had everything we needed and more. The modern amenities combined with the traditional coastal charm created a truly magical experience.",
     rating: 5
   },
@@ -33,7 +33,7 @@ const testimonials: Testimonial[] = [
     id: 3,
     name: "Emma Johnson",
     location: "London, UK",
-    avatar: "https://images.unsplash.com/photo-1569913486515-b74bf7751574?w=150&h=150&fit=crop&crop=faces",
+    avatar: "https://images.unsplash.com/photo-1569913486515-b74bf7751574?w=100&h=100&fit=crop&crop=faces&fm=webp&q=80",
     content: "We spent a wonderful week at this beachfront paradise. The sunrise views from our terrace were worth the trip alone. Exceptionally clean and beautifully designed spaces.",
     rating: 4
   },
@@ -102,7 +102,10 @@ export default function TestimonialsSection() {
                     <div className="rounded-full overflow-hidden w-20 h-20 mb-4 border-2 border-primary">
                       <img 
                         src={testimonial.avatar} 
-                        alt={testimonial.name} 
+                        alt={testimonial.name}
+                        width="80"
+                        height="80"
+                        loading="lazy"
                         className="w-full h-full object-cover"
                       />
                     </div>
