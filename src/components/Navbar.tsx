@@ -7,12 +7,7 @@ import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import lazuliLogo from "@/assets/lazuli-logo.png";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 export default function Navbar() {
   const {
     t
@@ -53,15 +48,10 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 mx-[7px] px-[20px] py-0 my-0">
           <LanguageSelector />
           <ThemeToggle />
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
-            className="rounded-full h-11 w-11"
-          >
+          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full h-11 w-11">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
@@ -79,17 +69,11 @@ export default function Navbar() {
           
           <nav className="flex flex-col h-[calc(100vh-140px)] justify-between">
             <ul className="space-y-2">
-              {navLinks.map(link => (
-                <li key={link.name}>
-                  <Link 
-                    to={link.path} 
-                    className="block py-3 px-4 text-base font-medium transition-colors hover:bg-muted rounded-lg hover:text-primary" 
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
+              {navLinks.map(link => <li key={link.name}>
+                  <Link to={link.path} className="block py-3 px-4 text-base font-medium transition-colors hover:bg-muted rounded-lg hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
             
             <div className="space-y-3 pt-4 border-t">
