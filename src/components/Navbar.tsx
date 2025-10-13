@@ -46,7 +46,7 @@ export default function Navbar() {
           <ThemeToggle />
         </div>
 
-        <div className="flex items-center space-x-6 px-2">
+        <div className="flex items-center space-x-8 px-2">
           <LanguageSelector />
           <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full h-11 w-11">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
