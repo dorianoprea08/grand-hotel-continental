@@ -59,8 +59,7 @@ export default function Navbar() {
       <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
         <SheetContent side="left" className="w-[300px] sm:w-[350px]">
           <SheetHeader className="border-b pb-4 mb-6">
-            <SheetTitle className="flex items-center space-x-3">
-              <img src={lazuliLogo} alt="Lazuli Marsa Alam" className="h-10 w-auto object-contain" />
+            <SheetTitle>
               <span className="text-lg font-semibold">Menu</span>
             </SheetTitle>
           </SheetHeader>
