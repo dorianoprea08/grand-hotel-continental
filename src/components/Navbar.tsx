@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import lazuliLogo from "@/assets/lazuli-logo.png";
-import hotelLogo from "@/assets/hotel-logo.png";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import lazuliLogo from "@/assets/lazuli-logo.png";
 export default function Navbar() {
   const {
     t
@@ -41,21 +40,41 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
-  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-lg shadow-sm border-b", scrolled ? "py-3 shadow-md" : "py-5")}>
-      <nav className="container flex justify-between items-center">
-        <div className="flex items-center px-1 sm:px-2">
+  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-gradient-to-br from-indigo-700 via-purple-700 to-indigo-800 py-6 shadow-lg" : "bg-gradient-to-br from-indigo-700 via-purple-700 to-indigo-800 py-8")}>
+      <nav className="container">
+        {/* Top row with controls */}
+        <div className="flex justify-between items-start mb-6">
           <ThemeToggle />
-        </div>
-
-        <div className="flex-1 flex justify-center min-w-0">
-          <img src={hotelLogo} alt="Grand Hotel Continental" className="h-8 sm:h-10 md:h-12 w-auto object-contain max-w-[200px] sm:max-w-[280px] md:max-w-full" />
-        </div>
-
-        <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 px-1 sm:px-2">
-          <LanguageSelector />
-          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full h-11 w-11">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+            className="rounded-full h-11 w-11 text-white hover:bg-white/10"
+          >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
+          <LanguageSelector />
+        </div>
+
+        {/* Center content */}
+        <div className="flex flex-col items-center text-center text-white space-y-4">
+          <div className="flex items-center gap-3 w-full max-w-2xl">
+            <div className="flex-1 h-px bg-white/30"></div>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif tracking-wider">
+              GRAND HOTEL CONTINENTAL
+            </h1>
+            <div className="flex-1 h-px bg-white/30"></div>
+          </div>
+          
+          <div className="flex gap-2">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            ))}
+          </div>
+
+          <a href="tel:+1234567890" className="inline-flex items-center justify-center p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+            <Phone className="h-6 w-6 text-white" />
+          </a>
         </div>
       </nav>
 
