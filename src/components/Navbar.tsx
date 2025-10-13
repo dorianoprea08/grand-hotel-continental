@@ -7,6 +7,7 @@ import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import lazuliLogo from "@/assets/lazuli-logo.png";
+import hotelLogo from "@/assets/hotel-logo.png";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 export default function Navbar() {
   const {
@@ -44,6 +45,10 @@ export default function Navbar() {
       <nav className="container flex justify-between items-center">
         <div className="flex items-center px-2">
           <ThemeToggle />
+        </div>
+
+        <div className="flex-1 flex justify-center">
+          <img src={hotelLogo} alt="Grand Hotel Continental" className="h-12 w-auto object-contain" />
         </div>
 
         <div className="flex items-center space-x-8 px-2">
