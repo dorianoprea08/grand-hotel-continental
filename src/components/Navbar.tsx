@@ -48,8 +48,7 @@ export default function Navbar() {
           <img src={hotelLogo} alt="Grand Hotel Continental" className="h-8 sm:h-10 md:h-12 w-auto object-contain max-w-[200px] sm:max-w-[280px] md:max-w-full" />
         </div>
 
-        <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 px-1 sm:px-2">
-          <LanguageSelector />
+        <div className="flex items-center px-1 sm:px-2">
           <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full h-11 w-11">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
@@ -76,6 +75,10 @@ export default function Navbar() {
             </ul>
             
             <div className="space-y-3 pt-4 border-t">
+              <div className="flex items-center justify-between px-4 py-2">
+                <span className="text-sm font-medium">Language</span>
+                <LanguageSelector />
+              </div>
               <div className="flex items-center justify-between px-4 py-2">
                 <span className="text-sm font-medium">Theme</span>
                 <ThemeToggle />
