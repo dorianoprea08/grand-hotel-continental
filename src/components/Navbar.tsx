@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import lazuliLogo from "@/assets/lazuli-logo.png";
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-} from "@/components/ui/drawer";
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetClose,
+} from "@/components/ui/sheet";
 export default function Navbar() {
   const {
     t
@@ -46,23 +46,21 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
-  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-2 sm:py-3 shadow-md" : "bg-transparent py-3 sm:py-5")}>
-      <nav className="container flex justify-between items-center px-4 sm:px-6">
-        <div className="flex items-center space-x-2 sm:space-x-4">
+  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-3 shadow-md" : "bg-transparent py-4")}>
+      <nav className="container flex items-center justify-between px-4 sm:px-6">
+        {/* LEFT SECTION: Logo perfect centrat vertical */}
+        <div className="flex items-center space-x-3">
           <Link to="/" className="flex items-center">
             <img 
               src={lazuliLogo} 
               alt="Lazuli Marsa Alam" 
-              className="h-10 sm:h-12 md:h-14 w-auto object-contain" 
+              className="h-12 md:h-14 w-auto object-contain" 
             />
           </Link>
-          <div className="hidden sm:flex">
-            <LanguageSelector />
-          </div>
         </div>
 
-        {/* Desktop Navigation */}
-        <ul className="hidden lg:flex space-x-6 xl:space-x-8">
+        {/* CENTER SECTION: Desktop Navigation */}
+        <ul className="hidden lg:flex space-x-6 xl:space-x-8 absolute left-1/2 transform -translate-x-1/2">
           {navLinks.map(link => <li key={link.name} className="relative">
               <Link to={link.path} className="font-medium text-sm xl:text-base transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">
                 {link.name}
@@ -70,49 +68,51 @@ export default function Navbar() {
             </li>)}
         </ul>
 
-        <div className="hidden lg:flex items-center space-x-2">
-          <ThemeToggle />
-          <Button asChild className="btn-primary text-sm xl:text-base">
-            <Link to="/booking">{t.nav.bookNow}</Link>
-          </Button>
-        </div>
-
-        {/* Mobile Navigation */}
-        <div className="lg:hidden flex items-center space-x-1 sm:space-x-2">
-          <div className="sm:hidden">
+        {/* RIGHT SECTION: Actions */}
+        <div className="flex items-center space-x-2">
+          <div className="hidden sm:flex">
             <LanguageSelector />
           </div>
           <ThemeToggle />
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
-            className="rounded-full h-9 w-9 sm:h-10 sm:w-10"
-          >
-            <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
-          </Button>
+          
+          {/* Desktop Book Now Button */}
+          <div className="hidden lg:flex">
+            <Button asChild className="btn-primary text-sm xl:text-base">
+              <Link to="/booking">{t.nav.bookNow}</Link>
+            </Button>
+          </div>
+          
+          {/* Mobile Hamburger Menu */}
+          <div className="lg:hidden">
+            <div className="sm:hidden mr-1">
+              <LanguageSelector />
+            </div>
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+              className="rounded-full h-11 w-11"
+            >
+              <Menu className="h-6 w-6" />
+            </Button>
+          </div>
         </div>
       </nav>
 
-      {/* Mobile Drawer */}
-      <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-        <DrawerContent className="h-[85vh]">
-          <DrawerHeader className="border-b pb-4">
+      {/* Mobile Side Drawer */}
+      <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+        <SheetContent side="left" className="w-[300px] sm:w-[350px]">
+          <SheetHeader className="border-b pb-4 mb-6">
             <div className="flex items-center justify-between">
-              <DrawerTitle className="flex items-center space-x-3">
+              <SheetTitle className="flex items-center space-x-3">
                 <img src={lazuliLogo} alt="Lazuli Marsa Alam" className="h-10 w-auto object-contain" />
                 <span className="text-lg font-semibold">Menu</span>
-              </DrawerTitle>
-              <DrawerClose asChild>
-                <Button variant="ghost" size="icon" className="rounded-full h-9 w-9">
-                  <X className="h-5 w-5" />
-                </Button>
-              </DrawerClose>
+              </SheetTitle>
             </div>
-          </DrawerHeader>
+          </SheetHeader>
           
-          <div className="flex flex-col h-full justify-between p-6 overflow-y-auto">
-            <ul className="space-y-1">
+          <nav className="flex flex-col h-[calc(100vh-120px)] justify-between">
+            <ul className="space-y-2">
               {navLinks.map(link => (
                 <li key={link.name}>
                   <Link 
@@ -133,8 +133,8 @@ export default function Navbar() {
                 </Link>
               </Button>
             </div>
-          </div>
-        </DrawerContent>
-      </Drawer>
+          </nav>
+        </SheetContent>
+      </Sheet>
     </header>;
 }
