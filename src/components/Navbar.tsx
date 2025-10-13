@@ -7,6 +7,12 @@ import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import lazuliLogo from "@/assets/lazuli-logo.png";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
 export default function Navbar() {
   const {
     t
@@ -43,68 +49,58 @@ export default function Navbar() {
       <nav className="container flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <Link to="/" className="flex items-center">
-            
+            <img src={lazuliLogo} alt="Lazuli Marsa Alam" className="h-12 md:h-14 w-auto object-contain" />
           </Link>
+        </div>
+
+        <div className="flex items-center space-x-2">
           <LanguageSelector />
-        </div>
-
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-8">
-          {navLinks.map(link => <li key={link.name} className="relative">
-              <Link to={link.path} className="font-medium transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">
-                {link.name}
-              </Link>
-            </li>)}
-        </ul>
-
-        <div className="hidden md:flex items-center space-x-2">
           <ThemeToggle />
-          <Button asChild className="btn-primary">
-            <Link to="/booking">{t.nav.bookNow}</Link>
-          </Button>
-        </div>
-
-        {/* Mobile Navigation */}
-        <div className="md:hidden flex items-center space-x-2">
-          <ThemeToggle />
-          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+            className="rounded-full h-11 w-11"
+          >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
       </nav>
 
-      {/* Mobile Menu */}
-      <div className={cn("fixed inset-0 z-40 bg-background/80 backdrop-blur-sm md:hidden transition-opacity duration-300", mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none")}>
-        <div className={cn("fixed inset-y-0 right-0 w-3/4 max-w-sm bg-card shadow-xl p-6 transition-transform duration-300 ease-in-out", mobileMenuOpen ? "translate-x-0" : "translate-x-full")}>
-          <div className="flex flex-col h-full justify-between">
-            <div>
-              <div className="flex justify-between items-center mb-8">
-                <div className="flex items-center space-x-4">
-                  <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-                    <img src={lazuliLogo} alt="Lazuli Marsa Alam" className="h-14 w-auto object-contain" />
+      {/* Navigation Drawer */}
+      <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+        <SheetContent side="left" className="w-[300px] sm:w-[350px]">
+          <SheetHeader className="border-b pb-4 mb-6">
+            <SheetTitle className="flex items-center space-x-3">
+              <img src={lazuliLogo} alt="Lazuli Marsa Alam" className="h-10 w-auto object-contain" />
+              <span className="text-lg font-semibold">Menu</span>
+            </SheetTitle>
+          </SheetHeader>
+          
+          <nav className="flex flex-col h-[calc(100vh-140px)] justify-between">
+            <ul className="space-y-2">
+              {navLinks.map(link => (
+                <li key={link.name}>
+                  <Link 
+                    to={link.path} 
+                    className="block py-3 px-4 text-base font-medium transition-colors hover:bg-muted rounded-lg hover:text-primary" 
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.name}
                   </Link>
-                  <LanguageSelector />
-                </div>
-                <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)} className="rounded-full">
-                  <X className="h-6 w-6" />
-                </Button>
-              </div>
-              <ul className="space-y-6">
-                {navLinks.map(link => <li key={link.name}>
-                    <Link to={link.path} className="text-lg font-medium transition-colors hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
-                      {link.name}
-                    </Link>
-                  </li>)}
-              </ul>
-            </div>
+                </li>
+              ))}
+            </ul>
             
-            <Button asChild className="w-full btn-primary mt-6">
-              <Link to="/booking" onClick={() => setMobileMenuOpen(false)}>
-                {t.nav.bookNow}
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </div>
+            <div className="space-y-3 pt-4 border-t">
+              <Button asChild className="w-full btn-primary h-12 text-base">
+                <Link to="/booking" onClick={() => setMobileMenuOpen(false)}>
+                  {t.nav.bookNow}
+                </Link>
+              </Button>
+            </div>
+          </nav>
+        </SheetContent>
+      </Sheet>
     </header>;
 }
