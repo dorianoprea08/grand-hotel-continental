@@ -42,9 +42,8 @@ export default function Navbar() {
   }, [scrolled]);
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-gradient-to-br from-indigo-700 via-purple-700 to-indigo-800 py-6 shadow-lg" : "bg-gradient-to-br from-indigo-700 via-purple-700 to-indigo-800 py-8")}>
       <nav className="container">
-        {/* Top row with controls */}
-        <div className="flex justify-between items-start mb-6">
-          <ThemeToggle />
+        {/* Menu button in top-right */}
+        <div className="flex justify-end mb-6">
           <Button 
             variant="ghost" 
             size="icon" 
@@ -53,7 +52,6 @@ export default function Navbar() {
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
-          <LanguageSelector />
         </div>
 
         {/* Center content */}
@@ -98,6 +96,14 @@ export default function Navbar() {
             </ul>
             
             <div className="space-y-3 pt-4 border-t">
+              <div className="flex items-center justify-between px-4 py-2">
+                <span className="text-sm font-medium">Theme</span>
+                <ThemeToggle />
+              </div>
+              <div className="flex items-center justify-between px-4 py-2">
+                <span className="text-sm font-medium">Language</span>
+                <LanguageSelector />
+              </div>
               <Button asChild className="w-full btn-primary h-12 text-base">
                 <Link to="/booking" onClick={() => setMobileMenuOpen(false)}>
                   {t.nav.bookNow}
