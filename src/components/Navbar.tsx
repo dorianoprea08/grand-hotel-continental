@@ -53,7 +53,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-4">
           <LanguageSelector />
           <ThemeToggle />
           <Button 
