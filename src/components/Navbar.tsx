@@ -15,6 +15,7 @@ export default function Navbar() {
   } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isDark, setIsDark] = useState(false);
   const navLinks = [{
     name: t.nav.home,
     path: "/"
@@ -41,11 +42,34 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
+
+  useEffect(() => {
+    const checkTheme = () => {
+      setIsDark(document.documentElement.classList.contains("dark"));
+    };
+    
+    checkTheme();
+    
+    const observer = new MutationObserver(checkTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"]
+    });
+    
+    return () => observer.disconnect();
+  }, []);
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-lg shadow-sm border-b", scrolled ? "py-3 shadow-md" : "py-5")}>
       <nav className="container flex justify-between items-center">
 
         <div className="flex-1 flex justify-center min-w-0">
-          <img src={hotelLogo} alt="Grand Hotel Continental" className="h-8 sm:h-10 md:h-12 w-auto object-contain max-w-[200px] sm:max-w-[280px] md:max-w-full" />
+          <img 
+            src={hotelLogo} 
+            alt="Grand Hotel Continental" 
+            className={cn(
+              "h-8 sm:h-10 md:h-12 w-auto object-contain max-w-[200px] sm:max-w-[280px] md:max-w-full transition-all duration-300",
+              !isDark && "invert"
+            )}
+          />
         </div>
 
         <div className="flex items-center px-1 sm:px-2">
