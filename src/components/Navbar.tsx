@@ -42,15 +42,12 @@ export default function Navbar() {
   }, [scrolled]);
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-3 shadow-md" : "bg-transparent py-5")}>
       <nav className="container flex justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <Link to="/" className="flex items-center">
-            <img src={lazuliLogo} alt="Lazuli Marsa Alam" className="h-12 md:h-14 w-auto object-contain" />
-          </Link>
+        <div className="flex items-center px-2">
+          <ThemeToggle />
         </div>
 
-        <div className="flex items-center space-x-4 mx-[7px] px-[20px] py-0 my-0">
+        <div className="flex items-center space-x-4 px-2">
           <LanguageSelector />
-          <ThemeToggle />
           <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full h-11 w-11">
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
