@@ -8,19 +8,19 @@ export const en = {
     bookNow: "Book Now"
   },
   hero: {
-    subtitle: "BEACHFRONT LUXURY ACCOMMODATION",
-    title: "Experience Seaside Tranquility",
-    description: "Discover our exclusive collection of luxury beachfront apartments and hotel rooms, offering unparalleled comfort and breathtaking sea views.",
-    bookStay: "Book Your Stay",
-    exploreApartments: "Explore Apartments",
+    subtitle: "5-STAR HOTEL IN BUCHAREST",
+    title: "Grand Hotel Continental Bucharest",
+    description: "5-star hotel in the heart of Bucharest, on Calea Victoriei. An elegant journey through time in a historic monument building from 1826 with a unique experience of refinement and elegance.",
+    bookStay: "Book Now",
+    exploreApartments: "Explore Rooms",
     scrollDown: "Scroll Down"
   },
   footer: {
-    description: "Luxurious beachfront apartments and hotel rooms with stunning sea views, offering the perfect blend of comfort and elegance for your dream vacation.",
+    description: "Grand Hotel Continental Bucharest - 5-star hotel in the heart of the Capital, on Calea Victoriei. Luxury accommodation in a historic monument building with over 190 years of history.",
     quickLinks: "Quick Links",
     contact: "Contact",
     newsletter: "Newsletter",
-    newsletterDesc: "Subscribe to our newsletter for special deals and updates.",
+    newsletterDesc: "Subscribe to our newsletter for special offers.",
     yourEmail: "Your email address",
     subscribe: "Subscribe",
     allRights: "All rights reserved."
@@ -39,7 +39,7 @@ export const en = {
   },
   testimonials: {
     title: "What Our Guests Say",
-    description: "Discover why our guests keep coming back to MareSereno for their seaside getaways."
+    description: "Discover why our guests choose Grand Hotel Continental Bucharest for their stays in the Capital."
   },
   notFound: {
     title: "Page Not Found",
@@ -48,10 +48,10 @@ export const en = {
   },
   home: {
     welcome: {
-      subtitle: "Welcome to MareSereno",
-      title: "Luxury Seaside Accommodations",
-      description1: "Nestled on the pristine Mediterranean coastline, MareSereno offers an exquisite collection of luxury apartments and hotel rooms. Our beachfront accommodations combine elegant design with modern comfort, creating the perfect setting for an unforgettable seaside getaway.",
-      description2: "Whether you're seeking a romantic escape, a family vacation, or a peaceful retreat, our diverse range of accommodations caters to every preference and need. Each space is thoughtfully designed to provide panoramic sea views and direct beach access.",
+      subtitle: "Welcome to Grand Hotel Continental",
+      title: "5-Star Accommodation in Bucharest",
+      description1: "Grand Hotel Continental is a 5-star hotel in Bucharest, located in the city center, on the most beautiful avenue of the Capital. Grand Hotel Continental Bucharest is not just accommodation in Bucharest, but a 5-star hotel that offers you an elegant journey through time and a unique experience.",
+      description2: "The charming hotel was reopened in 2009, after a four-year restoration process. Attention to detail has preserved the elegant and distinguished atmosphere that characterizes the building. The location and 5-star services bring all the refinement and history of the two tourist attractions in the immediate vicinity: Calea Victoriei and the Old Town of Bucharest.",
       learnMore: "Learn More"
     },
     booking: {
@@ -68,44 +68,44 @@ export const en = {
     },
     amenities: {
       subtitle: "Hotel Amenities",
-      title: "Experience The Best",
-      description: "Enjoy our premium facilities and services designed to make your stay exceptional.",
+      title: "5-Star Services",
+      description: "Enjoy our premium facilities and services designed for an exceptional stay.",
       features: {
         beachfront: {
-          title: "Beachfront Location",
-          description: "Direct access to pristine beaches with crystal clear waters."
+          title: "Central Location",
+          description: "In the heart of Bucharest, on Calea Victoriei, near the Old Town."
         },
         pools: {
-          title: "Swimming Pools",
-          description: "Relax by our infinity pools with stunning sea views."
+          title: "THAIco Spa",
+          description: "Luxury Asian spa with sauna, jacuzzi pool and fitness center."
         },
         restaurant: {
-          title: "Gourmet Restaurant",
-          description: "Enjoy exquisite local and international cuisine."
+          title: "Fine Dining Restaurants",
+          description: "Concerto, Bistro Continental and Victoria Club for 5 o'clock tea."
         },
         wifi: {
-          title: "High-Speed Wi-Fi",
-          description: "Stay connected with complimentary high-speed internet."
+          title: "Free Wi-Fi",
+          description: "High-speed wireless internet throughout the hotel."
         },
         bar: {
-          title: "Beach Bar & Café",
-          description: "Refreshing drinks and snacks served right on the beach."
+          title: "Continental Patisserie",
+          description: "Tradition and history on Calea Victoriei."
         },
         location: {
-          title: "Prime Location",
-          description: "Close to local attractions, shops, and restaurants."
+          title: "Historic Monument",
+          description: "Building from 1826 with over 190 years of history."
         }
       }
     },
     cta: {
-      title: "Ready for Your Dream Vacation?",
-      description: "Book your stay today and experience the perfect blend of luxury, comfort, and stunning sea views.",
+      title: "Ready for Your Stay in Bucharest?",
+      description: "Book direct with 20% discount and experience the elegance of a 5-star hotel in the heart of the Capital.",
       bookNow: "Book Now"
     }
   },
   apartments: {
-    title: "Our Apartments & Rooms",
-    subtitle: "Discover our selection of premium accommodations, ranging from cozy studios to luxurious penthouses.",
+    title: "Accommodation in Bucharest",
+    subtitle: "Our elegant rooms combine classic decor with modern comfort for a 5-star stay.",
     filters: {
       guests: "Guests",
       anyGuests: "Any number of guests",
@@ -234,7 +234,7 @@ export const en = {
     email: "Email",
     receptionHours: "Reception Hours",
     checkInTime: "Check-in: After 3:00 PM",
-    checkOutTime: "Check-out: Before 11:00 AM",
+    checkOutTime: "Check-out: Before 12:00 PM",
     sendMessage: "Send Us a Message",
     fullName: "Full Name",
     phoneNumber: "Phone Number",
@@ -253,7 +253,7 @@ export const en = {
       },
       parking: {
         question: "Is parking available at the property?",
-        answer: "Yes, we offer complimentary parking for all guests. Valet parking service is also available for an additional fee."
+        answer: "Parking spaces are limited and cost 50 lei per day. Advance reservation is required, and confirmation is subject to availability."
       },
       pets: {
         question: "Are pets allowed in the apartments?",
@@ -268,127 +268,127 @@ export const en = {
         answer: "Yes, we offer airport transfers for an additional fee. Please contact our concierge at least 48 hours before your arrival to arrange transportation."
       },
       amenities: {
-        question: "What amenities are available at the property?",
-        answer: "Our property features swimming pools, a spa, restaurants, a beach bar, fitness center, and direct beach access. All apartments include Wi-Fi, air conditioning, and modern appliances."
+        question: "What amenities are available at the hotel?",
+        answer: "The hotel features THAIco Spa with sauna and jacuzzi pool, restaurants (Concerto, Bistro Continental, Victoria Club), patisserie, fitness center, free Wi-Fi, room service and 24/7 concierge."
       }
     }
   },
   apartmentDescriptions: {
     "1": {
-      name: "Deluxe Sea View Suite",
-      description: "Luxurious suite with panoramic sea views, modern amenities, and a private balcony."
+      name: "Deluxe Room",
+      description: "Deluxe rooms are elegant, perfect for lovers of good taste. 34-42 sqm with free WiFi, safe and minibar."
     },
     "2": {
-      name: "Premium Family Apartment",
-      description: "Spacious apartment ideal for families, with full kitchen and stunning coastal views."
+      name: "Senior Apartment",
+      description: "Senior Apartments represent luxury, elegance and refinement for a 5-star stay in Bucharest. 61 sqm with classic decor and city view."
     },
     "3": {
-      name: "Executive Beach Studio",
-      description: "Elegant studio with direct beach access, modern design, and premium finishes."
+      name: "Junior Apartment",
+      description: "Junior Apartments are decorated with classic solid wood furniture that impresses any tourist. 46 sqm with espresso machine and lounge area."
     },
     "4": {
-      name: "Luxury Penthouse Suite",
-      description: "Exclusive top-floor suite with expansive terrace and panoramic sea views."
+      name: "Standard Room",
+      description: "Standard rooms are perfect for any type of traveler. 19-26 sqm with free WiFi, safe and minibar."
     },
     "5": {
-      name: "Classic Double Room",
-      description: "Comfortable hotel room with modern amenities and partial sea views."
+      name: "Deluxe Twin Room",
+      description: "Elegant room with two separate beds, perfect for friends or business colleagues. Classic design and modern amenities."
     },
     "6": {
-      name: "Garden View Apartment",
-      description: "Peaceful apartment surrounded by lush gardens, just a short walk from the beach."
+      name: "Superior Room",
+      description: "Superior room with premium finishes and attention to detail, ideal for a comfortable stay in central Bucharest."
     }
   },
   amenitiesPage: {
-    title: "Our Amenities",
-    subtitle: "Discover the luxury amenities and services that make your stay unforgettable.",
-    description: "At MareSereno, we are dedicated to providing a comprehensive and luxurious stay experience. From our beachfront services to wellness facilities, every detail has been curated to ensure maximum comfort and pleasure.",
+    title: "Services and Facilities",
+    subtitle: "Discover the 5-star facilities and services that make your stay unforgettable.",
+    description: "At Grand Hotel Continental, we are dedicated to providing a comprehensive and luxurious stay experience. From THAIco Spa to our fine dining restaurants, every detail has been designed for your maximum comfort.",
     categories: {
       wellness: {
         title: "Wellness & Relaxation",
-        description: "Treat yourself with our range of wellness services designed to rejuvenate body and mind.",
+        description: "Indulge in THAIco Spa services and wellness facilities designed for complete relaxation.",
         items: [
           {
-            title: "Luxury Spa",
-            description: "Our spa offers a full range of treatments, from traditional therapies to the most modern beauty treatments."
+            title: "THAIco Spa",
+            description: "Leader in the Romanian market for Asian SPA services. Beauty and relaxation rituals inspired by Asian cultures, in a luxurious yet intimate atmosphere."
           },
           {
             title: "Fitness Center",
-            description: "Maintain your fitness routine with our state-of-the-art gym featuring panoramic sea views."
+            description: "Access to the fitness area is free for hotel guests."
           },
           {
-            title: "Infinity Pool",
-            description: "Immerse yourself in our infinity pool while admiring the endless horizon of the sea."
+            title: "Jacuzzi Pool",
+            description: "Relax in the jacuzzi pool, available free of charge for hotel guests."
           },
           {
-            title: "Beach Yoga",
-            description: "Join our morning yoga sessions on the beach for a revitalizing awakening."
+            title: "Dry Sauna",
+            description: "Enjoy free access to the dry sauna in the wellness area."
           }
         ]
       },
       dining: {
-        title: "Dining",
-        description: "Discover the best of local and international cuisine at our restaurants and bars.",
+        title: "Restaurants",
+        description: "Discover exceptional culinary experiences, from fine dining to traditional 5 o'clock tea.",
         items: [
           {
-            title: "Gourmet Restaurant",
-            description: "Savor fine dishes prepared by our chefs with fresh local ingredients."
+            title: "Concerto",
+            description: "Modern approach to traditional French cuisine, with light and fresh ingredients. In the top options for fine dining in Bucharest."
           },
           {
-            title: "Beach Bar",
-            description: "Enjoy refreshing cocktails and light snacks with your feet in the sand."
+            title: "Bistro Continental",
+            description: "A culinary journey in a casual and friendly atmosphere, overlooking Calea Victoriei."
           },
           {
-            title: "Lounge Bar",
-            description: "Relax with a selection of fine wines and spirits in an elegant atmosphere."
+            title: "Victoria Club",
+            description: "The perfect place for traditional 5 o'clock tea and business meetings in a refined setting."
           },
           {
-            title: "Room Service",
-            description: "Enjoy gourmet meals in the privacy of your apartment, available 24 hours a day."
+            title: "Continental Patisserie",
+            description: "Tradition and history on Calea Victoriei. An emblematic place for quality sweets and coffee."
           }
         ]
       },
       services: {
-        title: "Extra Services",
-        description: "Take advantage of our additional services for a hassle-free stay.",
+        title: "Premium Services",
+        description: "Services designed for an impeccable stay in the heart of Bucharest.",
         items: [
           {
-            title: "24/7 Concierge",
-            description: "Our concierge team is available at any time to assist you with any request."
+            title: "Concierge",
+            description: "Our team is at your disposal for booking tickets to shows, tourist assistance, airport transport, restaurant reservations."
           },
           {
-            title: "Airport Transfers",
-            description: "Travel comfortably to and from the airport with our private transfer service."
+            title: "Airport Transfer",
+            description: "Private transfer service to/from the airport, available for a fee."
           },
           {
-            title: "Car Rental",
-            description: "Explore the area with our fleet of premium vehicles available for rent."
+            title: "Room Service",
+            description: "Complete menu from which you can choose culinary products or drinks served in your room."
           },
           {
-            title: "Guided Excursions",
-            description: "Discover local attractions with our personalized expert-guided tours."
+            title: "Vacation Vouchers",
+            description: "We accept vacation vouchers from Pluxee Romania, UP Romania and Edenred Romania."
           }
         ]
       },
       entertainment: {
-        title: "Entertainment",
-        description: "Enjoy a variety of recreational activities designed for all tastes.",
+        title: "Events & Business Facilities",
+        description: "Spaces and services for memorable corporate and private events.",
         items: [
           {
-            title: "Water Sports",
-            description: "Try a wide range of water sports, from paddleboarding to jet skiing."
+            title: "Conference Rooms",
+            description: "Modern facilities for conferences and business events."
           },
           {
-            title: "Kids Play Area",
-            description: "Little ones can have fun in our safe and supervised play area."
+            title: "Private Events",
+            description: "Elegant halls for private parties and special events."
           },
           {
-            title: "Themed Evenings",
-            description: "Join our weekly themed evenings with live music and entertainment."
+            title: "VIP Facilities",
+            description: "VIP services and facilities available in-room for special guests."
           },
           {
-            title: "Library & Game Room",
-            description: "Relax with a good book or enjoy board games in our common room."
+            title: "Lounge Area",
+            description: "Elegant common spaces for relaxation and socializing."
           }
         ]
       }

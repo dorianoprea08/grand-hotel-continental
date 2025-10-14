@@ -8,19 +8,19 @@ export const ro = {
     bookNow: "Rezervă Acum"
   },
   hero: {
-    subtitle: "CAZARE DE LUX PE MALUL MĂRII",
-    title: "Experimentează Liniștea Mării",
-    description: "Descoperă colecția noastră exclusivă de apartamente de lux și camere de hotel pe malul mării, oferind confort de neegalat și vederi spectaculoase asupra mării.",
-    bookStay: "Rezervă Sejurul",
-    exploreApartments: "Explorează Apartamentele",
+    subtitle: "HOTEL 5 STELE ÎN BUCUREȘTI",
+    title: "Grand Hotel Continental București",
+    description: "Hotel de 5 stele în centrul Bucureștiului, pe Calea Victoriei. O călătorie elegantă în timp, într-o clădire monument istoric din 1826 cu o experiență aparte de rafinament și eleganță.",
+    bookStay: "Rezervă Acum",
+    exploreApartments: "Explorează Camerele",
     scrollDown: "Derulează Jos"
   },
   footer: {
-    description: "Apartamente de lux pe malul mării și camere de hotel cu vederi spectaculoase, oferind combinația perfectă de confort și eleganță pentru vacanța ta de vis.",
+    description: "Grand Hotel Continental București - hotel de 5 stele în centrul Capitalei, pe Calea Victoriei. Cazare de lux într-o clădire monument istoric cu peste 190 de ani de poveste.",
     quickLinks: "Link-uri Rapide",
     contact: "Contact",
     newsletter: "Newsletter",
-    newsletterDesc: "Abonează-te la newsletter-ul nostru pentru oferte speciale și actualizări.",
+    newsletterDesc: "Abonează-te la newsletter-ul nostru pentru oferte speciale.",
     yourEmail: "Adresa ta de email",
     subscribe: "Abonează-te",
     allRights: "Toate drepturile rezervate."
@@ -39,7 +39,7 @@ export const ro = {
   },
   testimonials: {
     title: "Ce Spun Oaspeții Noștri",
-    description: "Descoperă de ce oaspeții noștri se întorc mereu la MareSereno pentru escapadele lor la mare."
+    description: "Descoperă de ce oaspeții noștri aleg Grand Hotel Continental București pentru sejururile lor în Capitală."
   },
   notFound: {
     title: "Pagină Negăsită",
@@ -48,10 +48,10 @@ export const ro = {
   },
   home: {
     welcome: {
-      subtitle: "Bun venit la MareSereno",
-      title: "Cazare de Lux la Mare",
-      description1: "Situat pe coasta pristină a Mării Mediterane, MareSereno oferă o colecție rafinată de apartamente de lux și camere de hotel. Cazarea noastră pe malul mării combină designul elegant cu confortul modern, creând cadrul perfect pentru o escapadă de neuitat la mare.",
-      description2: "Fie că cauți o evadare romantică, o vacanță în familie sau o retragere liniștită, gama noastră diversă de cazare se potrivește fiecărei preferințe și nevoi. Fiecare spațiu este proiectat cu grijă pentru a oferi vederi panoramice asupra mării și acces direct la plajă.",
+      subtitle: "Bun venit la Grand Hotel Continental",
+      title: "Cazare de 5 Stele în București",
+      description1: "Grand Hotel Continental este un hotel de 5 stele în București, aflat în centrul orașului, chiar pe cea mai frumoasă arteră din Capitală. Grand Hotel Continental București nu este doar un loc de cazare în București, ci și un hotel de 5 stele care îți propune o călătorie elegantă în timp și o experiență aparte.",
+      description2: "Hotelul cochet a fost redeschis în anul 2009, după un proces de restaurare care a durat patru ani. Grija pentru detalii a păstrat intact aerul elegant și distins ce caracterizează clădirea. Localizarea și serviciile de 5 stele aduc tot rafinamentul și istoria cu care sunt încărcate cele două atracții turistice aflate în imediata vecinătate: Calea Victoriei și Centrul Vechi din București.",
       learnMore: "Află Mai Multe"
     },
     booking: {
@@ -68,44 +68,44 @@ export const ro = {
     },
     amenities: {
       subtitle: "Facilități Hotel",
-      title: "Experimentează Cele Mai Bune",
-      description: "Bucură-te de facilitățile și serviciile noastre premium concepute pentru a-ți face sejurul excepțional.",
+      title: "Servicii de 5 Stele",
+      description: "Bucură-te de facilitățile și serviciile noastre premium concepute pentru un sejur excepțional.",
       features: {
         beachfront: {
-          title: "Locație pe Malul Mării",
-          description: "Acces direct la plaje pristine cu ape cristalline."
+          title: "Locație Centrală",
+          description: "În inima Bucureștiului, pe Calea Victoriei, lângă Centrul Vechi."
         },
         pools: {
-          title: "Piscine",
-          description: "Relaxează-te lângă piscinele noastre infinity cu vederi spectaculoase asupra mării."
+          title: "THAIco Spa",
+          description: "Spa asiatic de lux cu saună, piscină cu hidromasaj și centru fitness."
         },
         restaurant: {
-          title: "Restaurant Gourmet",
-          description: "Savurează bucătărie locală și internațională rafinată."
+          title: "Restaurante Fine Dining",
+          description: "Concerto, Bistro Continental și Victoria Club pentru 5 o'clock tea."
         },
         wifi: {
-          title: "Wi-Fi de Mare Viteză",
-          description: "Rămâi conectat cu internet de mare viteză gratuit."
+          title: "Wi-Fi Gratuit",
+          description: "Internet wireless de mare viteză în tot hotelul."
         },
         bar: {
-          title: "Bar & Cafenea pe Plajă",
-          description: "Băuturi răcoritoare și gustări servite direct pe plajă."
+          title: "Cofetăria Continental",
+          description: "Tradiție și istorie pe Calea Victoriei."
         },
         location: {
-          title: "Locație Premium",
-          description: "Aproape de atracțiile locale, magazine și restaurante."
+          title: "Monument Istoric",
+          description: "Clădire din 1826 cu peste 190 de ani de poveste."
         }
       }
     },
     cta: {
-      title: "Pregătit Pentru Vacanța Ta de Vis?",
-      description: "Rezervă sejurul tău astăzi și experimentează combinația perfectă de lux, confort și vederi spectaculoase asupra mării.",
+      title: "Pregătit Pentru Sejurul Tău în București?",
+      description: "Rezervă direct cu 20% discount și experimentează eleganța unui hotel de 5 stele în inima Capitalei.",
       bookNow: "Rezervă Acum"
     }
   },
   apartments: {
-    title: "Apartamentele și Camerele Noastre",
-    subtitle: "Descoperă selecția noastră de cazare premium, de la garsoniere confortabile la penthouse-uri luxoase.",
+    title: "Cazare București",
+    subtitle: "Camerele noastre elegante combină decorul clasic cu confortul modern pentru un sejur de 5 stele.",
     filters: {
       guests: "Oaspeți",
       anyGuests: "Orice număr de oaspeți",
@@ -234,7 +234,7 @@ export const ro = {
     email: "Email",
     receptionHours: "Program Recepție",
     checkInTime: "Check-in: După 15:00",
-    checkOutTime: "Check-out: Înainte de 11:00",
+    checkOutTime: "Check-out: Înainte de 12:00",
     sendMessage: "Trimite-ne un Mesaj",
     fullName: "Nume Complet",
     phoneNumber: "Număr Telefon",
@@ -253,7 +253,7 @@ export const ro = {
       },
       parking: {
         question: "Este disponibilă parcarea la proprietate?",
-        answer: "Da, oferim parcare gratuită pentru toți oaspeții. Serviciul de parcare cu valet este, de asemenea, disponibil contra cost."
+        answer: "Locurile de parcare sunt limitate și costă 50 lei pe zi. Este necesară rezervare în avans, iar confirmarea se face în funcție de disponibilitate."
       },
       pets: {
         question: "Sunt permise animalele de companie în apartamente?",
@@ -268,127 +268,127 @@ export const ro = {
         answer: "Da, oferim transferuri de la aeroport contra cost. Vă rugăm să contactați concierge-ul nostru cu cel puțin 48 de ore înainte de sosire pentru a aranja transportul."
       },
       amenities: {
-        question: "Ce facilități sunt disponibile la proprietate?",
-        answer: "Proprietatea noastră dispune de piscine, spa, restaurante, bar pe plajă, centru fitness și acces direct la plajă. Toate apartamentele includ Wi-Fi, aer condiționat și aparate moderne."
+        question: "Ce facilități sunt disponibile la hotel?",
+        answer: "Hotelul dispune de THAIco Spa cu saună și piscină cu hidromasaj, restaurante (Concerto, Bistro Continental, Victoria Club), cofetărie, centru fitness, Wi-Fi gratuit, room service și concierge 24/7."
       }
     }
   },
   apartmentDescriptions: {
     "1": {
-      name: "Suite Deluxe cu Vedere la Mare",
-      description: "Suite luxoasă cu vedere panoramică la mare, facilități moderne și balcon privat."
+      name: "Cameră Deluxe",
+      description: "Camerele deluxe sunt elegante, perfecte pentru iubitorii de bun gust. 34-42 mp cu WiFi gratuit, seif și minibar."
     },
     "2": {
-      name: "Apartament Premium pentru Familii",
-      description: "Apartament spațios ideal pentru familii, cu bucătărie completă și vederi spectaculoase la coastă."
+      name: "Apartament Senior",
+      description: "Apartamentele Senior reprezintă luxul, eleganța și rafinamentul pentru un sejur de 5 stele în București. 61 mp cu decor clasic și vedere spre oraș."
     },
     "3": {
-      name: "Studio Executiv pe Plajă",
-      description: "Studio elegant cu acces direct la plajă, design modern și finisaje premium."
+      name: "Apartament Junior",
+      description: "Apartamentele Junior sunt decorate cu un mobilier clasic, din lemn masiv, ce impresionează orice turist. 46 mp cu espressor și zonă de relaxare."
     },
     "4": {
-      name: "Suite Penthouse de Lux",
-      description: "Suite exclusivă la ultimul etaj cu terasă extinsă și vedere panoramică la mare."
+      name: "Cameră Standard",
+      description: "Camerele standard sunt perfecte pentru orice tip de călătorii. 19-26 mp cu WiFi gratuit, seif și minibar."
     },
     "5": {
-      name: "Cameră Dublă Clasică",
-      description: "Cameră de hotel confortabilă cu facilități moderne și vedere parțială la mare."
+      name: "Cameră Deluxe Twin",
+      description: "Cameră elegantă cu două paturi separate, perfectă pentru prieteni sau colegi de afaceri. Design clasic și facilități moderne."
     },
     "6": {
-      name: "Apartament cu Vedere la Grădină",
-      description: "Apartament liniștit înconjurat de grădini luxuriante, la o scurtă plimbare de plajă."
+      name: "Cameră Superior",
+      description: "Cameră superioară cu finisaje premium și atenție la detalii, ideală pentru un sejur confortabil în centrul Bucureștiului."
     }
   },
   amenitiesPage: {
-    title: "Facilitățile Noastre",
-    subtitle: "Descoperă facilitățile și serviciile de lux care fac sejurul tău de neuitat.",
-    description: "La MareSereno, suntem dedicați să oferim o experiență de sejur completă și luxoasă. De la serviciile noastre pe plajă până la facilitățile de wellness, fiecare detaliu a fost conceput pentru a asigura confort și plăcere maxime.",
+    title: "Servicii și Facilități",
+    subtitle: "Descoperă facilitățile și serviciile de 5 stele care fac sejurul tău de neuitat.",
+    description: "La Grand Hotel Continental, suntem dedicați să oferim o experiență de sejur completă și luxoasă. De la THAIco Spa până la restaurantele noastre fine dining, fiecare detaliu a fost conceput pentru confortul tău maxim.",
     categories: {
       wellness: {
         title: "Wellness & Relaxare",
-        description: "Răsfață-te cu gama noastră de servicii wellness concepute pentru a revigora corpul și mintea.",
+        description: "Răsfață-te cu serviciile THAIco Spa și facilitățile de wellness concepute pentru relaxare completă.",
         items: [
           {
-            title: "Spa de Lux",
-            description: "Spa-ul nostru oferă o gamă completă de tratamente, de la terapii tradiționale la cele mai moderne tratamente de frumusețe."
+            title: "THAIco Spa",
+            description: "Liderul pieței românești de servicii SPA asiatice. Ritualuri de înfrumusețare și relaxare inspirate din culturile asiatice, într-o ambianță luxuriantă dar intimă."
           },
           {
             title: "Centru Fitness",
-            description: "Menține-ți rutina de fitness cu sala noastră de ultimă generație cu vedere panoramică la mare."
+            description: "Accesul la zona de fitness este gratuit pentru oaspeții hotelului."
           },
           {
-            title: "Piscină Infinity",
-            description: "Scufundă-te în piscina noastră infinity admirând orizontul infinit al mării."
+            title: "Piscină cu Hidromasaj",
+            description: "Relaxează-te în piscina cu hidromasaj, disponibilă gratuit pentru oaspeții hotelului."
           },
           {
-            title: "Yoga pe Plajă",
-            description: "Alătură-te sesiunilor noastre de yoga matinale pe plajă pentru o trezire revitalizantă."
+            title: "Saună Uscată",
+            description: "Beneficiază de acces liber la sauna uscată din zona de wellness."
           }
         ]
       },
       dining: {
         title: "Restaurante",
-        description: "Descoperă cele mai bune preparate din bucătăria locală și internațională la restaurantele și barurile noastre.",
+        description: "Descoperă experiențe culinare de excepție, de la fine dining la tradiționalul 5 o'clock tea.",
         items: [
           {
-            title: "Restaurant Gourmet",
-            description: "Savurează preparate rafinate pregătite de bucătarii noștri cu ingrediente locale proaspete."
+            title: "Concerto",
+            description: "Abordarea modernă a bucătăriei tradiționale franțuzești, cu ingrediente ușoare și proaspete. În topul opțiunilor pentru fine dining din București."
           },
           {
-            title: "Bar pe Plajă",
-            description: "Bucură-te de cocktailuri răcoritoare și gustări ușoare cu picioarele în nisip."
+            title: "Bistro Continental",
+            description: "O călătorie culinară într-o atmosferă casual și prietenoasă, cu vedere spre Calea Victoriei."
           },
           {
-            title: "Lounge Bar",
-            description: "Relaxează-te cu o selecție de vinuri fine și spirtoase într-o atmosferă elegantă."
+            title: "Victoria Club",
+            description: "Locul perfect pentru tradiționalul 5 o'clock tea și întâlniri de afaceri într-un cadru rafinat."
           },
           {
-            title: "Serviciu în Cameră",
-            description: "Bucură-te de mese gourmet în intimitatea apartamentului tău, disponibil 24 de ore pe zi."
+            title: "Cofetăria Continental",
+            description: "Tradiție și istorie pe Calea Victoriei. Un loc emblematic pentru dulciuri și cafea de calitate."
           }
         ]
       },
       services: {
-        title: "Servicii Extra",
-        description: "Profită de serviciile noastre suplimentare pentru un sejur fără probleme.",
+        title: "Servicii Premium",
+        description: "Servicii concepute pentru un sejur impecabil în inima Bucureștiului.",
         items: [
           {
-            title: "Concierge 24/7",
-            description: "Echipa noastră de concierge este disponibilă oricând pentru a te asista cu orice cerere."
+            title: "Concierge",
+            description: "Echipa noastră vă stă la dispoziție pentru rezervare de bilete la spectacole, asistență turistică, transport la/de la aeroport, rezervări la restaurant."
           },
           {
-            title: "Transferuri Aeroport",
-            description: "Călătorește confortabil de și la aeroport cu serviciul nostru de transfer privat."
+            title: "Transfer Aeroport",
+            description: "Serviciu de transfer privat de la/la aeroport, disponibil contra cost."
           },
           {
-            title: "Închiriere Auto",
-            description: "Explorează zona cu flota noastră de vehicule premium disponibile pentru închiriere."
+            title: "Room Service",
+            description: "Meniu complet din care vă puteți alege produse culinare sau băuturi servite în cameră."
           },
           {
-            title: "Excursii Ghidate",
-            description: "Descoperă atracțiile locale cu tururile noastre personalizate ghidate de experți."
+            title: "Card de Vacanță",
+            description: "Acceptăm carduri de vacanță de la Pluxee România, UP Romania și Edenred Romania."
           }
         ]
       },
       entertainment: {
-        title: "Divertisment",
-        description: "Bucură-te de o varietate de activități recreative concepute pentru toate gusturile.",
+        title: "Evenimente & Facilități Business",
+        description: "Spații și servicii pentru evenimente corporative și private memorabile.",
         items: [
           {
-            title: "Sporturi Nautice",
-            description: "Încearcă o gamă largă de sporturi nautice, de la paddleboarding la jet ski."
+            title: "Săli de Conferințe",
+            description: "Facilități moderne pentru conferințe și evenimente de afaceri."
           },
           {
-            title: "Zonă de Joacă pentru Copii",
-            description: "Cei mici se pot distra în zona noastră de joacă sigură și supravegheată."
+            title: "Evenimente Private",
+            description: "Săli elegante pentru petreceri private și evenimente speciale."
           },
           {
-            title: "Seri Tematice",
-            description: "Alătură-te serilor noastre tematice săptămânale cu muzică live și divertisment."
+            title: "Facilități VIP",
+            description: "Servicii și facilități VIP disponibile în cameră pentru oaspeți speciali."
           },
           {
-            title: "Bibliotecă & Sală de Jocuri",
-            description: "Relaxează-te cu o carte bună sau bucură-te de jocuri de masă în sala noastră comună."
+            title: "Zonă de Relaxare",
+            description: "Spații comune elegante pentru relaxare și socializare."
           }
         ]
       }
