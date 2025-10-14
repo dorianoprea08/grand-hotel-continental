@@ -1,26 +1,26 @@
 export const it = {
   nav: {
     home: "Home",
-    apartments: "Appartamenti",
+    apartments: "Sistemazioni",
     amenities: "Servizi",
     gallery: "Galleria",
     contact: "Contatti",
     bookNow: "Prenota Ora"
   },
   hero: {
-    subtitle: "ALLOGGI DI LUSSO SUL MARE",
-    title: "Vivi la Tranquillità del Mare",
-    description: "Scopri la nostra esclusiva collezione di appartamenti di lusso e camere d'albergo sul mare, che offrono comfort impareggiabile e viste mozzafiato sul mare.",
-    bookStay: "Prenota il tuo Soggiorno",
-    exploreApartments: "Esplora gli Appartamenti",
+    subtitle: "BOUTIQUE HOTEL DI LUSSO • EDIFICIO PATRIMONIO DI STATO",
+    title: "Grand Hotel Continental Bucarest",
+    description: "Scopri 200 anni di ospitalità raffinata nel cuore di Bucarest sulla storica Calea Victoriei",
+    bookStay: "Prenota Ora",
+    exploreApartments: "Vedi Sistemazioni",
     scrollDown: "Scorri Giù"
   },
   footer: {
-    description: "Appartamenti di lusso sul mare e camere d'albergo con splendide viste sul mare, che offrono il perfetto connubio di comfort ed eleganza per la tua vacanza da sogno.",
+    description: "Edificio distinto del Patrimonio di Stato su Calea Victoriei, il Grand Hotel Continental offre ospitalità boutique di lusso nel centro storico di Bucarest dalla prima metà del XIX secolo.",
     quickLinks: "Link Rapidi",
     contact: "Contatti",
-    newsletter: "Newsletter",
-    newsletterDesc: "Iscriviti alla nostra newsletter per offerte speciali e aggiornamenti.",
+    newsletter: "Rimani Informato",
+    newsletterDesc: "Ricevi offerte esclusive e aggiornamenti sul nostro hotel storico",
     yourEmail: "Il tuo indirizzo email",
     subscribe: "Iscriviti",
     allRights: "Tutti i diritti riservati."
@@ -38,17 +38,74 @@ export const it = {
     bookingConfirmed: "Prenotazione Confermata!"
   },
   testimonials: {
-    title: "Cosa Dicono i Nostri Ospiti",
-    description: "Scopri perché i nostri ospiti continuano a tornare a MareSereno per le loro fughe al mare."
+    title: "Testimonianze Ospiti",
+    description: "Scopri perché i viaggiatori esigenti scelgono il Grand Hotel Continental Bucarest per i loro soggiorni nella capitale della Romania."
   },
   notFound: {
     title: "Pagina Non Trovata",
-    description: "Non siamo riusciti a trovare la pagina che stavi cercando. Forse hai preso una svolta sbagliata in paradiso?",
+    description: "Non siamo riusciti a trovare la pagina che stavi cercando.",
     returnHome: "Torna alla Home"
   },
+  home: {
+    welcome: {
+      subtitle: "GRAND HOTEL CONTINENTAL BUCAREST",
+      title: "Ospitalità Boutique di Patrimonio dal 1822",
+      description1: "Strategicamente posizionato su Calea Victoriei in un edificio protetto del Patrimonio di Stato, il Grand Hotel Continental rappresenta 200 anni di raffinata ospitalità di Bucarest. Situato a soli 5 minuti a piedi dal Centro Storico e dalla Stazione Metro Universitate, a 2 km dal Palazzo del Parlamento, il nostro boutique hotel offre ai viaggiatori esigenti un'esperienza di lusso intimo nella capitale della Romania.",
+      description2: "Meticolosamente restaurato nel 2009 dopo un completo processo di ristrutturazione di quattro anni, l'hotel preserva l'atmosfera elegante e distinta che caratterizza questo monumento storico. La nostra posizione e i servizi a cinque stelle combinano la raffinatezza e la storia di due monumenti iconici: Calea Victoriei e il Centro Storico di Bucarest.",
+      learnMore: "Scopri di Più"
+    },
+    booking: {
+      subtitle: "Prenota il Tuo Soggiorno",
+      title: "Vivi il Patrimonio di Bucarest",
+      description: "Assicurati le date preferite presso il distinto boutique hotel di Bucarest. Il nostro processo di prenotazione semplificato garantisce un'esperienza senza problemi dalla prenotazione all'arrivo.",
+      benefits: ["Conferma istantanea", "Garanzia miglior tariffa", "Politiche flessibili", "Pagamento sicuro"]
+    },
+    featuredApartments: {
+      subtitle: "Camere & Suite",
+      title: "Sistemazioni",
+      description: "Arredamento classico e comfort moderni con vista sulla storica Calea Victoriei o sul nostro tranquillo cortile interno",
+      viewAll: "Vedi Tutte le Sistemazioni"
+    },
+    amenities: {
+      subtitle: "Servizi Hotel",
+      title: "Servizi a Cinque Stelle",
+      description: "Strutture e servizi premium progettati per un soggiorno eccezionale a Bucarest.",
+      features: {
+        beachfront: {
+          title: "Posizione Privilegiata",
+          description: "Nel cuore di Bucarest su Calea Victoriei, a pochi passi dal Centro Storico."
+        },
+        pools: {
+          title: "THAIco Spa",
+          description: "Spa asiatico di lusso con sauna, vasca idromassaggio e centro fitness."
+        },
+        restaurant: {
+          title: "Fine Dining",
+          description: "Concerto, Bistro Continental e Victoria Club per il tè del pomeriggio."
+        },
+        wifi: {
+          title: "Wi-Fi Gratuito",
+          description: "Internet wireless ad alta velocità in tutta la proprietà."
+        },
+        bar: {
+          title: "Pasticceria Continental",
+          description: "Patrimonio e tradizione su Calea Victoriei."
+        },
+        location: {
+          title: "Monumento Storico",
+          description: "Edificio del Patrimonio di Stato del 1826 con 200 anni di storia."
+        }
+      }
+    },
+    cta: {
+      title: "Vivi il Patrimonio di Bucarest",
+      description: "Prenota il tuo soggiorno al Grand Hotel Continental e scopri due secoli di ospitalità raffinata nella capitale della Romania. Vantaggi esclusivi per prenotazioni dirette.",
+      bookNow: "Prenota il Soggiorno"
+    }
+  },
   apartments: {
-    title: "I Nostri Appartamenti e Camere",
-    subtitle: "Scopri la nostra selezione di alloggi premium, dalle accoglienti mansarde ai lussuosi attici.",
+    title: "Sistemazioni Bucarest",
+    subtitle: "Le nostre camere elegantemente arredate combinano arredamento classico con comfort contemporaneo per un'esperienza distintiva a cinque stelle.",
     filters: {
       guests: "Ospiti",
       anyGuests: "Qualsiasi numero di ospiti",
@@ -61,9 +118,9 @@ export const it = {
       priceRange: "Fascia di Prezzo",
       showing: "Visualizzando",
       of: "di",
-      accommodations: "alloggi",
+      accommodations: "sistemazioni",
       resetFilters: "Reimposta Filtri",
-      noMatch: "Nessun appartamento corrisponde ai tuoi filtri",
+      noMatch: "Nessuna camera corrisponde ai tuoi filtri",
       adjustFilters: "Prova a modificare i criteri di filtro per vedere più opzioni.",
       viewDetails: "Visualizza Dettagli",
       features: "caratteristiche",
@@ -72,12 +129,12 @@ export const it = {
   },
   gallery: {
     title: "Galleria Fotografica",
-    subtitle: "Esplora il nostro paradiso sul mare attraverso immagini suggestive.",
+    subtitle: "Scopri la nostra eleganza storica e il lusso senza tempo",
     filters: {
       all: "Tutti",
-      exterior: "Esterno",
-      rooms: "Camere",
-      amenities: "Servizi"
+      exterior: "Edificio Storico",
+      rooms: "Camere & Suite",
+      amenities: "Servizi Hotel"
     }
   },
   booking: {
@@ -121,7 +178,7 @@ export const it = {
     payment: {
       title: "Informazioni di Pagamento",
       creditCard: "Carta di Credito",
-      payAtProperty: "Paga in Struttura",
+      payAtProperty: "Paga in Hotel",
       nameOnCard: "Nome sulla Carta",
       cardNumber: "Numero Carta",
       cardNumberPlaceholder: "0000 0000 0000 0000",
@@ -129,7 +186,7 @@ export const it = {
       expiryDatePlaceholder: "MM/AA",
       cvc: "CVC",
       cvcPlaceholder: "123",
-      payAtPropertyInfo: "Ti verrà richiesto di fornire una carta di credito valida all'arrivo per motivi di sicurezza, ma il pagamento sarà effettuato durante il tuo soggiorno nella struttura."
+      payAtPropertyInfo: "Ti verrà richiesto di fornire una carta di credito valida all'arrivo per motivi di sicurezza, ma il pagamento sarà effettuato durante il tuo soggiorno."
     },
     summary: {
       title: "Riepilogo Prenotazione",
@@ -159,7 +216,7 @@ export const it = {
       termsAgree: "Accetto i",
       termsLink: "Termini e Condizioni",
       privacyLink: "Politica sulla Privacy",
-      cancellationInfo: "Comprendo che la mia prenotazione è soggetta alla politica di cancellazione della struttura.",
+      cancellationInfo: "Comprendo che la mia prenotazione è soggetta alla politica di cancellazione dell'hotel.",
       back: "Indietro",
       confirmBooking: "Conferma Prenotazione",
       success: "Prenotazione Confermata!",
@@ -170,37 +227,37 @@ export const it = {
   },
   contact: {
     title: "Contattaci",
-    subtitle: "Siamo qui per aiutarti a rendere il tuo soggiorno indimenticabile. Contattaci per qualsiasi domanda o richiesta speciale.",
+    subtitle: "Il nostro team di concierge è qui per assicurare che il tuo soggiorno sia eccezionale. Contattaci per richieste o domande speciali.",
     getInTouch: "Mettiti in Contatto",
     address: "Indirizzo",
     phone: "Telefono",
     email: "Email",
     receptionHours: "Orari Reception",
     checkInTime: "Check-in: Dopo le 15:00",
-    checkOutTime: "Check-out: Prima delle 11:00",
+    checkOutTime: "Check-out: Prima delle 12:00",
     sendMessage: "Inviaci un Messaggio",
     fullName: "Nome Completo",
     phoneNumber: "Numero di Telefono",
     subject: "Oggetto",
     message: "Messaggio",
-    howCanWeHelp: "Come possiamo aiutarti?",
+    howCanWeHelp: "Come possiamo assisterti?",
     send: "Invia",
     messageSent: "Messaggio Inviato!",
-    thankYou: "Grazie per averci contattato. Risponderemo al tuo messaggio il prima possibile.",
+    thankYou: "Grazie per averci contattato. Risponderemo alla tua richiesta prontamente.",
     faq: "Domande Frequenti",
-    faqSubtitle: "Trova risposte rapide alle domande più comuni sui nostri alloggi e servizi.",
+    faqSubtitle: "Trova risposte rapide alle domande più comuni sul nostro hotel e servizi.",
     questions: {
       checkInOut: {
         question: "Quali sono gli orari di check-in e check-out?",
         answer: "Il check-in è dalle 15:00 in poi, e il check-out è fino alle 11:00. Il check-in anticipato o il check-out posticipato possono essere organizzati in base alla disponibilità."
       },
       parking: {
-        question: "È disponibile il parcheggio presso la struttura?",
-        answer: "Sì, offriamo parcheggio gratuito per tutti gli ospiti. Il servizio di parcheggio con valletto è disponibile anche a un costo aggiuntivo."
+        question: "È disponibile il parcheggio presso l'hotel?",
+        answer: "I posti auto sono limitati e costano 50 lei al giorno. È richiesta la prenotazione anticipata e la conferma è soggetta a disponibilità."
       },
       pets: {
-        question: "Gli animali domestici sono ammessi negli appartamenti?",
-        answer: "Accogliamo gli animali domestici in appartamenti designati pet-friendly. Si prega di informarci in anticipo se si prevede di portare un animale domestico, poiché potrebbero essere applicati costi aggiuntivi."
+        question: "Gli animali domestici sono ammessi in hotel?",
+        answer: "Accogliamo gli animali domestici in camere designate pet-friendly. Si prega di informarci in anticipo se si prevede di portare un animale domestico, poiché potrebbero essere applicati costi aggiuntivi."
       },
       breakfast: {
         question: "La colazione è inclusa nella tariffa della camera?",
@@ -211,187 +268,130 @@ export const it = {
         answer: "Sì, offriamo trasferimenti aeroportuali a un costo aggiuntivo. Si prega di contattare la nostra concierge almeno 48 ore prima del tuo arrivo per organizzare il trasporto."
       },
       amenities: {
-        question: "Quali servizi sono disponibili nella struttura?",
-        answer: "La nostra struttura dispone di piscine, una spa, ristoranti, un bar sulla spiaggia, un centro fitness e accesso diretto alla spiaggia. Tutti gli appartamenti includono Wi-Fi, aria condizionata e elettrodomestici moderni."
-      }
-    }
-  },
-  home: {
-    welcome: {
-      subtitle: "Benvenuti a MareSereno",
-      title: "Alloggi di Lusso sul Mare",
-      description1: "Situato sulla incontaminata costa mediterranea, MareSereno offre una squisita collezione di appartamenti di lusso e camere d'albergo. I nostri alloggi fronte mare combinano un design elegante con comfort moderni, creando l'ambientazione perfetta per una indimenticabile fuga al mare.",
-      description2: "Che tu stia cercando una fuga romantica, una vacanza in famiglia o un ritiro tranquillo, la nostra vasta gamma di alloggi si adatta a ogni preferenza ed esigenza. Ogni spazio è progettato con cura per fornire viste panoramiche sul mare e accesso diretto alla spiaggia.",
-      learnMore: "Scopri di Più"
-    },
-    booking: {
-      subtitle: "Prenota il tuo Soggiorno",
-      title: "Prenota la tua Vacanza Perfetta",
-      description: "Fai il primo passo verso la tua vacanza da sogno verificando la disponibilità e assicurandoti le date preferite. Il nostro semplice processo di prenotazione garantisce un'esperienza senza interruzioni dalla prenotazione all'arrivo.",
-      benefits: ["Conferma istantanea", "Miglior tariffa garantita", "Opzioni di cancellazione flessibili", "Pagamento sicuro"]
-    },
-    featuredApartments: {
-      subtitle: "I Nostri Alloggi",
-      title: "Appartamenti in Evidenza",
-      description: "Scopri le nostre opzioni di alloggio più popolari, ognuna che offre un perfetto equilibrio di comfort, stile e viste mozzafiato sul mare.",
-      viewAll: "Visualizza Tutti gli Appartamenti"
-    },
-    amenities: {
-      subtitle: "Servizi dell'Hotel",
-      title: "Vivi il Meglio",
-      description: "Goditi le nostre strutture e servizi premium progettati per rendere il tuo soggiorno eccezionale.",
-      features: {
-        beachfront: {
-          title: "Posizione Fronte Mare",
-          description: "Accesso diretto a spiagge incontaminate con acque cristalline."
-        },
-        pools: {
-          title: "Piscine",
-          description: "Rilassati accanto alle nostre piscine a sfioro con vista mozzafiato sul mare."
-        },
-        restaurant: {
-          title: "Ristorante Gourmet",
-          description: "Goditi squisita cucina locale e internazionale."
-        },
-        wifi: {
-          title: "Wi-Fi ad Alta Velocità",
-          description: "Rimani connesso con internet ad alta velocità gratuito."
-        },
-        bar: {
-          title: "Bar & Caffè sulla Spiaggia",
-          description: "Bevande rinfrescanti e snack serviti direttamente sulla spiaggia."
-        },
-        location: {
-          title: "Posizione Privilegiata",
-          description: "Vicino alle attrazioni locali, negozi e ristoranti."
-        }
-      }
-    },
-    cta: {
-      title: "Pronto per la tua Vacanza da Sogno?",
-      description: "Prenota il tuo soggiorno oggi e vivi il perfetto connubio di lusso, comfort e viste mozzafiato sul mare.",
-      bookNow: "Prenota Ora"
-    }
-  },
-  amenitiesPage: {
-    title: "I Nostri Servizi",
-    subtitle: "Scopri i servizi e le comodità di lusso che rendono il tuo soggiorno indimenticabile.",
-    description: "A MareSereno, ci dedichiamo a fornire un'esperienza di soggiorno completa e lussuosa. Dai nostri servizi sulla spiaggia alle strutture di benessere, ogni dettaglio è stato curato per garantire il massimo comfort e piacere.",
-    categories: {
-      wellness: {
-        title: "Benessere e Relax",
-        description: "Trattati con la nostra gamma di servizi benessere progettati per ringiovanire corpo e mente.",
-        items: [
-          {
-            title: "Spa di Lusso",
-            description: "La nostra spa offre una gamma completa di trattamenti, dalle terapie tradizionali ai trattamenti di bellezza più moderni."
-          },
-          {
-            title: "Centro Fitness",
-            description: "Mantieni la tua routine di fitness con la nostra palestra all'avanguardia con vista panoramica sul mare."
-          },
-          {
-            title: "Piscina Infinity",
-            description: "Immergiti nella nostra piscina a sfioro mentre ammiri l'orizzonte infinito del mare."
-          },
-          {
-            title: "Yoga sulla Spiaggia",
-            description: "Partecipa alle nostre sessioni di yoga mattutine sulla spiaggia per un risveglio rivitalizzante."
-          }
-        ]
-      },
-      dining: {
-        title: "Ristorazione",
-        description: "Scopri il meglio della cucina locale e internazionale nei nostri ristoranti e bar.",
-        items: [
-          {
-            title: "Ristorante Gourmet",
-            description: "Assapora piatti raffinati preparati dai nostri chef con ingredienti locali freschi."
-          },
-          {
-            title: "Bar sulla Spiaggia",
-            description: "Goditi cocktail rinfrescanti e snack leggeri con i piedi nella sabbia."
-          },
-          {
-            title: "Lounge Bar",
-            description: "Rilassati con una selezione di vini pregiati e liquori in un'atmosfera elegante."
-          },
-          {
-            title: "Servizio in Camera",
-            description: "Goditi pasti gourmet nella privacy del tuo appartamento, disponibile 24 ore su 24."
-          }
-        ]
-      },
-      services: {
-        title: "Servizi Extra",
-        description: "Approfitta dei nostri servizi aggiuntivi per un soggiorno senza problemi.",
-        items: [
-          {
-            title: "Concierge 24/7",
-            description: "Il nostro team di concierge è disponibile in qualsiasi momento per assisterti con qualsiasi richiesta."
-          },
-          {
-            title: "Trasferimenti Aeroportuali",
-            description: "Viaggia comodamente da e per l'aeroporto con il nostro servizio di trasferimento privato."
-          },
-          {
-            title: "Noleggio Auto",
-            description: "Esplora la zona con la nostra flotta di veicoli premium disponibili per il noleggio."
-          },
-          {
-            title: "Escursioni Guidate",
-            description: "Scopri le attrazioni locali con le nostre escursioni personalizzate guidate da esperti."
-          }
-        ]
-      },
-      entertainment: {
-        title: "Intrattenimento",
-        description: "Goditi una varietà di attività ricreative pensate per tutti i gusti.",
-        items: [
-          {
-            title: "Sport Acquatici",
-            description: "Prova una vasta gamma di sport acquatici, dal paddleboarding al jet skiing."
-          },
-          {
-            title: "Area Giochi per Bambini",
-            description: "I più piccoli possono divertirsi nella nostra area giochi sicura e supervisionata."
-          },
-          {
-            title: "Serate a Tema",
-            description: "Partecipa alle nostre serate a tema settimanali con musica dal vivo e intrattenimento."
-          },
-          {
-            title: "Biblioteca & Sala Giochi",
-            description: "Rilassati con un buon libro o goditi i giochi da tavolo nella nostra sala comune."
-          }
-        ]
+        question: "Quali servizi sono disponibili in hotel?",
+        answer: "L'hotel dispone di THAIco Spa con sauna e vasca idromassaggio, ristoranti (Concerto, Bistro Continental, Victoria Club), pasticceria, centro fitness, Wi-Fi gratuito, servizio in camera e concierge 24/7."
       }
     }
   },
   apartmentDescriptions: {
     "1": {
-      name: "Suite Vista Mare Deluxe",
-      description: "Suite lussuosa con vista panoramica sul mare, comfort moderni e balcone privato."
+      name: "Camera Deluxe",
+      description: "Le camere deluxe sono eleganti, perfette per gli amanti del gusto raffinato. 34-42 mq con WiFi gratuito, cassaforte e minibar."
     },
     "2": {
-      name: "Appartamento Premium per Famiglie",
-      description: "Appartamento spazioso ideale per famiglie, con cucina completa e splendide viste costiere."
+      name: "Appartamento Senior",
+      description: "Gli Appartamenti Senior rappresentano lusso, eleganza e raffinatezza per un soggiorno a cinque stelle a Bucarest. 61 mq con arredamento classico e vista sulla città."
     },
     "3": {
-      name: "Studio Esecutivo sulla Spiaggia",
-      description: "Elegante studio con accesso diretto alla spiaggia, design moderno e finiture di pregio."
+      name: "Appartamento Junior",
+      description: "Gli Appartamenti Junior sono decorati con mobili classici in legno massello. 46 mq con macchina per espresso e area lounge."
     },
     "4": {
-      name: "Suite Attico di Lusso",
-      description: "Esclusiva suite all'ultimo piano con ampia terrazza e vista panoramica sul mare."
+      name: "Camera Standard",
+      description: "Le camere standard sono perfette per qualsiasi tipo di viaggiatore. 19-26 mq con WiFi gratuito, cassaforte e minibar."
     },
     "5": {
-      name: "Camera Doppia Classica",
-      description: "Confortevole camera d'albergo con comfort moderni e vista parziale sul mare."
+      name: "Camera Deluxe Twin",
+      description: "Camera elegante con due letti separati, perfetta per amici o colleghi di lavoro. Design classico e comfort moderni."
     },
     "6": {
-      name: "Appartamento Vista Giardino",
-      description: "Appartamento tranquillo circondato da rigogliosi giardini, a breve distanza dalla spiaggia."
+      name: "Camera Superior",
+      description: "Camera superior con finiture premium e attenzione ai dettagli, ideale per un soggiorno confortevole nel centro di Bucarest."
+    }
+  },
+  amenitiesPage: {
+    title: "Servizi e Strutture",
+    subtitle: "Scopri le strutture e i servizi a cinque stelle che rendono il tuo soggiorno eccezionale.",
+    description: "Al Grand Hotel Continental, ci dedichiamo a fornire un'esperienza di ospitalità completa e lussuosa. Dal THAIco Spa ai nostri ristoranti di alta cucina, ogni dettaglio è stato progettato per il tuo massimo comfort e soddisfazione.",
+    categories: {
+      wellness: {
+        title: "Benessere e Relax",
+        description: "Concediti i servizi THAIco Spa e le strutture benessere progettate per il relax completo.",
+        items: [
+          {
+            title: "THAIco Spa",
+            description: "Leader rumeno nei servizi SPA asiatici. Rituali di bellezza e relax ispirati alle culture asiatiche, in un'atmosfera lussuosa ma intima. Trattamenti disponibili su appuntamento."
+          },
+          {
+            title: "Centro Fitness",
+            description: "Accesso gratuito all'area fitness per gli ospiti dell'hotel. Attrezzature moderne con strutture di livello professionale."
+          },
+          {
+            title: "Vasca Idromassaggio",
+            description: "Rilassati nella vasca idromassaggio, disponibile gratuitamente per gli ospiti dell'hotel. Perfetta per rilassarsi dopo aver esplorato Bucarest."
+          },
+          {
+            title: "Sauna Secca",
+            description: "Accesso gratuito alla sauna secca nell'area benessere. Ideale per il relax e il ringiovanimento."
+          }
+        ]
+      },
+      dining: {
+        title: "Ristoranti",
+        description: "Scopri esperienze culinarie eccezionali, dall'alta cucina al tradizionale tè del pomeriggio.",
+        items: [
+          {
+            title: "Ristorante Concerto",
+            description: "Interpretazione moderna della cucina tradizionale francese, con ingredienti leggeri e freschi. Classificato tra i migliori ristoranti di Bucarest."
+          },
+          {
+            title: "Bistro Continental",
+            description: "Un viaggio culinario in un'atmosfera casual e accogliente, con vista su Calea Victoriei. Specialità internazionali e rumene."
+          },
+          {
+            title: "Victoria Club",
+            description: "Il luogo perfetto per il tradizionale tè del pomeriggio e riunioni di lavoro in un ambiente raffinato. Atmosfera esclusiva e intima."
+          },
+          {
+            title: "Pasticceria Continental",
+            description: "Patrimonio e tradizione su Calea Victoriei. Un locale emblematico per pasticceria di qualità e caffè speciali."
+          }
+        ]
+      },
+      services: {
+        title: "Servizi Premium",
+        description: "Servizi progettati per un soggiorno impeccabile nel cuore di Bucarest.",
+        items: [
+          {
+            title: "Servizi Concierge",
+            description: "Il nostro team dedicato assiste con prenotazioni di biglietti per il teatro, guida turistica, trasporto aeroportuale, prenotazioni di ristoranti e raccomandazioni personalizzate."
+          },
+          {
+            title: "Trasferimento Aeroportuale",
+            description: "Servizio di trasferimento privato da/per l'Aeroporto Internazionale Henri Coandă, disponibile a pagamento. Prenotazione anticipata consigliata."
+          },
+          {
+            title: "Servizio in Camera",
+            description: "Menu completo con selezioni culinarie e bevande servite nella privacy della tua camera."
+          },
+          {
+            title: "Buoni Vacanza",
+            description: "Accettiamo buoni vacanza da Pluxee Romania, UP Romania ed Edenred Romania."
+          }
+        ]
+      },
+      entertainment: {
+        title: "Eventi e Strutture Business",
+        description: "Spazi e servizi per eventi aziendali e privati memorabili.",
+        items: [
+          {
+            title: "Strutture per Conferenze",
+            description: "Strutture moderne per conferenze ed eventi aziendali. Attrezzature AV professionali e personale di supporto dedicato."
+          },
+          {
+            title: "Eventi Privati",
+            description: "Location eleganti per celebrazioni private e occasioni speciali. Allestimenti personalizzati disponibili."
+          },
+          {
+            title: "Servizi VIP",
+            description: "Servizi e strutture migliorate in camera disponibili per ospiti speciali e requisiti VIP."
+          },
+          {
+            title: "Aree Lounge",
+            description: "Spazi comuni eleganti per il relax e la socializzazione. Perfetti per incontri informali o tempo libero."
+          }
+        ]
+      }
     }
   }
 };

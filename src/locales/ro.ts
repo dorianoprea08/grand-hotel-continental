@@ -1,26 +1,26 @@
 export const ro = {
   nav: {
     home: "Acasă",
-    apartments: "Apartamente",
+    apartments: "Cazare",
     amenities: "Facilități",
     gallery: "Galerie",
     contact: "Contact",
     bookNow: "Rezervă Acum"
   },
   hero: {
-    subtitle: "HOTEL 5 STELE ÎN BUCUREȘTI",
+    subtitle: "HOTEL BOUTIQUE DE LUX • CLĂDIRE DIN PATRIMONIUL DE STAT",
     title: "Grand Hotel Continental București",
-    description: "Hotel de 5 stele în centrul Bucureștiului, pe Calea Victoriei. O călătorie elegantă în timp, într-o clădire monument istoric din 1826 cu o experiență aparte de rafinament și eleganță.",
+    description: "Descoperă 200 de ani de ospitalitate rafinată în inima Bucureștiului pe istorica Calea Victoriei",
     bookStay: "Rezervă Acum",
-    exploreApartments: "Explorează Camerele",
+    exploreApartments: "Vezi Camerele",
     scrollDown: "Derulează Jos"
   },
   footer: {
-    description: "Grand Hotel Continental București - hotel de 5 stele în centrul Capitalei, pe Calea Victoriei. Cazare de lux într-o clădire monument istoric cu peste 190 de ani de poveste.",
+    description: "Clădire distinctă din Patrimoniul de Stat pe Calea Victoriei, Grand Hotel Continental oferă ospitalitate boutique de lux în centrul istoric al Bucureștiului din prima jumătate a secolului XIX.",
     quickLinks: "Link-uri Rapide",
     contact: "Contact",
-    newsletter: "Newsletter",
-    newsletterDesc: "Abonează-te la newsletter-ul nostru pentru oferte speciale.",
+    newsletter: "Rămâi Informat",
+    newsletterDesc: "Primește oferte exclusive și informații despre hotelul nostru istoric",
     yourEmail: "Adresa ta de email",
     subscribe: "Abonează-te",
     allRights: "Toate drepturile rezervate."
@@ -38,74 +38,74 @@ export const ro = {
     bookingConfirmed: "Rezervare Confirmată!"
   },
   testimonials: {
-    title: "Ce Spun Oaspeții Noștri",
-    description: "Descoperă de ce oaspeții noștri aleg Grand Hotel Continental București pentru sejururile lor în Capitală."
+    title: "Mărturii Oaspeți",
+    description: "Descoperă de ce călătorii exigenți aleg Grand Hotel Continental București pentru sejururile lor în capitala României."
   },
   notFound: {
     title: "Pagină Negăsită",
-    description: "Nu am putut găsi pagina pe care o căutai. Poate ai luat o cotitură greșită în paradis?",
+    description: "Nu am putut găsi pagina pe care o căutai.",
     returnHome: "Înapoi Acasă"
   },
   home: {
     welcome: {
-      subtitle: "Bun venit la Grand Hotel Continental",
-      title: "Cazare de 5 Stele în București",
-      description1: "Grand Hotel Continental este un hotel de 5 stele în București, aflat în centrul orașului, chiar pe cea mai frumoasă arteră din Capitală. Grand Hotel Continental București nu este doar un loc de cazare în București, ci și un hotel de 5 stele care îți propune o călătorie elegantă în timp și o experiență aparte.",
-      description2: "Hotelul cochet a fost redeschis în anul 2009, după un proces de restaurare care a durat patru ani. Grija pentru detalii a păstrat intact aerul elegant și distins ce caracterizează clădirea. Localizarea și serviciile de 5 stele aduc tot rafinamentul și istoria cu care sunt încărcate cele două atracții turistice aflate în imediata vecinătate: Calea Victoriei și Centrul Vechi din București.",
-      learnMore: "Află Mai Multe"
+      subtitle: "GRAND HOTEL CONTINENTAL BUCUREȘTI",
+      title: "Ospitalitate Boutique de Patrimoniu din 1822",
+      description1: "Poziționat strategic pe Calea Victoriei într-o clădire protejată din Patrimoniul de Stat, Grand Hotel Continental reprezintă 200 de ani de ospitalitate rafinată bucureșteană. Situat la doar 5 minute de mers pe jos de Centrul Vechi și Stația de Metrou Universitate, la 2 km de Palatul Parlamentului, hotelul nostru boutique oferă călătorilor exigenți o experiență de lux intimă în capitala României.",
+      description2: "Restaurat meticulos în 2009 după un proces cuprinzător de renovare de patru ani, hotelul păstrează atmosfera elegantă și distinsă care caracterizează acest monument istoric. Locația și serviciile noastre de cinci stele combină rafinamentul și istoria a două repere iconice: Calea Victoriei și Centrul Vechi al Bucureștiului.",
+      learnMore: "Descoperă Mai Mult"
     },
     booking: {
       subtitle: "Rezervă Sejurul Tău",
-      title: "Rezervă Escapada Ta Perfectă",
-      description: "Fă primul pas către vacanța ta de vis verificând disponibilitatea și asigurându-ți datele preferate. Procesul nostru simplu de rezervare asigură o experiență fără probleme de la rezervare până la sosire.",
-      benefits: ["Confirmare instantanee", "Garanție cel mai bun preț", "Opțiuni flexibile de anulare", "Plată securizată"]
+      title: "Experimentează Patrimoniul Bucureștean",
+      description: "Asigură-ți datele preferate la hotelul boutique distins al Bucureștiului. Procesul nostru simplificat de rezervare asigură o experiență fără probleme de la rezervare până la sosire.",
+      benefits: ["Confirmare instantanee", "Garanție cel mai bun tarif", "Politici flexibile", "Plată securizată"]
     },
     featuredApartments: {
-      subtitle: "Cazarea Noastră",
-      title: "Apartamente Recomandate",
-      description: "Descoperă cele mai populare opțiuni de cazare, fiecare oferind o combinație perfectă de confort, stil și vederi spectaculoase asupra mării.",
-      viewAll: "Vezi Toate Apartamentele"
+      subtitle: "Camere & Suite-uri",
+      title: "Cazare",
+      description: "Decor clasic și dotări moderne cu vederi spre istorica Calea Victoriei sau curtea noastră interioară liniștită",
+      viewAll: "Vezi Toate Camerele"
     },
     amenities: {
       subtitle: "Facilități Hotel",
-      title: "Servicii de 5 Stele",
-      description: "Bucură-te de facilitățile și serviciile noastre premium concepute pentru un sejur excepțional.",
+      title: "Servicii de Cinci Stele",
+      description: "Facilități și servicii premium concepute pentru un sejur excepțional în București.",
       features: {
         beachfront: {
-          title: "Locație Centrală",
-          description: "În inima Bucureștiului, pe Calea Victoriei, lângă Centrul Vechi."
+          title: "Locație de Prim Rang",
+          description: "În inima Bucureștiului pe Calea Victoriei, la câțiva pași de Centrul Vechi."
         },
         pools: {
           title: "THAIco Spa",
           description: "Spa asiatic de lux cu saună, piscină cu hidromasaj și centru fitness."
         },
         restaurant: {
-          title: "Restaurante Fine Dining",
-          description: "Concerto, Bistro Continental și Victoria Club pentru 5 o'clock tea."
+          title: "Fine Dining",
+          description: "Concerto, Bistro Continental și Victoria Club pentru ceaiul de după-amiază."
         },
         wifi: {
           title: "Wi-Fi Gratuit",
-          description: "Internet wireless de mare viteză în tot hotelul."
+          description: "Internet wireless de mare viteză în întreaga proprietate."
         },
         bar: {
           title: "Cofetăria Continental",
-          description: "Tradiție și istorie pe Calea Victoriei."
+          description: "Patrimoniu și tradiție pe Calea Victoriei."
         },
         location: {
           title: "Monument Istoric",
-          description: "Clădire din 1826 cu peste 190 de ani de poveste."
+          description: "Clădire din Patrimoniul de Stat din 1826 cu 200 de ani de istorie."
         }
       }
     },
     cta: {
-      title: "Pregătit Pentru Sejurul Tău în București?",
-      description: "Rezervă direct cu 20% discount și experimentează eleganța unui hotel de 5 stele în inima Capitalei.",
-      bookNow: "Rezervă Acum"
+      title: "Experimentează Patrimoniul Bucureștean",
+      description: "Rezervă sejurul la Grand Hotel Continental și descoperă două secole de ospitalitate rafinată în capitala României. Beneficii exclusive pentru rezervările directe.",
+      bookNow: "Rezervă Sejurul"
     }
   },
   apartments: {
     title: "Cazare București",
-    subtitle: "Camerele noastre elegante combină decorul clasic cu confortul modern pentru un sejur de 5 stele.",
+    subtitle: "Camerele noastre amenajate elegant combină decorul clasic cu confortul contemporan pentru o experiență distinctă de cinci stele.",
     filters: {
       guests: "Oaspeți",
       anyGuests: "Orice număr de oaspeți",
@@ -120,7 +120,7 @@ export const ro = {
       of: "din",
       accommodations: "cazări",
       resetFilters: "Resetează Filtrele",
-      noMatch: "Niciun apartament nu corespunde filtrelor tale",
+      noMatch: "Nicio cameră nu corespunde filtrelor tale",
       adjustFilters: "Încearcă să ajustezi criteriile de filtrare pentru a vedea mai multe opțiuni.",
       viewDetails: "Vezi Detalii",
       features: "caracteristici",
@@ -129,12 +129,12 @@ export const ro = {
   },
   gallery: {
     title: "Galerie Foto",
-    subtitle: "Explorează paradisul nostru de la mare prin imagini captivante.",
+    subtitle: "Descoperă eleganța noastră istorică și luxul intemporal",
     filters: {
       all: "Toate",
-      exterior: "Exterior",
-      rooms: "Camere",
-      amenities: "Facilități"
+      exterior: "Clădire Istorică",
+      rooms: "Camere & Suite-uri",
+      amenities: "Facilități Hotel"
     }
   },
   booking: {
@@ -178,7 +178,7 @@ export const ro = {
     payment: {
       title: "Informații Plată",
       creditCard: "Card de Credit",
-      payAtProperty: "Plătește la Proprietate",
+      payAtProperty: "Plătește la Hotel",
       nameOnCard: "Nume pe Card",
       cardNumber: "Număr Card",
       cardNumberPlaceholder: "0000 0000 0000 0000",
@@ -186,7 +186,7 @@ export const ro = {
       expiryDatePlaceholder: "LL/AA",
       cvc: "CVC",
       cvcPlaceholder: "123",
-      payAtPropertyInfo: "Vei fi obligat să furnizezi un card de credit valid la sosire pentru scopuri de securitate, dar plata va fi colectată în timpul șederii tale la proprietate."
+      payAtPropertyInfo: "Vei fi obligat să furnizezi un card de credit valid la sosire pentru scopuri de securitate, dar plata va fi colectată în timpul șederii tale."
     },
     summary: {
       title: "Rezumat Rezervare",
@@ -216,7 +216,7 @@ export const ro = {
       termsAgree: "Sunt de acord cu",
       termsLink: "Termenii și Condițiile",
       privacyLink: "Politica de Confidențialitate",
-      cancellationInfo: "Înțeleg că rezervarea mea este supusă politicii de anulare a proprietății.",
+      cancellationInfo: "Înțeleg că rezervarea mea este supusă politicii de anulare a hotelului.",
       back: "Înapoi",
       confirmBooking: "Confirmă Rezervarea",
       success: "Rezervare Confirmată!",
@@ -227,7 +227,7 @@ export const ro = {
   },
   contact: {
     title: "Contactează-ne",
-    subtitle: "Suntem aici pentru a face sejurul tău de neuitat. Contactează-ne cu orice întrebări sau cereri speciale.",
+    subtitle: "Echipa noastră de concierge este aici pentru a asigura că sejurul tău este excepțional. Contactează-ne cu întrebări sau cereri speciale.",
     getInTouch: "Intră în Contact",
     address: "Adresă",
     phone: "Telefon",
@@ -240,24 +240,24 @@ export const ro = {
     phoneNumber: "Număr Telefon",
     subject: "Subiect",
     message: "Mesaj",
-    howCanWeHelp: "Cum te putem ajuta?",
+    howCanWeHelp: "Cu ce vă putem ajuta?",
     send: "Trimite Mesaj",
     messageSent: "Mesaj Trimis!",
-    thankYou: "Mulțumim că ne-ai contactat. Vom răspunde mesajului tău cât mai curând posibil.",
+    thankYou: "Mulțumim că ne-ai contactat. Vom răspunde solicitării tale prompt.",
     faq: "Întrebări Frecvente",
-    faqSubtitle: "Găsește răspunsuri rapide la întrebările frecvente despre cazarea și serviciile noastre.",
+    faqSubtitle: "Găsește răspunsuri rapide la întrebările frecvente despre hotelul și serviciile noastre.",
     questions: {
       checkInOut: {
         question: "Care sunt orele de check-in și check-out?",
         answer: "Check-in-ul este de la ora 15:00 înainte, iar check-out-ul este până la ora 11:00. Check-in-ul timpuriu sau check-out-ul târziu pot fi aranjate în funcție de disponibilitate."
       },
       parking: {
-        question: "Este disponibilă parcarea la proprietate?",
+        question: "Este disponibilă parcarea la hotel?",
         answer: "Locurile de parcare sunt limitate și costă 50 lei pe zi. Este necesară rezervare în avans, iar confirmarea se face în funcție de disponibilitate."
       },
       pets: {
-        question: "Sunt permise animalele de companie în apartamente?",
-        answer: "Primim animale de companie în apartamentele desemnate pet-friendly. Vă rugăm să ne anunțați în avans dacă intenționați să aduceți un animal de companie, deoarece pot fi aplicate taxe suplimentare."
+        question: "Sunt permise animalele de companie la hotel?",
+        answer: "Primim animale de companie în camerele desemnate pet-friendly. Vă rugăm să ne anunțați în avans dacă intenționați să aduceți un animal de companie, deoarece pot fi aplicate taxe suplimentare."
       },
       breakfast: {
         question: "Este micul dejun inclus în tariful camerei?",
@@ -276,19 +276,19 @@ export const ro = {
   apartmentDescriptions: {
     "1": {
       name: "Cameră Deluxe",
-      description: "Camerele deluxe sunt elegante, perfecte pentru iubitorii de bun gust. 34-42 mp cu WiFi gratuit, seif și minibar."
+      description: "Camerele deluxe sunt elegante, perfecte pentru iubitorii de gust rafinat. 34-42 mp cu WiFi gratuit, seif și minibar."
     },
     "2": {
       name: "Apartament Senior",
-      description: "Apartamentele Senior reprezintă luxul, eleganța și rafinamentul pentru un sejur de 5 stele în București. 61 mp cu decor clasic și vedere spre oraș."
+      description: "Apartamentele Senior reprezintă luxul, eleganța și rafinamentul pentru un sejur de cinci stele în București. 61 mp cu decor clasic și vedere spre oraș."
     },
     "3": {
       name: "Apartament Junior",
-      description: "Apartamentele Junior sunt decorate cu un mobilier clasic, din lemn masiv, ce impresionează orice turist. 46 mp cu espressor și zonă de relaxare."
+      description: "Apartamentele Junior sunt decorate cu mobilier clasic din lemn masiv. 46 mp cu espressor și zonă de relaxare."
     },
     "4": {
       name: "Cameră Standard",
-      description: "Camerele standard sunt perfecte pentru orice tip de călătorii. 19-26 mp cu WiFi gratuit, seif și minibar."
+      description: "Camerele standard sunt perfecte pentru orice tip de călător. 19-26 mp cu WiFi gratuit, seif și minibar."
     },
     "5": {
       name: "Cameră Deluxe Twin",
@@ -301,8 +301,8 @@ export const ro = {
   },
   amenitiesPage: {
     title: "Servicii și Facilități",
-    subtitle: "Descoperă facilitățile și serviciile de 5 stele care fac sejurul tău de neuitat.",
-    description: "La Grand Hotel Continental, suntem dedicați să oferim o experiență de sejur completă și luxoasă. De la THAIco Spa până la restaurantele noastre fine dining, fiecare detaliu a fost conceput pentru confortul tău maxim.",
+    subtitle: "Descoperă facilitățile și serviciile de cinci stele care fac sejurul tău excepțional.",
+    description: "La Grand Hotel Continental, suntem dedicați să oferim o experiență de ospitalitate cuprinzătoare și luxoasă. De la THAIco Spa până la locațiile noastre de fine dining, fiecare detaliu a fost conceput pentru confortul și satisfacția ta maximă.",
     categories: {
       wellness: {
         title: "Wellness & Relaxare",
@@ -310,41 +310,41 @@ export const ro = {
         items: [
           {
             title: "THAIco Spa",
-            description: "Liderul pieței românești de servicii SPA asiatice. Ritualuri de înfrumusețare și relaxare inspirate din culturile asiatice, într-o ambianță luxuriantă dar intimă."
+            description: "Liderul pieței românești pentru servicii SPA asiatice. Ritualuri de înfrumusețare și relaxare inspirate din culturile asiatice, într-o ambianță luxuriantă dar intimă. Tratamente disponibile pe bază de programare."
           },
           {
             title: "Centru Fitness",
-            description: "Accesul la zona de fitness este gratuit pentru oaspeții hotelului."
+            description: "Acces gratuit la zona de fitness pentru oaspeții hotelului. Echipamente moderne cu facilități de nivel profesional."
           },
           {
             title: "Piscină cu Hidromasaj",
-            description: "Relaxează-te în piscina cu hidromasaj, disponibilă gratuit pentru oaspeții hotelului."
+            description: "Relaxează-te în piscina cu hidromasaj, disponibilă gratuit pentru oaspeții hotelului. Perfectă pentru relaxare după explorarea Bucureștiului."
           },
           {
             title: "Saună Uscată",
-            description: "Beneficiază de acces liber la sauna uscată din zona de wellness."
+            description: "Acces gratuit la sauna uscată din zona de wellness. Ideală pentru relaxare și rejuvenare."
           }
         ]
       },
       dining: {
-        title: "Restaurante",
-        description: "Descoperă experiențe culinare de excepție, de la fine dining la tradiționalul 5 o'clock tea.",
+        title: "Locații Dining",
+        description: "Descoperă experiențe culinare de excepție, de la fine dining la tradiționalul ceai de după-amiază.",
         items: [
           {
-            title: "Concerto",
-            description: "Abordarea modernă a bucătăriei tradiționale franțuzești, cu ingrediente ușoare și proaspete. În topul opțiunilor pentru fine dining din București."
+            title: "Restaurant Concerto",
+            description: "Interpretare modernă a bucătăriei tradiționale franțuzești, cu ingrediente ușoare și proaspete. Clasat printre cele mai fine stabilimente de dining din București."
           },
           {
             title: "Bistro Continental",
-            description: "O călătorie culinară într-o atmosferă casual și prietenoasă, cu vedere spre Calea Victoriei."
+            description: "O călătorie culinară într-o atmosferă casual și primitoare, cu vedere spre Calea Victoriei. Specialități internaționale și românești."
           },
           {
             title: "Victoria Club",
-            description: "Locul perfect pentru tradiționalul 5 o'clock tea și întâlniri de afaceri într-un cadru rafinat."
+            description: "Locația perfectă pentru tradiționalul ceai de după-amiază și întâlniri de afaceri într-un cadru rafinat. Atmosferă exclusivă și intimă."
           },
           {
             title: "Cofetăria Continental",
-            description: "Tradiție și istorie pe Calea Victoriei. Un loc emblematic pentru dulciuri și cafea de calitate."
+            description: "Patrimoniu și tradiție pe Calea Victoriei. Un stabiliment emblematic pentru patiserie de calitate și cafea de specialitate."
           }
         ]
       },
@@ -353,19 +353,19 @@ export const ro = {
         description: "Servicii concepute pentru un sejur impecabil în inima Bucureștiului.",
         items: [
           {
-            title: "Concierge",
-            description: "Echipa noastră vă stă la dispoziție pentru rezervare de bilete la spectacole, asistență turistică, transport la/de la aeroport, rezervări la restaurant."
+            title: "Servicii Concierge",
+            description: "Echipa noastră dedicată asistă cu rezervări de bilete la teatru, ghidare turistică, transport la aeroport, rezervări la restaurant și recomandări personalizate."
           },
           {
             title: "Transfer Aeroport",
-            description: "Serviciu de transfer privat de la/la aeroport, disponibil contra cost."
+            description: "Serviciu de transfer privat de la/la Aeroportul Internațional Henri Coandă, disponibil contra cost. Rezervare în avans recomandată."
           },
           {
             title: "Room Service",
-            description: "Meniu complet din care vă puteți alege produse culinare sau băuturi servite în cameră."
+            description: "Meniu cuprinzător cu selecții culinare și băuturi servite în intimitatea camerei tale."
           },
           {
-            title: "Card de Vacanță",
+            title: "Carduri de Vacanță",
             description: "Acceptăm carduri de vacanță de la Pluxee România, UP Romania și Edenred Romania."
           }
         ]
@@ -375,20 +375,20 @@ export const ro = {
         description: "Spații și servicii pentru evenimente corporative și private memorabile.",
         items: [
           {
-            title: "Săli de Conferințe",
-            description: "Facilități moderne pentru conferințe și evenimente de afaceri."
+            title: "Facilități Conferințe",
+            description: "Facilități moderne pentru conferințe și evenimente de afaceri. Echipamente AV profesionale și personal de suport dedicat."
           },
           {
             title: "Evenimente Private",
-            description: "Săli elegante pentru petreceri private și evenimente speciale."
+            description: "Locații elegante pentru celebrări private și ocazii speciale. Aranjamente personalizate disponibile."
           },
           {
-            title: "Facilități VIP",
-            description: "Servicii și facilități VIP disponibile în cameră pentru oaspeți speciali."
+            title: "Servicii VIP",
+            description: "Servicii și facilități îmbunătățite în cameră disponibile pentru oaspeți speciali și cerințe VIP."
           },
           {
-            title: "Zonă de Relaxare",
-            description: "Spații comune elegante pentru relaxare și socializare."
+            title: "Zone de Relaxare",
+            description: "Spații comune elegante pentru relaxare și socializare. Perfecte pentru întâlniri informale sau timp liber."
           }
         ]
       }

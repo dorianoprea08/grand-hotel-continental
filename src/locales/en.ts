@@ -1,32 +1,32 @@
 export const en = {
   nav: {
     home: "Home",
-    apartments: "Apartments",
+    apartments: "Accommodations",
     amenities: "Amenities",
     gallery: "Gallery",
     contact: "Contact",
-    bookNow: "Book Now"
+    bookNow: "Reserve Now"
   },
   hero: {
-    subtitle: "5-STAR HOTEL IN BUCHAREST",
+    subtitle: "BOUTIQUE LUXURY • STATE PATRIMONY BUILDING",
     title: "Grand Hotel Continental Bucharest",
-    description: "5-star hotel in the heart of Bucharest, on Calea Victoriei. An elegant journey through time in a historic monument building from 1826 with a unique experience of refinement and elegance.",
-    bookStay: "Book Now",
-    exploreApartments: "Explore Rooms",
+    description: "Experience 200 years of refined hospitality in the heart of Bucharest on historic Calea Victoriei",
+    bookStay: "Reserve Now",
+    exploreApartments: "View Accommodations",
     scrollDown: "Scroll Down"
   },
   footer: {
-    description: "Grand Hotel Continental Bucharest - 5-star hotel in the heart of the Capital, on Calea Victoriei. Luxury accommodation in a historic monument building with over 190 years of history.",
+    description: "A distinguished State Patrimony building on Calea Victoriei, Grand Hotel Continental offers boutique luxury hospitality in Bucharest's historic center since the early 19th century.",
     quickLinks: "Quick Links",
     contact: "Contact",
-    newsletter: "Newsletter",
-    newsletterDesc: "Subscribe to our newsletter for special offers.",
+    newsletter: "Stay Informed",
+    newsletterDesc: "Receive exclusive offers and heritage hotel updates",
     yourEmail: "Your email address",
     subscribe: "Subscribe",
     allRights: "All rights reserved."
   },
   bookingForm: {
-    title: "Book Your Stay",
+    title: "Reserve Your Stay",
     checkIn: "Check-in Date",
     checkOut: "Check-out Date",
     adults: "Adults",
@@ -35,77 +35,77 @@ export const en = {
     child: "Child",
     selectDate: "Select date",
     checkAvailability: "Check Availability",
-    bookingConfirmed: "Booking Confirmed!"
+    bookingConfirmed: "Reservation Confirmed!"
   },
   testimonials: {
-    title: "What Our Guests Say",
-    description: "Discover why our guests choose Grand Hotel Continental Bucharest for their stays in the Capital."
+    title: "Guest Testimonials",
+    description: "Discover why discerning travelers choose Grand Hotel Continental Bucharest for their stays in Romania's capital."
   },
   notFound: {
     title: "Page Not Found",
-    description: "We couldn't find the page you were looking for. Perhaps you took a wrong turn in paradise?",
+    description: "We couldn't find the page you were looking for.",
     returnHome: "Return Home"
   },
   home: {
     welcome: {
-      subtitle: "Welcome to Grand Hotel Continental",
-      title: "5-Star Accommodation in Bucharest",
-      description1: "Grand Hotel Continental is a 5-star hotel in Bucharest, located in the city center, on the most beautiful avenue of the Capital. Grand Hotel Continental Bucharest is not just accommodation in Bucharest, but a 5-star hotel that offers you an elegant journey through time and a unique experience.",
-      description2: "The charming hotel was reopened in 2009, after a four-year restoration process. Attention to detail has preserved the elegant and distinguished atmosphere that characterizes the building. The location and 5-star services bring all the refinement and history of the two tourist attractions in the immediate vicinity: Calea Victoriei and the Old Town of Bucharest.",
-      learnMore: "Learn More"
+      subtitle: "GRAND HOTEL CONTINENTAL BUCHAREST",
+      title: "Heritage Boutique Hospitality Since 1822",
+      description1: "Strategically positioned on Calea Victoriei in a protected State Patrimony building, Grand Hotel Continental represents 200 years of refined Bucharest hospitality. Located just 5 minutes' walk from the Old Town and Universitate Metro Station, 2 km from the Parliament Palace, our boutique hotel offers discerning travelers an intimate luxury experience in Romania's capital.",
+      description2: "Meticulously restored in 2009 after a comprehensive four-year renovation, the hotel preserves the elegant and distinguished atmosphere that characterizes this historic monument. Our location and five-star services combine the refinement and history of two iconic landmarks: Calea Victoriei and Bucharest's Old Town.",
+      learnMore: "Discover More"
     },
     booking: {
-      subtitle: "Book Your Stay",
-      title: "Reserve Your Perfect Getaway",
-      description: "Take the first step towards your dream vacation by checking availability and securing your preferred dates. Our simple booking process ensures a seamless experience from reservation to arrival.",
-      benefits: ["Instant confirmation", "Best rate guarantee", "Flexible cancellation options", "Secure payment"]
+      subtitle: "Reserve Your Stay",
+      title: "Experience Bucharest Heritage",
+      description: "Secure your preferred dates at Bucharest's distinguished boutique hotel. Our streamlined reservation process ensures a seamless experience from booking to arrival.",
+      benefits: ["Instant confirmation", "Best rate guarantee", "Flexible policies", "Secure payment"]
     },
     featuredApartments: {
-      subtitle: "Our Accommodations",
-      title: "Featured Apartments",
-      description: "Discover our most popular accommodation options, each offering a perfect blend of comfort, style, and breathtaking sea views.",
-      viewAll: "View All Apartments"
+      subtitle: "Rooms & Suites",
+      title: "Accommodations",
+      description: "Classic décor and modern amenities with views of historic Calea Victoriei or our quiet inner courtyard",
+      viewAll: "View All Accommodations"
     },
     amenities: {
       subtitle: "Hotel Amenities",
-      title: "5-Star Services",
-      description: "Enjoy our premium facilities and services designed for an exceptional stay.",
+      title: "Five-Star Services",
+      description: "Premium facilities and services designed for an exceptional stay in Bucharest.",
       features: {
         beachfront: {
-          title: "Central Location",
-          description: "In the heart of Bucharest, on Calea Victoriei, near the Old Town."
+          title: "Prime Location",
+          description: "Heart of Bucharest on Calea Victoriei, steps from Old Town."
         },
         pools: {
           title: "THAIco Spa",
-          description: "Luxury Asian spa with sauna, jacuzzi pool and fitness center."
+          description: "Asian luxury spa with sauna, jacuzzi pool and fitness center."
         },
         restaurant: {
-          title: "Fine Dining Restaurants",
-          description: "Concerto, Bistro Continental and Victoria Club for 5 o'clock tea."
+          title: "Fine Dining",
+          description: "Concerto, Bistro Continental and Victoria Club for afternoon tea."
         },
         wifi: {
-          title: "Free Wi-Fi",
-          description: "High-speed wireless internet throughout the hotel."
+          title: "Complimentary Wi-Fi",
+          description: "High-speed wireless internet throughout the property."
         },
         bar: {
           title: "Continental Patisserie",
-          description: "Tradition and history on Calea Victoriei."
+          description: "Heritage and tradition on Calea Victoriei."
         },
         location: {
           title: "Historic Monument",
-          description: "Building from 1826 with over 190 years of history."
+          description: "State Patrimony building from 1826 with 200 years of history."
         }
       }
     },
     cta: {
-      title: "Ready for Your Stay in Bucharest?",
-      description: "Book direct with 20% discount and experience the elegance of a 5-star hotel in the heart of the Capital.",
-      bookNow: "Book Now"
+      title: "Experience Bucharest Heritage",
+      description: "Reserve your stay at Grand Hotel Continental and discover two centuries of refined hospitality in Romania's capital. Direct booking exclusive benefits available.",
+      bookNow: "Reserve Your Stay"
     }
   },
   apartments: {
-    title: "Accommodation in Bucharest",
-    subtitle: "Our elegant rooms combine classic decor with modern comfort for a 5-star stay.",
+    title: "Bucharest Accommodations",
+    subtitle: "Our elegantly appointed rooms combine classic décor with contemporary comfort for a distinguished five-star experience.",
     filters: {
       guests: "Guests",
       anyGuests: "Any number of guests",
@@ -120,7 +120,7 @@ export const en = {
       of: "of",
       accommodations: "accommodations",
       resetFilters: "Reset Filters",
-      noMatch: "No apartments match your filters",
+      noMatch: "No rooms match your filters",
       adjustFilters: "Try adjusting your filter criteria to see more options.",
       viewDetails: "View Details",
       features: "features",
@@ -129,16 +129,16 @@ export const en = {
   },
   gallery: {
     title: "Photo Gallery",
-    subtitle: "Explore our seaside paradise through captivating imagery.",
+    subtitle: "Discover our historic elegance and timeless luxury",
     filters: {
       all: "All",
-      exterior: "Exterior",
-      rooms: "Rooms",
-      amenities: "Amenities"
+      exterior: "Heritage Building",
+      rooms: "Rooms & Suites",
+      amenities: "Hotel Amenities"
     }
   },
   booking: {
-    title: "Book Your Stay",
+    title: "Reserve Your Stay",
     subtitle: "Complete your reservation in a few simple steps.",
     steps: {
       chooseRoom: "Choose Room",
@@ -178,7 +178,7 @@ export const en = {
     payment: {
       title: "Payment Information",
       creditCard: "Credit Card",
-      payAtProperty: "Pay at Property",
+      payAtProperty: "Pay at Hotel",
       nameOnCard: "Name on Card",
       cardNumber: "Card Number",
       cardNumberPlaceholder: "0000 0000 0000 0000",
@@ -186,7 +186,7 @@ export const en = {
       expiryDatePlaceholder: "MM/YY",
       cvc: "CVC",
       cvcPlaceholder: "123",
-      payAtPropertyInfo: "You will be required to provide a valid credit card upon arrival for security purposes, but payment will be collected during your stay at the property."
+      payAtPropertyInfo: "You will be required to provide a valid credit card upon arrival for security purposes, but payment will be collected during your stay."
     },
     summary: {
       title: "Booking Summary",
@@ -216,7 +216,7 @@ export const en = {
       termsAgree: "I agree to the",
       termsLink: "Terms and Conditions",
       privacyLink: "Privacy Policy",
-      cancellationInfo: "I understand that my booking is subject to the property's cancellation policy.",
+      cancellationInfo: "I understand that my booking is subject to the hotel's cancellation policy.",
       back: "Back",
       confirmBooking: "Confirm Booking",
       success: "Booking Confirmed!",
@@ -227,7 +227,7 @@ export const en = {
   },
   contact: {
     title: "Contact Us",
-    subtitle: "We're here to help make your stay unforgettable. Reach out with any questions or special requests.",
+    subtitle: "Our concierge team is here to ensure your stay is exceptional. Reach out with inquiries or special requests.",
     getInTouch: "Get In Touch",
     address: "Address",
     phone: "Phone",
@@ -240,24 +240,24 @@ export const en = {
     phoneNumber: "Phone Number",
     subject: "Subject",
     message: "Message",
-    howCanWeHelp: "How can we help you?",
+    howCanWeHelp: "How may we assist you?",
     send: "Send Message",
     messageSent: "Message Sent!",
-    thankYou: "Thank you for reaching out. We'll respond to your message as soon as possible.",
+    thankYou: "Thank you for contacting us. We'll respond to your inquiry promptly.",
     faq: "Frequently Asked Questions",
-    faqSubtitle: "Find quick answers to commonly asked questions about our accommodations and services.",
+    faqSubtitle: "Find quick answers to commonly asked questions about our hotel and services.",
     questions: {
       checkInOut: {
         question: "What are your check-in and check-out times?",
         answer: "Check-in is from 3:00 PM onwards, and check-out is until 11:00 AM. Early check-in or late check-out may be arranged based on availability."
       },
       parking: {
-        question: "Is parking available at the property?",
+        question: "Is parking available at the hotel?",
         answer: "Parking spaces are limited and cost 50 lei per day. Advance reservation is required, and confirmation is subject to availability."
       },
       pets: {
-        question: "Are pets allowed in the apartments?",
-        answer: "We welcome pets in designated pet-friendly apartments. Please inform us in advance if you plan to bring a pet, as additional charges may apply."
+        question: "Are pets allowed at the hotel?",
+        answer: "We welcome pets in designated pet-friendly rooms. Please inform us in advance if you plan to bring a pet, as additional charges may apply."
       },
       breakfast: {
         question: "Is breakfast included in the room rate?",
@@ -269,26 +269,26 @@ export const en = {
       },
       amenities: {
         question: "What amenities are available at the hotel?",
-        answer: "The hotel features THAIco Spa with sauna and jacuzzi pool, restaurants (Concerto, Bistro Continental, Victoria Club), patisserie, fitness center, free Wi-Fi, room service and 24/7 concierge."
+        answer: "The hotel features THAIco Spa with sauna and jacuzzi pool, restaurants (Concerto, Bistro Continental, Victoria Club), patisserie, fitness center, complimentary Wi-Fi, room service and 24/7 concierge."
       }
     }
   },
   apartmentDescriptions: {
     "1": {
       name: "Deluxe Room",
-      description: "Deluxe rooms are elegant, perfect for lovers of good taste. 34-42 sqm with free WiFi, safe and minibar."
+      description: "Deluxe rooms are elegant, perfect for lovers of refined taste. 34-42 sqm with complimentary WiFi, safe and minibar."
     },
     "2": {
       name: "Senior Apartment",
-      description: "Senior Apartments represent luxury, elegance and refinement for a 5-star stay in Bucharest. 61 sqm with classic decor and city view."
+      description: "Senior Apartments represent luxury, elegance and refinement for a five-star stay in Bucharest. 61 sqm with classic décor and city view."
     },
     "3": {
       name: "Junior Apartment",
-      description: "Junior Apartments are decorated with classic solid wood furniture that impresses any tourist. 46 sqm with espresso machine and lounge area."
+      description: "Junior Apartments are decorated with classic solid wood furniture. 46 sqm with espresso machine and lounge area."
     },
     "4": {
       name: "Standard Room",
-      description: "Standard rooms are perfect for any type of traveler. 19-26 sqm with free WiFi, safe and minibar."
+      description: "Standard rooms are perfect for any type of traveler. 19-26 sqm with complimentary WiFi, safe and minibar."
     },
     "5": {
       name: "Deluxe Twin Room",
@@ -301,8 +301,8 @@ export const en = {
   },
   amenitiesPage: {
     title: "Services and Facilities",
-    subtitle: "Discover the 5-star facilities and services that make your stay unforgettable.",
-    description: "At Grand Hotel Continental, we are dedicated to providing a comprehensive and luxurious stay experience. From THAIco Spa to our fine dining restaurants, every detail has been designed for your maximum comfort.",
+    subtitle: "Discover the five-star facilities and services that make your stay exceptional.",
+    description: "At Grand Hotel Continental, we are dedicated to providing a comprehensive and luxurious hospitality experience. From THAIco Spa to our fine dining venues, every detail has been designed for your maximum comfort and satisfaction.",
     categories: {
       wellness: {
         title: "Wellness & Relaxation",
@@ -310,41 +310,41 @@ export const en = {
         items: [
           {
             title: "THAIco Spa",
-            description: "Leader in the Romanian market for Asian SPA services. Beauty and relaxation rituals inspired by Asian cultures, in a luxurious yet intimate atmosphere."
+            description: "Romania's leading Asian SPA provider. Beauty and relaxation rituals inspired by Asian cultures, in a luxurious yet intimate atmosphere. Treatments available by appointment."
           },
           {
             title: "Fitness Center",
-            description: "Access to the fitness area is free for hotel guests."
+            description: "Complimentary access to the fitness area for hotel guests. Modern equipment with professional-grade facilities."
           },
           {
             title: "Jacuzzi Pool",
-            description: "Relax in the jacuzzi pool, available free of charge for hotel guests."
+            description: "Relax in the jacuzzi pool, available complimentary for hotel guests. Perfect for unwinding after exploring Bucharest."
           },
           {
             title: "Dry Sauna",
-            description: "Enjoy free access to the dry sauna in the wellness area."
+            description: "Complimentary access to the dry sauna in the wellness area. Ideal for relaxation and rejuvenation."
           }
         ]
       },
       dining: {
-        title: "Restaurants",
-        description: "Discover exceptional culinary experiences, from fine dining to traditional 5 o'clock tea.",
+        title: "Dining Venues",
+        description: "Discover exceptional culinary experiences, from fine dining to traditional afternoon tea.",
         items: [
           {
-            title: "Concerto",
-            description: "Modern approach to traditional French cuisine, with light and fresh ingredients. In the top options for fine dining in Bucharest."
+            title: "Concerto Restaurant",
+            description: "Modern interpretation of traditional French cuisine, featuring light and fresh ingredients. Ranked among Bucharest's finest dining establishments."
           },
           {
             title: "Bistro Continental",
-            description: "A culinary journey in a casual and friendly atmosphere, overlooking Calea Victoriei."
+            description: "A culinary journey in a casual and welcoming atmosphere, overlooking Calea Victoriei. International and Romanian specialties."
           },
           {
             title: "Victoria Club",
-            description: "The perfect place for traditional 5 o'clock tea and business meetings in a refined setting."
+            description: "The perfect venue for traditional afternoon tea and business meetings in a refined setting. Exclusive and intimate atmosphere."
           },
           {
             title: "Continental Patisserie",
-            description: "Tradition and history on Calea Victoriei. An emblematic place for quality sweets and coffee."
+            description: "Heritage and tradition on Calea Victoriei. An emblematic establishment for quality pastries and specialty coffee."
           }
         ]
       },
@@ -353,20 +353,20 @@ export const en = {
         description: "Services designed for an impeccable stay in the heart of Bucharest.",
         items: [
           {
-            title: "Concierge",
-            description: "Our team is at your disposal for booking tickets to shows, tourist assistance, airport transport, restaurant reservations."
+            title: "Concierge Services",
+            description: "Our dedicated team assists with theater ticket reservations, tourist guidance, airport transportation, restaurant bookings, and personalized recommendations."
           },
           {
             title: "Airport Transfer",
-            description: "Private transfer service to/from the airport, available for a fee."
+            description: "Private transfer service to/from Henri Coandă International Airport, available for a fee. Advance booking recommended."
           },
           {
             title: "Room Service",
-            description: "Complete menu from which you can choose culinary products or drinks served in your room."
+            description: "Comprehensive menu featuring culinary selections and beverages served in the privacy of your room."
           },
           {
-            title: "Vacation Vouchers",
-            description: "We accept vacation vouchers from Pluxee Romania, UP Romania and Edenred Romania."
+            title: "Holiday Vouchers",
+            description: "We accept holiday vouchers from Pluxee Romania, UP Romania and Edenred Romania."
           }
         ]
       },
@@ -375,20 +375,20 @@ export const en = {
         description: "Spaces and services for memorable corporate and private events.",
         items: [
           {
-            title: "Conference Rooms",
-            description: "Modern facilities for conferences and business events."
+            title: "Conference Facilities",
+            description: "Modern facilities for conferences and business events. Professional AV equipment and dedicated support staff."
           },
           {
             title: "Private Events",
-            description: "Elegant halls for private parties and special events."
+            description: "Elegant venues for private celebrations and special occasions. Customized arrangements available."
           },
           {
-            title: "VIP Facilities",
-            description: "VIP services and facilities available in-room for special guests."
+            title: "VIP Services",
+            description: "Enhanced in-room services and facilities available for special guests and VIP requirements."
           },
           {
-            title: "Lounge Area",
-            description: "Elegant common spaces for relaxation and socializing."
+            title: "Lounge Areas",
+            description: "Elegant common spaces for relaxation and socializing. Perfect for informal meetings or leisure."
           }
         ]
       }
