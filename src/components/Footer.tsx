@@ -101,6 +101,16 @@ export default function Footer() {
         
         <div className="border-t border-border pt-8 mt-8 text-center text-muted-foreground">
           <p>&copy; {currentYear} Grand Hotel Continental Bucharest. {t.footer.allRights}</p>
+          <p className="mt-2">
+            <a 
+              href="https://reclamatiisal.anpc.ro/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              ANPC
+            </a>
+          </p>
         </div>
       </div>
     </footer>
