@@ -45,7 +45,7 @@ export default function HeroSection() {
           <span className="inline-block text-white/90 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 tracking-widest border-b border-white/30 pb-2 animate-fade-in-up">
             {t.hero.subtitle}
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 px-2 animate-fade-in-up [animation-delay:200ms] leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 px-2 animate-fade-in-up leading-tight">
             {t.hero.title}
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto px-2 animate-fade-in-up [animation-delay:400ms]">
