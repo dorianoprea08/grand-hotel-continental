@@ -70,16 +70,26 @@ export default function HeroSection() {
         </a>
       </div>
       
-      {/* Royal ornamental divider with enhanced luxury styling */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none">
+      {/* Royal ornamental divider - elegant design */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 sm:h-48 pointer-events-none flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-        <svg className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-16 animate-float" viewBox="0 0 256 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M128 32L138 22L148 32L138 42L128 32Z" fill="currentColor" className="text-primary opacity-60 drop-shadow-lg" />
-          <line x1="20" y1="32" x2="118" y2="32" stroke="currentColor" strokeWidth="1.5" className="text-primary opacity-40" />
-          <line x1="138" y1="32" x2="236" y2="32" stroke="currentColor" strokeWidth="1.5" className="text-primary opacity-40" />
-          <circle cx="128" cy="32" r="3" fill="currentColor" className="text-primary opacity-70 drop-shadow-md" />
-          <circle cx="80" cy="32" r="1.5" fill="currentColor" className="text-primary opacity-50" />
-          <circle cx="176" cy="32" r="1.5" fill="currentColor" className="text-primary opacity-50" />
+        <svg className="relative w-80 sm:w-96 md:w-[500px] h-24 sm:h-28 md:h-32 animate-float" viewBox="0 0 500 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Left line with decorative dots */}
+          <line x1="20" y1="64" x2="200" y2="64" stroke="currentColor" strokeWidth="1.5" className="text-primary opacity-40" />
+          <circle cx="60" cy="64" r="2" fill="currentColor" className="text-primary opacity-50" />
+          <circle cx="140" cy="64" r="2" fill="currentColor" className="text-primary opacity-50" />
+          
+          {/* Center diamond */}
+          <rect x="235" y="49" width="30" height="30" transform="rotate(45 250 64)" fill="currentColor" stroke="currentColor" strokeWidth="1.5" className="text-primary opacity-70 drop-shadow-xl" />
+          
+          {/* Right line with decorative dots */}
+          <line x1="300" y1="64" x2="480" y2="64" stroke="currentColor" strokeWidth="1.5" className="text-primary opacity-40" />
+          <circle cx="360" cy="64" r="2" fill="currentColor" className="text-primary opacity-50" />
+          <circle cx="440" cy="64" r="2" fill="currentColor" className="text-primary opacity-50" />
+          
+          {/* Additional elegant accents */}
+          <circle cx="220" cy="64" r="3" fill="currentColor" className="text-primary opacity-60" />
+          <circle cx="280" cy="64" r="3" fill="currentColor" className="text-primary opacity-60" />
         </svg>
       </div>
     </section>;
