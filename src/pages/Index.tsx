@@ -47,6 +47,39 @@ const featuredApartments: ApartmentProps[] = [
     image: "src/assets/junior-suite.jpg",
     location: "Courtyard View",
     features: ["Wi-Fi", "Espresso Machine", "Lounge", "Safe", "Air Conditioning", "Smart TV"]
+  },
+  {
+    id: "4",
+    name: "Standard Room",
+    description: "Comfortable 19-26 sqm room perfect for any traveler, with complimentary WiFi and minibar.",
+    price: 140,
+    capacity: 2,
+    size: 26,
+    image: "src/assets/luxury-bedroom.jpg",
+    location: "Courtyard View",
+    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
+  },
+  {
+    id: "5",
+    name: "Deluxe Twin Room",
+    description: "Elegant room with two separate beds, perfect for friends or colleagues traveling together.",
+    price: 190,
+    capacity: 2,
+    size: 38,
+    image: "src/assets/deluxe-suite.jpg",
+    location: "Calea Victoriei View",
+    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Twin Beds"]
+  },
+  {
+    id: "6",
+    name: "Superior Room",
+    description: "Premium finishes and attention to detail, ideal for a comfortable stay in central Bucharest.",
+    price: 200,
+    capacity: 2,
+    size: 35,
+    image: "src/assets/junior-suite.jpg",
+    location: "City View",
+    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   }
 ];
 
