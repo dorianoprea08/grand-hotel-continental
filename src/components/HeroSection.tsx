@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
-import lazuliLogo from "@/assets/lazuli-logo.png";
+import hotelEntrance from "@/assets/hotel-entrance.jpg";
 export default function HeroSection() {
   const {
     t
@@ -24,13 +24,13 @@ export default function HeroSection() {
   return <section className="relative h-screen overflow-hidden">
       {/* Background image with parallax */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1615571022219-eb45cf7faa9d?q=80&w=1920&auto=format&fit=crop')",
+      backgroundImage: `url(${hotelEntrance})`,
       transform: `translateY(${backgroundY}px)`,
       backgroundPosition: `center ${50 + scrollY * 0.05}%`
     }} />
       
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-background" />
       
       {/* Content */}
       <div className="relative h-full flex flex-col justify-center items-center text-center px-4 sm:px-6" style={{
@@ -68,11 +68,14 @@ export default function HeroSection() {
         </a>
       </div>
       
-      {/* Animated wave */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden">
-        <svg className="absolute bottom-0 w-full h-24 fill-background" preserveAspectRatio="none" viewBox="0 0 1440 74" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,37.1L40,34.5C80,32,160,27,240,29.6C320,32,400,42,480,42.9C560,44,640,35,720,32.1C800,30,880,34,960,40.8C1040,47,1120,56,1200,56.6C1280,57,1360,48,1400,43.3L1440,39.1L1440,74L1400,74C1360,74,1280,74,1200,74C1120,74,1040,74,960,74C880,74,800,74,720,74C640,74,560,74,480,74C400,74,320,74,240,74C160,74,80,74,40,74L0,74Z" className="animate-wave opacity-50" />
-          <path d="M0,37.1L40,34.5C80,32,160,27,240,29.6C320,32,400,42,480,42.9C560,44,640,35,720,32.1C800,30,880,34,960,40.8C1040,47,1120,56,1200,56.6C1280,57,1360,48,1400,43.3L1440,39.1L1440,74L1400,74C1360,74,1280,74,1200,74C1120,74,1040,74,960,74C880,74,800,74,720,74C640,74,560,74,480,74C400,74,320,74,240,74C160,74,80,74,40,74L0,74Z" className="animate-wave opacity-100 [animation-delay:-4s]" />
+      {/* Royal ornamental divider */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+        <svg className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-16" viewBox="0 0 256 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M128 32L138 22L148 32L138 42L128 32Z" fill="currentColor" className="text-primary opacity-40" />
+          <line x1="20" y1="32" x2="118" y2="32" stroke="currentColor" strokeWidth="1" className="text-primary opacity-30" />
+          <line x1="138" y1="32" x2="236" y2="32" stroke="currentColor" strokeWidth="1" className="text-primary opacity-30" />
+          <circle cx="128" cy="32" r="3" fill="currentColor" className="text-primary opacity-50" />
         </svg>
       </div>
     </section>;

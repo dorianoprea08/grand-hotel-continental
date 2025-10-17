@@ -23,7 +23,7 @@ const allApartments: ApartmentProps[] = [
     price: 180,
     capacity: 2,
     size: 42,
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/deluxe-suite.jpg",
     location: "Calea Victoriei View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },
@@ -34,7 +34,7 @@ const allApartments: ApartmentProps[] = [
     price: 280,
     capacity: 3,
     size: 61,
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/presidential-suite.jpg",
     location: "City View",
     features: ["Wi-Fi", "Living Area", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -45,7 +45,7 @@ const allApartments: ApartmentProps[] = [
     price: 220,
     capacity: 2,
     size: 46,
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/junior-suite.jpg",
     location: "Courtyard View",
     features: ["Wi-Fi", "Espresso Machine", "Lounge", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -56,7 +56,7 @@ const allApartments: ApartmentProps[] = [
     price: 140,
     capacity: 2,
     size: 26,
-    image: "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/luxury-bedroom.jpg",
     location: "Courtyard View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -67,7 +67,7 @@ const allApartments: ApartmentProps[] = [
     price: 190,
     capacity: 2,
     size: 38,
-    image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/deluxe-suite.jpg",
     location: "Calea Victoriei View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Twin Beds"]
   },
@@ -78,7 +78,7 @@ const allApartments: ApartmentProps[] = [
     price: 200,
     capacity: 2,
     size: 35,
-    image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/junior-suite.jpg",
     location: "City View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },

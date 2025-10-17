@@ -9,6 +9,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Wifi, Utensils, Waves, LifeBuoy, MapPin, Coffee } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import luxuryLobby from "@/assets/luxury-lobby.jpg";
+import luxuryBedroom from "@/assets/luxury-bedroom.jpg";
+import luxuryRestaurant from "@/assets/luxury-restaurant.jpg";
 
 // Featured rooms data
 const featuredApartments: ApartmentProps[] = [
@@ -19,7 +22,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 180,
     capacity: 2,
     size: 42,
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/deluxe-suite.jpg",
     location: "Calea Victoriei View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },
@@ -30,7 +33,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 280,
     capacity: 3,
     size: 61,
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/presidential-suite.jpg",
     location: "City View",
     features: ["Wi-Fi", "Living Area", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -41,7 +44,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 220,
     capacity: 2,
     size: 46,
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=600&h=450&fit=crop&fm=webp&q=80",
+    image: "src/assets/junior-suite.jpg",
     location: "Courtyard View",
     features: ["Wi-Fi", "Espresso Machine", "Lounge", "Safe", "Air Conditioning", "Smart TV"]
   }
@@ -124,24 +127,24 @@ export default function Index() {
               <div className="relative animate-fade-in [animation-delay:300ms] mt-8 lg:mt-0">
                 <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=700&h=525&fit=crop&fm=webp&q=80"
-                    alt="Seaside view"
+                    src={luxuryLobby}
+                    alt="Grand Hotel Continental Lobby"
                     loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="hidden sm:block absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 w-2/3 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1545579133-99bb5ab189bd?w=450&h=350&fit=crop&fm=webp&q=80"
-                    alt="Luxury apartment interior"
+                    src={luxuryBedroom}
+                    alt="Luxury Suite Interior"
                     loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="hidden sm:block absolute -top-4 sm:-top-6 -right-4 sm:-right-6 w-1/2 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=350&h=250&fit=crop&fm=webp&q=80"
-                    alt="Pool view"
+                    src={luxuryRestaurant}
+                    alt="Fine Dining Restaurant"
                     loading="lazy"
                     className="w-full h-full object-cover"
                   />
