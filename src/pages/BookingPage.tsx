@@ -24,6 +24,23 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ApartmentProps } from "@/components/ApartmentCard";
+import { z } from "zod";
+
+const guestSchema = z.object({
+  firstName: z.string().trim().min(1, "First name is required").max(100, "First name must be less than 100 characters"),
+  lastName: z.string().trim().min(1, "Last name is required").max(100, "Last name must be less than 100 characters"),
+  email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
+  phone: z.string().trim().min(1, "Phone is required").max(20, "Phone must be less than 20 characters"),
+  address: z.string().trim().min(1, "Address is required").max(200, "Address must be less than 200 characters"),
+  city: z.string().trim().min(1, "City is required").max(100, "City must be less than 100 characters"),
+  zipCode: z.string().trim().min(1, "Zip code is required").max(20, "Zip code must be less than 20 characters"),
+  country: z.string().trim().min(1, "Country is required").max(100, "Country must be less than 100 characters"),
+  cardName: z.string().trim().max(100, "Card name must be less than 100 characters").optional(),
+  cardNumber: z.string().trim().max(19, "Invalid card number").optional(),
+  cardExpiry: z.string().trim().max(5, "Invalid expiry date").optional(),
+  cardCvc: z.string().trim().min(3, "CVC must be at least 3 digits").max(4, "CVC must be at most 4 digits").optional(),
+  specialRequests: z.string().trim().max(1000, "Special requests must be less than 1000 characters").optional(),
+});
 
 // Sample apartments data
 const apartmentsData: ApartmentProps[] = [
@@ -86,6 +103,7 @@ export default function BookingPage() {
     specialRequests: ""
   });
   const [isBookingConfirmed, setIsBookingConfirmed] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
   
   useEffect(() => {
     // Scroll to top when component mounts
@@ -110,44 +128,54 @@ export default function BookingPage() {
   // Submit booking
   const handleSubmitBooking = (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
     
-    // In a real app, this would send the booking data to a server
-    console.log("Booking submitted:", {
-      apartment: selectedApartment,
-      dates: { startDate, endDate },
-      guests: { adults, children },
-      customerInfo: formData
-    });
-    
-    // Show confirmation
-    setIsBookingConfirmed(true);
-    
-    // Reset form after booking is confirmed
-    setTimeout(() => {
-      setCurrentStep(1);
-      setSelectedApartment(null);
-      setStartDate(new Date());
-      setEndDate(addDays(new Date(), 7));
-      setAdults("2");
-      setChildren("0");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        address: "",
-        city: "",
-        zipCode: "",
-        country: "",
-        paymentMethod: "credit-card",
-        cardName: "",
-        cardNumber: "",
-        cardExpiry: "",
-        cardCvc: "",
-        specialRequests: ""
-      });
-      setIsBookingConfirmed(false);
-    }, 5000);
+    try {
+      guestSchema.parse(formData);
+      // Validation successful, proceed with booking
+      
+      // Show confirmation
+      setIsBookingConfirmed(true);
+      
+      // Reset form after booking is confirmed
+      setTimeout(() => {
+        setCurrentStep(1);
+        setSelectedApartment(null);
+        setStartDate(new Date());
+        setEndDate(addDays(new Date(), 7));
+        setAdults("2");
+        setChildren("0");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          address: "",
+          city: "",
+          zipCode: "",
+          country: "",
+          paymentMethod: "credit-card",
+          cardName: "",
+          cardNumber: "",
+          cardExpiry: "",
+          cardCvc: "",
+          specialRequests: ""
+        });
+        setIsBookingConfirmed(false);
+      }, 5000);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        const newErrors: Record<string, string> = {};
+        error.errors.forEach((err) => {
+          if (err.path[0]) {
+            newErrors[err.path[0].toString()] = err.message;
+          }
+        });
+        setErrors(newErrors);
+        // Scroll to top to show errors
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
   };
   
   return (
@@ -422,8 +450,10 @@ export default function BookingPage() {
                               name="firstName" 
                               value={formData.firstName} 
                               onChange={handleInputChange} 
-                              required 
+                              required
+                              maxLength={100}
                             />
+                            {errors.firstName && <p className="text-sm text-red-500 mt-1">{errors.firstName}</p>}
                           </div>
                           <div className="space-y-2">
                             <Label htmlFor="lastName">Last Name</Label>
@@ -432,8 +462,10 @@ export default function BookingPage() {
                               name="lastName" 
                               value={formData.lastName} 
                               onChange={handleInputChange} 
-                              required 
+                              required
+                              maxLength={100}
                             />
+                            {errors.lastName && <p className="text-sm text-red-500 mt-1">{errors.lastName}</p>}
                           </div>
                         </div>
                         
@@ -446,8 +478,10 @@ export default function BookingPage() {
                               type="email" 
                               value={formData.email} 
                               onChange={handleInputChange} 
-                              required 
+                              required
+                              maxLength={255}
                             />
+                            {errors.email && <p className="text-sm text-red-500 mt-1">{errors.email}</p>}
                           </div>
                           <div className="space-y-2">
                             <Label htmlFor="phone">Phone</Label>
@@ -456,8 +490,10 @@ export default function BookingPage() {
                               name="phone" 
                               value={formData.phone} 
                               onChange={handleInputChange} 
-                              required 
+                              required
+                              maxLength={20}
                             />
+                            {errors.phone && <p className="text-sm text-red-500 mt-1">{errors.phone}</p>}
                           </div>
                         </div>
                         
@@ -468,8 +504,10 @@ export default function BookingPage() {
                             name="address" 
                             value={formData.address} 
                             onChange={handleInputChange} 
-                            required 
+                            required
+                            maxLength={200}
                           />
+                          {errors.address && <p className="text-sm text-red-500 mt-1">{errors.address}</p>}
                         </div>
                         
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -480,8 +518,10 @@ export default function BookingPage() {
                               name="city" 
                               value={formData.city} 
                               onChange={handleInputChange} 
-                              required 
+                              required
+                              maxLength={100}
                             />
+                            {errors.city && <p className="text-sm text-red-500 mt-1">{errors.city}</p>}
                           </div>
                           <div className="space-y-2">
                             <Label htmlFor="zipCode">Zip Code</Label>
@@ -490,8 +530,10 @@ export default function BookingPage() {
                               name="zipCode" 
                               value={formData.zipCode} 
                               onChange={handleInputChange} 
-                              required 
+                              required
+                              maxLength={20}
                             />
+                            {errors.zipCode && <p className="text-sm text-red-500 mt-1">{errors.zipCode}</p>}
                           </div>
                           <div className="space-y-2">
                             <Label htmlFor="country">Country</Label>
@@ -500,8 +542,10 @@ export default function BookingPage() {
                               name="country" 
                               value={formData.country} 
                               onChange={handleInputChange} 
-                              required 
+                              required
+                              maxLength={100}
                             />
+                            {errors.country && <p className="text-sm text-red-500 mt-1">{errors.country}</p>}
                           </div>
                         </div>
                         
@@ -514,7 +558,9 @@ export default function BookingPage() {
                             onChange={handleInputChange}
                             className="w-full h-24 rounded-md border border-input bg-background px-3 py-2 text-sm"
                             placeholder="Any special requests or notes for your stay"
+                            maxLength={1000}
                           />
+                          {errors.specialRequests && <p className="text-sm text-red-500 mt-1">{errors.specialRequests}</p>}
                         </div>
                       </div>
                       
@@ -532,8 +578,10 @@ export default function BookingPage() {
                                 id="cardName" 
                                 name="cardName" 
                                 value={formData.cardName} 
-                                onChange={handleInputChange} 
+                                onChange={handleInputChange}
+                                maxLength={100}
                               />
+                              {errors.cardName && <p className="text-sm text-red-500 mt-1">{errors.cardName}</p>}
                             </div>
                             <div className="space-y-2">
                               <Label htmlFor="cardNumber">Card Number</Label>
@@ -542,8 +590,10 @@ export default function BookingPage() {
                                 name="cardNumber" 
                                 value={formData.cardNumber} 
                                 onChange={handleInputChange}
-                                placeholder="0000 0000 0000 0000" 
+                                placeholder="0000 0000 0000 0000"
+                                maxLength={19}
                               />
+                              {errors.cardNumber && <p className="text-sm text-red-500 mt-1">{errors.cardNumber}</p>}
                             </div>
                             <div className="grid grid-cols-2 gap-4">
                               <div className="space-y-2">
@@ -553,8 +603,10 @@ export default function BookingPage() {
                                   name="cardExpiry" 
                                   value={formData.cardExpiry} 
                                   onChange={handleInputChange}
-                                  placeholder="MM/YY" 
+                                  placeholder="MM/YY"
+                                  maxLength={5}
                                 />
+                                {errors.cardExpiry && <p className="text-sm text-red-500 mt-1">{errors.cardExpiry}</p>}
                               </div>
                               <div className="space-y-2">
                                 <Label htmlFor="cardCvc">CVC</Label>
@@ -563,8 +615,10 @@ export default function BookingPage() {
                                   name="cardCvc" 
                                   value={formData.cardCvc} 
                                   onChange={handleInputChange}
-                                  placeholder="123" 
+                                  placeholder="123"
+                                  maxLength={4}
                                 />
+                                {errors.cardCvc && <p className="text-sm text-red-500 mt-1">{errors.cardCvc}</p>}
                               </div>
                             </div>
                           </TabsContent>

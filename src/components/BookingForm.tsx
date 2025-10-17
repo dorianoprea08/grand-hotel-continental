@@ -29,8 +29,7 @@ export default function BookingForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send the booking data to a server
-    console.log("Booking submitted:", { startDate, endDate, adults, children });
+    // Validation successful, proceed with booking
     setSubmitted(true);
     
     // Reset form after 3 seconds

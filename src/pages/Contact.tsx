@@ -7,6 +7,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
+  email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
+  phone: z.string().trim().max(20, "Phone must be less than 20 characters").optional(),
+  subject: z.string().trim().min(1, "Subject is required").max(200, "Subject must be less than 200 characters"),
+  message: z.string().trim().min(1, "Message is required").max(2000, "Message must be less than 2000 characters"),
+});
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -19,6 +28,7 @@ export default function Contact() {
   });
   
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
   
   useEffect(() => {
     // Scroll to top when component mounts
@@ -32,23 +42,35 @@ export default function Contact() {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
     
-    // In a real app, this would send the form data to a server
-    console.log("Form submitted:", formData);
-    
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: ""
-      });
-    }, 3000);
+    try {
+      contactSchema.parse(formData);
+      // Form is valid, proceed with submission
+      setIsSubmitted(true);
+      
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: ""
+        });
+      }, 3000);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        const newErrors: Record<string, string> = {};
+        error.errors.forEach((err) => {
+          if (err.path[0]) {
+            newErrors[err.path[0].toString()] = err.message;
+          }
+        });
+        setErrors(newErrors);
+      }
+    }
   };
   
   return (
@@ -165,8 +187,10 @@ export default function Contact() {
                             value={formData.name}
                             onChange={handleInputChange}
                             placeholder="John Doe" 
-                            required 
+                            required
+                            maxLength={100}
                           />
+                          {errors.name && <p className="text-sm text-red-500 mt-1">{errors.name}</p>}
                         </div>
                         
                         <div className="space-y-2">
@@ -178,8 +202,10 @@ export default function Contact() {
                             value={formData.email}
                             onChange={handleInputChange}
                             placeholder="john@example.com" 
-                            required 
+                            required
+                            maxLength={255}
                           />
+                          {errors.email && <p className="text-sm text-red-500 mt-1">{errors.email}</p>}
                         </div>
                       </div>
                       
@@ -191,8 +217,10 @@ export default function Contact() {
                             name="phone"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            placeholder="+1 234 567 8900" 
+                            placeholder="+1 234 567 8900"
+                            maxLength={20}
                           />
+                          {errors.phone && <p className="text-sm text-red-500 mt-1">{errors.phone}</p>}
                         </div>
                         
                         <div className="space-y-2">
@@ -203,8 +231,10 @@ export default function Contact() {
                             value={formData.subject}
                             onChange={handleInputChange}
                             placeholder="Reservation Inquiry" 
-                            required 
+                            required
+                            maxLength={200}
                           />
+                          {errors.subject && <p className="text-sm text-red-500 mt-1">{errors.subject}</p>}
                         </div>
                       </div>
                       
@@ -217,8 +247,10 @@ export default function Contact() {
                           onChange={handleInputChange}
                           placeholder={t.contact.howCanWeHelp} 
                           className="w-full min-h-[150px] p-3 rounded-md border border-input bg-background"
-                          required 
+                          required
+                          maxLength={2000}
                         />
+                        {errors.message && <p className="text-sm text-red-500 mt-1">{errors.message}</p>}
                       </div>
                       
                       <Button type="submit" className="w-full btn-primary">
