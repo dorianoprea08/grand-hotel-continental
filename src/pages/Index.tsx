@@ -152,7 +152,7 @@ export default function Index() {
         </section>
         
         {/* Booking Form Section */}
-        <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-sea-light to-white dark:from-sea-dark dark:to-background overflow-hidden">
+        <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-secondary to-background overflow-hidden">
           <div className="container relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="animate-fade-in">

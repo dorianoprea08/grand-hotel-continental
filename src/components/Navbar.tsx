@@ -45,7 +45,8 @@ export default function Navbar() {
 
   useEffect(() => {
     const checkTheme = () => {
-      setIsDark(document.documentElement.classList.contains("dark"));
+      const isLight = document.documentElement.classList.contains("light");
+      setIsDark(!isLight);
     };
     
     checkTheme();
