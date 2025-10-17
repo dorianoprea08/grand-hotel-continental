@@ -74,6 +74,16 @@ export default function Footer() {
                 <Mail className="w-5 h-5 mr-2 text-primary" />
                 <span className="text-muted-foreground">reservations@grandhotelcontinental.ro</span>
               </li>
+              <li className="flex items-center">
+                <a 
+                  href="https://reclamatiisal.anpc.ro/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  ANPC
+                </a>
+              </li>
             </ul>
           </div>
           
@@ -101,16 +111,6 @@ export default function Footer() {
         
         <div className="border-t border-border pt-8 mt-8 text-center text-muted-foreground">
           <p>&copy; {currentYear} Grand Hotel Continental Bucharest. {t.footer.allRights}</p>
-          <p className="mt-2">
-            <a 
-              href="https://reclamatiisal.anpc.ro/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
-            >
-              ANPC
-            </a>
-          </p>
         </div>
       </div>
     </footer>
