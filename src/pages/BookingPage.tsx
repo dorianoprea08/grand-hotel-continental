@@ -51,7 +51,7 @@ const apartmentsData: ApartmentProps[] = [
     price: 180,
     capacity: 2,
     size: 45,
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=300&fit=crop&fm=webp&q=80",
     location: "Beachfront",
     features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
   },
@@ -62,7 +62,7 @@ const apartmentsData: ApartmentProps[] = [
     price: 250,
     capacity: 4,
     size: 75,
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop&fm=webp&q=80",
     location: "Second row",
     features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Washing Machine"]
   },
@@ -73,7 +73,7 @@ const apartmentsData: ApartmentProps[] = [
     price: 150,
     capacity: 2,
     size: 35,
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=400&h=300&fit=crop&fm=webp&q=80",
     location: "Beachfront",
     features: ["Wi-Fi", "Kitchenette", "Bathroom", "Air Conditioning", "TV"]
   },
