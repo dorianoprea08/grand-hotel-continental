@@ -6,8 +6,8 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import lazuliLogo from "@/assets/lazuli-logo.png";
-import hotelLogo from "@/assets/hotel-logo.png";
+import lazuliLogo from "@/assets/lazuli-logo.webp";
+import hotelLogo from "@/assets/hotel-logo.webp";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 export default function Navbar() {
   const {
