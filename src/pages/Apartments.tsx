@@ -14,73 +14,73 @@ import {
 import { Slider } from "@/components/ui/slider";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// Sample apartments data (will use translations from context)
+// All rooms and suites data
 const allApartments: ApartmentProps[] = [
   {
     id: "1",
-    name: "Deluxe Sea View Suite",
-    description: "Luxurious suite with panoramic sea views, modern amenities, and a private balcony.",
+    name: "Deluxe Room",
+    description: "Elegant 34-42 sqm room perfect for refined taste, featuring classic décor and modern comforts.",
     price: 180,
     capacity: 2,
-    size: 45,
+    size: 42,
     image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
+    location: "Calea Victoriei View",
+    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },
   {
     id: "2",
-    name: "Premium Family Apartment",
-    description: "Spacious apartment ideal for families, with full kitchen and stunning coastal views.",
-    price: 250,
-    capacity: 4,
-    size: 75,
+    name: "Senior Apartment",
+    description: "Luxurious 61 sqm suite representing five-star elegance with city views and classic furnishings.",
+    price: 280,
+    capacity: 3,
+    size: 61,
     image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Second row",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Washing Machine"]
+    location: "City View",
+    features: ["Wi-Fi", "Living Area", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
   {
     id: "3",
-    name: "Executive Beach Studio",
-    description: "Elegant studio with direct beach access, modern design, and premium finishes.",
-    price: 150,
+    name: "Junior Apartment",
+    description: "Sophisticated 46 sqm space with solid wood furniture, espresso machine, and lounge area.",
+    price: 220,
     capacity: 2,
-    size: 35,
+    size: 46,
     image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchenette", "Bathroom", "Air Conditioning", "TV"]
+    location: "Courtyard View",
+    features: ["Wi-Fi", "Espresso Machine", "Lounge", "Safe", "Air Conditioning", "Smart TV"]
   },
   {
     id: "4",
-    name: "Luxury Penthouse Suite",
-    description: "Exclusive top-floor suite with expansive terrace and panoramic sea views.",
-    price: 350,
-    capacity: 4,
-    size: 90,
+    name: "Standard Room",
+    description: "Comfortable 19-26 sqm room perfect for any traveler, with complimentary WiFi and minibar.",
+    price: 140,
+    capacity: 2,
+    size: 26,
     image: "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Full Kitchen", "2 Bathrooms", "Air Conditioning", "TV", "Terrace", "Jacuzzi"]
+    location: "Courtyard View",
+    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
   {
     id: "5",
-    name: "Classic Double Room",
-    description: "Comfortable hotel room with modern amenities and partial sea views.",
-    price: 120,
+    name: "Deluxe Twin Room",
+    description: "Elegant room with two separate beds, perfect for friends or colleagues. Classic design and modern amenities.",
+    price: 190,
     capacity: 2,
-    size: 28,
+    size: 38,
     image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Hotel building",
-    features: ["Wi-Fi", "Bathroom", "Air Conditioning", "TV", "Mini Fridge"]
+    location: "Calea Victoriei View",
+    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Twin Beds"]
   },
   {
     id: "6",
-    name: "Garden View Apartment",
-    description: "Peaceful apartment surrounded by lush gardens, just a short walk from the beach.",
-    price: 160,
-    capacity: 3,
-    size: 55,
+    name: "Superior Room",
+    description: "Premium finishes and attention to detail, ideal for a comfortable stay in central Bucharest.",
+    price: 200,
+    capacity: 2,
+    size: 35,
     image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Garden area",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Terrace"]
+    location: "City View",
+    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },
 ];
 

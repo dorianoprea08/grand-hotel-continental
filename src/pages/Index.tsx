@@ -10,40 +10,40 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Wifi, Utensils, Waves, LifeBuoy, MapPin, Coffee } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// Sample apartments data
+// Featured rooms data
 const featuredApartments: ApartmentProps[] = [
   {
     id: "1",
-    name: "Deluxe Sea View Suite",
-    description: "Luxurious suite with panoramic sea views, modern amenities, and a private balcony.",
+    name: "Deluxe Room",
+    description: "Elegant 34-42 sqm room perfect for refined taste, featuring classic décor and modern comforts.",
     price: 180,
     capacity: 2,
-    size: 45,
+    size: 42,
     image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
+    location: "Calea Victoriei View",
+    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },
   {
     id: "2",
-    name: "Premium Family Apartment",
-    description: "Spacious apartment ideal for families, with full kitchen and stunning coastal views.",
-    price: 250,
-    capacity: 4,
-    size: 75,
+    name: "Senior Apartment",
+    description: "Luxurious 61 sqm suite representing five-star elegance with city views and classic furnishings.",
+    price: 280,
+    capacity: 3,
+    size: 61,
     image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Second row",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Washing Machine"]
+    location: "City View",
+    features: ["Wi-Fi", "Living Area", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
   {
     id: "3",
-    name: "Executive Beach Studio",
-    description: "Elegant studio with direct beach access, modern design, and premium finishes.",
-    price: 150,
+    name: "Junior Apartment",
+    description: "Sophisticated 46 sqm space with solid wood furniture, espresso machine, and lounge area.",
+    price: 220,
     capacity: 2,
-    size: 35,
+    size: 46,
     image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=600&h=450&fit=crop&fm=webp&q=80",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchenette", "Bathroom", "Air Conditioning", "TV"]
+    location: "Courtyard View",
+    features: ["Wi-Fi", "Espresso Machine", "Lounge", "Safe", "Air Conditioning", "Smart TV"]
   }
 ];
 

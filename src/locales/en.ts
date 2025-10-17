@@ -1,27 +1,27 @@
 export const en = {
   nav: {
     home: "Home",
-    apartments: "Accommodations",
-    amenities: "Amenities",
+    apartments: "Rooms & Suites",
+    amenities: "Amenities & Services",
     gallery: "Gallery",
     contact: "Contact",
-    bookNow: "Reserve Now"
+    bookNow: "Book Now"
   },
   hero: {
-    subtitle: "BOUTIQUE LUXURY • STATE PATRIMONY BUILDING",
-    title: "Grand Hotel Continental Bucharest",
-    description: "Experience 200 years of refined hospitality in the heart of Bucharest on historic Calea Victoriei",
-    bookStay: "Reserve Now",
-    exploreApartments: "View Accommodations",
-    scrollDown: "Scroll Down"
+    subtitle: "HISTORIC ELEGANCE MEETS MODERN LUXURY",
+    title: "Your Sanctuary in the Heart of Bucharest",
+    description: "Welcome to Grand Hotel Continental. Experience two centuries of refined hospitality on historic Calea Victoriei, where heritage and contemporary comfort create your perfect Bucharest escape.",
+    bookStay: "Book Your Stay",
+    exploreApartments: "Explore Our Rooms",
+    scrollDown: "Discover More"
   },
   footer: {
-    description: "A distinguished State Patrimony building on Calea Victoriei, Grand Hotel Continental offers boutique luxury hospitality in Bucharest's historic center since the early 19th century.",
-    quickLinks: "Quick Links",
-    contact: "Contact",
-    newsletter: "Stay Informed",
-    newsletterDesc: "Receive exclusive offers and heritage hotel updates",
-    yourEmail: "Your email address",
+    description: "Located in a distinguished State Patrimony building on Calea Victoriei, Grand Hotel Continental Bucharest has welcomed discerning guests since 1822. Experience timeless elegance in the heart of Romania's capital.",
+    quickLinks: "Explore",
+    contact: "Visit Us",
+    newsletter: "Exclusive Offers",
+    newsletterDesc: "Subscribe to receive special rates and luxury travel inspiration",
+    yourEmail: "Enter your email",
     subscribe: "Subscribe",
     allRights: "All rights reserved."
   },
@@ -38,8 +38,8 @@ export const en = {
     bookingConfirmed: "Reservation Confirmed!"
   },
   testimonials: {
-    title: "Guest Testimonials",
-    description: "Discover why discerning travelers choose Grand Hotel Continental Bucharest for their stays in Romania's capital."
+    title: "What Our Guests Say",
+    description: "Hear from travelers who've experienced the warmth and elegance of Grand Hotel Continental."
   },
   notFound: {
     title: "Page Not Found",
@@ -48,23 +48,23 @@ export const en = {
   },
   home: {
     welcome: {
-      subtitle: "GRAND HOTEL CONTINENTAL BUCHAREST",
-      title: "Heritage Boutique Hospitality Since 1822",
-      description1: "Strategically positioned on Calea Victoriei in a protected State Patrimony building, Grand Hotel Continental represents 200 years of refined Bucharest hospitality. Located just 5 minutes' walk from the Old Town and Universitate Metro Station, 2 km from the Parliament Palace, our boutique hotel offers discerning travelers an intimate luxury experience in Romania's capital.",
-      description2: "Meticulously restored in 2009 after a comprehensive four-year renovation, the hotel preserves the elegant and distinguished atmosphere that characterizes this historic monument. Our location and five-star services combine the refinement and history of two iconic landmarks: Calea Victoriei and Bucharest's Old Town.",
-      learnMore: "Discover More"
+      subtitle: "WELCOME TO GRAND HOTEL CONTINENTAL",
+      title: "Discover Your Refined Escape",
+      description1: "Step into 200 years of distinguished hospitality. Nestled in a protected State Patrimony building on iconic Calea Victoriei, your Grand Hotel Continental experience begins the moment you arrive. Just steps from Bucharest's vibrant Old Town and perfectly positioned for exploring the capital, you'll find yourself immersed in a world where historic grandeur meets contemporary luxury.",
+      description2: "Lovingly restored to preserve its timeless elegance, every detail of our boutique hotel reflects our commitment to your comfort. From the classic architecture that speaks to our heritage to modern amenities designed for today's discerning traveler, your stay promises to be as memorable as it is refined.",
+      learnMore: "Learn More"
     },
     booking: {
-      subtitle: "Reserve Your Stay",
-      title: "Experience Bucharest Heritage",
-      description: "Secure your preferred dates at Bucharest's distinguished boutique hotel. Our streamlined reservation process ensures a seamless experience from booking to arrival.",
-      benefits: ["Instant confirmation", "Best rate guarantee", "Flexible policies", "Secure payment"]
+      subtitle: "PLAN YOUR STAY",
+      title: "Begin Your Bucharest Journey",
+      description: "Your perfect escape awaits. Select your dates and let us welcome you to an unforgettable experience in the heart of Romania's capital.",
+      benefits: ["Instant confirmation", "Best rate guarantee", "Flexible cancellation", "Secure booking"]
     },
     featuredApartments: {
-      subtitle: "Rooms & Suites",
-      title: "Accommodations",
-      description: "Classic décor and modern amenities with views of historic Calea Victoriei or our quiet inner courtyard",
-      viewAll: "View All Accommodations"
+      subtitle: "OUR ROOMS & SUITES",
+      title: "Luxury Accommodations",
+      description: "Each room blends timeless elegance with modern comfort. Choose from stunning Calea Victoriei views or the tranquility of our private courtyard.",
+      viewAll: "View All Rooms"
     },
     amenities: {
       subtitle: "Hotel Amenities",
@@ -98,14 +98,14 @@ export const en = {
       }
     },
     cta: {
-      title: "Experience Bucharest Heritage",
-      description: "Reserve your stay at Grand Hotel Continental and discover two centuries of refined hospitality in Romania's capital. Direct booking exclusive benefits available.",
-      bookNow: "Reserve Your Stay"
+      title: "Begin Your Bucharest Experience",
+      description: "Your story at Grand Hotel Continental awaits. Book direct for exclusive benefits and discover why discerning travelers choose us for their Bucharest stay.",
+      bookNow: "Book Now"
     }
   },
   apartments: {
-    title: "Bucharest Accommodations",
-    subtitle: "Our elegantly appointed rooms combine classic décor with contemporary comfort for a distinguished five-star experience.",
+    title: "Our Rooms & Suites",
+    subtitle: "Discover elegantly appointed spaces where historic charm meets modern luxury. Each room offers a unique perspective of Bucharest's most celebrated boulevard.",
     filters: {
       guests: "Guests",
       anyGuests: "Any number of guests",
@@ -226,24 +226,24 @@ export const en = {
     }
   },
   contact: {
-    title: "Contact Us",
-    subtitle: "Our concierge team is here to ensure your stay is exceptional. Reach out with inquiries or special requests.",
-    getInTouch: "Get In Touch",
-    address: "Address",
-    phone: "Phone",
-    email: "Email",
-    receptionHours: "Reception Hours",
-    checkInTime: "Check-in: After 3:00 PM",
-    checkOutTime: "Check-out: Before 12:00 PM",
-    sendMessage: "Send Us a Message",
-    fullName: "Full Name",
-    phoneNumber: "Phone Number",
-    subject: "Subject",
-    message: "Message",
-    howCanWeHelp: "How may we assist you?",
-    send: "Send Message",
-    messageSent: "Message Sent!",
-    thankYou: "Thank you for contacting us. We'll respond to your inquiry promptly.",
+    title: "Get in Touch",
+    subtitle: "We're here to help. Whether you have questions about your stay or need assistance with special arrangements, our team is at your service 24/7.",
+    getInTouch: "Contact Our Team",
+    address: "Our Location",
+    phone: "Call Us",
+    email: "Email Us",
+    receptionHours: "24-Hour Reception",
+    checkInTime: "Check-in: From 3:00 PM",
+    checkOutTime: "Check-out: Until 12:00 PM",
+    sendMessage: "Send a Message",
+    fullName: "Your Name",
+    phoneNumber: "Your Phone",
+    subject: "Inquiry Type",
+    message: "Your Message",
+    howCanWeHelp: "How can we make your stay exceptional?",
+    send: "Send",
+    messageSent: "Thank You!",
+    thankYou: "We've received your message and will get back to you shortly.",
     faq: "Frequently Asked Questions",
     faqSubtitle: "Find quick answers to commonly asked questions about our hotel and services.",
     questions: {
