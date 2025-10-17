@@ -33,7 +33,7 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
   
   return (
     <div 
-      className="rounded-lg sm:rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl bg-card group"
+      className="rounded-lg sm:rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 bg-card group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -41,12 +41,14 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
         <img 
           src={apartment.image} 
           alt={translatedName}
+          loading="lazy"
+          decoding="async"
           className={cn(
             "w-full h-full object-cover transition-transform duration-700",
             isHovered ? "scale-110" : "scale-100"
           )}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 flex items-end p-4 sm:p-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70 flex items-end p-4 sm:p-6 transition-opacity duration-300">
           <div className="w-full">
             <h3 className="text-white text-lg sm:text-xl font-bold mb-1">{translatedName}</h3>
             <div className="flex items-center text-white/80 text-xs sm:text-sm mb-2">

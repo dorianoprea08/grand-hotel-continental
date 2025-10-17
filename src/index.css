@@ -77,19 +77,31 @@
     @apply border-border;
   }
   
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
   }
+  
+  /* Performance optimization for images */
+  img {
+    content-visibility: auto;
+  }
 }
 
 @layer components {
   .container {
-    @apply px-4 md:px-6 lg:px-8 mx-auto;
+    @apply px-4 md:px-6 lg:px-8 mx-auto max-w-7xl;
   }
   
   .btn-primary {
@@ -101,15 +113,77 @@
   }
   
   .glass-card {
-    @apply bg-card/80 backdrop-blur-lg border border-border rounded-xl shadow-lg;
+    @apply bg-card/80 backdrop-blur-lg border border-border rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-primary/10;
   }
   
-  .wave-animation {
-    animation: wave 12s linear infinite;
-    animation-delay: -2s;
-    transform-origin: center bottom;
+  /* Premium luxury animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, rgba(201, 162, 75, 0.1), transparent);
+    background-size: 1000px 100%;
+    animation: shimmer 3s infinite;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Mobile-optimized touch targets */
+  @media (max-width: 768px) {
+    button, a, [role="button"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+  
+  /* Smooth image loading */
+  .lazy-load-image {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .lazy-load-image.loaded {
+    opacity: 1;
+  }
+  
+  /* Premium hover effects */
+  .luxury-hover {
+    @apply transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20;
+  }
+  
+  /* Page transitions */
   .page-transition-enter {
     opacity: 0;
     transform: translateY(10px);

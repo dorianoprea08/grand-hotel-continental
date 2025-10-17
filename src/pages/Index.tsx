@@ -161,24 +161,33 @@ export default function Index() {
                 <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden">
                   <img 
                     src={luxuryLobby}
-                    alt="Grand Hotel Continental Lobby"
+                    alt="Grand Hotel Continental Luxury Lobby"
                     loading="lazy"
+                    decoding="async"
+                    width="700"
+                    height="525"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="hidden sm:block absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 w-2/3 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                   <img 
                     src={luxuryBedroom}
-                    alt="Luxury Suite Interior"
+                    alt="Luxury Suite Interior with Premium Furnishings"
                     loading="lazy"
+                    decoding="async"
+                    width="450"
+                    height="350"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="hidden sm:block absolute -top-4 sm:-top-6 -right-4 sm:-right-6 w-1/2 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl">
                   <img 
                     src={luxuryRestaurant}
-                    alt="Fine Dining Restaurant"
+                    alt="Fine Dining Restaurant at Grand Hotel Continental"
                     loading="lazy"
+                    decoding="async"
+                    width="350"
+                    height="250"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -279,14 +288,14 @@ export default function Index() {
               {features.map((feature, index) => (
                 <div 
                   key={index} 
-                  className="glass-card p-5 sm:p-6 rounded-xl animate-fade-in flex flex-col items-center text-center"
+                  className="glass-card p-5 sm:p-6 rounded-xl animate-fade-in-up flex flex-col items-center text-center luxury-hover"
                   style={{ animationDelay: `${(index + 1) * 100}ms` }}
                 >
-                  <div className="mb-3 sm:mb-4 p-2.5 sm:p-3 rounded-full bg-primary/10">
+                  <div className="mb-3 sm:mb-4 p-2.5 sm:p-3 rounded-full bg-primary/10 transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
                     {feature.icon}
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold mb-1.5 sm:mb-2">{feature.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground">{feature.description}</p>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{feature.description}</p>
                 </div>
               ))}
             </div>
