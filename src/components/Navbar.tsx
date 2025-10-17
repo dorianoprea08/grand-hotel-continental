@@ -65,7 +65,9 @@ export default function Navbar() {
         <Link to="/" className="flex-1 flex justify-center min-w-0">
           <img 
             src={hotelLogo} 
-            alt="Grand Hotel Continental" 
+            alt="Grand Hotel Continental"
+            width="258"
+            height="48"
             className={cn(
               "h-8 sm:h-10 md:h-12 w-auto object-contain max-w-[200px] sm:max-w-[280px] md:max-w-full transition-all duration-300",
               !isDark && "invert"
