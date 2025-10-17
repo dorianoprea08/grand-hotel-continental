@@ -162,7 +162,7 @@ export default function Index() {
                   <img 
                     src={luxuryLobby}
                     alt="Grand Hotel Continental Luxury Lobby"
-                    loading="lazy"
+                    loading="eager"
                     decoding="async"
                     width="700"
                     height="525"
@@ -173,7 +173,7 @@ export default function Index() {
                   <img 
                     src={luxuryBedroom}
                     alt="Luxury Suite Interior with Premium Furnishings"
-                    loading="lazy"
+                    loading="eager"
                     decoding="async"
                     width="450"
                     height="350"
@@ -184,7 +184,7 @@ export default function Index() {
                   <img 
                     src={luxuryRestaurant}
                     alt="Fine Dining Restaurant at Grand Hotel Continental"
-                    loading="lazy"
+                    loading="eager"
                     decoding="async"
                     width="350"
                     height="250"
