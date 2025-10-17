@@ -63,10 +63,10 @@ export default function HeroSection() {
       </div>
       
       {/* Scroll down indicator */}
-      <div className="absolute bottom-6 sm:bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+      <div className="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 text-white animate-bounce">
         <a href="#welcome" className="flex flex-col items-center opacity-70 hover:opacity-100 transition-opacity">
           <span className="text-xs sm:text-sm mb-1 sm:mb-2">{t.hero.scrollDown}</span>
-          <ChevronDown className="h-5 w-5 sm:h-6 sm:w-6" />
+          <ChevronDown className="h-6 w-6 sm:h-7 sm:w-7" />
         </a>
       </div>
       
