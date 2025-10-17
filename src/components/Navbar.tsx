@@ -62,7 +62,7 @@ export default function Navbar() {
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-lg shadow-sm border-b", scrolled ? "py-3 shadow-md" : "py-5")}>
       <nav className="container flex justify-between items-center">
 
-        <div className="flex-1 flex justify-center min-w-0">
+        <Link to="/" className="flex-1 flex justify-center min-w-0">
           <img 
             src={hotelLogo} 
             alt="Grand Hotel Continental" 
@@ -71,7 +71,7 @@ export default function Navbar() {
               !isDark && "invert"
             )}
           />
-        </div>
+        </Link>
 
         <div className="flex items-center px-1 sm:px-2">
           <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full h-11 w-11">
