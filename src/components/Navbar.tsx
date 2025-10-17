@@ -60,25 +60,39 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-lg shadow-sm border-b", scrolled ? "py-3 shadow-md" : "py-5")}>
-      <nav className="container flex justify-between items-center">
+      <nav className="container">
+        <div className="flex justify-between items-center">
+          {/* Hamburger Menu - Left */}
+          <div className="flex items-center">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+              className="rounded-full h-11 w-11"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
 
-        <Link to="/" className="flex-1 flex justify-center min-w-0">
-          <img 
-            src={hotelLogo} 
-            alt="Grand Hotel Continental"
-            width="258"
-            height="48"
-            className={cn(
-              "h-8 sm:h-10 md:h-12 w-auto object-contain max-w-[200px] sm:max-w-[280px] md:max-w-full transition-all duration-300",
-              !isDark && "invert"
-            )}
-          />
-        </Link>
+          {/* Logo - Center */}
+          <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex items-center">
+            <img 
+              src={hotelLogo} 
+              alt="Grand Hotel Continental"
+              width="258"
+              height="48"
+              loading="eager"
+              fetchPriority="high"
+              className={cn(
+                "h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300",
+                !isDark && "invert brightness-0"
+              )}
+            />
+          </Link>
 
-        <div className="flex items-center px-1 sm:px-2">
-          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full h-11 w-11">
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          {/* Right Side Spacer */}
+          <div className="w-11"></div>
         </div>
       </nav>
 

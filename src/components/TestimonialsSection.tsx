@@ -99,13 +99,14 @@ export default function TestimonialsSection() {
               >
                 <div className="flex flex-col md:flex-row gap-6 h-full">
                   <div className="flex flex-col items-center md:items-start">
-                    <div className="rounded-full overflow-hidden w-20 h-20 mb-4 border-2 border-primary">
+                    <div className="rounded-full overflow-hidden w-20 h-20 mb-4 border-2 border-primary flex-shrink-0">
                       <img 
                         src={testimonial.avatar} 
                         alt={testimonial.name}
                         width="80"
                         height="80"
                         loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover"
                       />
                     </div>

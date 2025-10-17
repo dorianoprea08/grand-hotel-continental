@@ -41,6 +41,8 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
         <img 
           src={apartment.image} 
           alt={translatedName}
+          width="400"
+          height="300"
           loading="lazy"
           decoding="async"
           className={cn(
