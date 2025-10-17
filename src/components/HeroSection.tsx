@@ -62,14 +62,6 @@ export default function HeroSection() {
         </div>
       </div>
       
-      {/* Scroll down indicator */}
-      <div className="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 text-white animate-bounce">
-        <a href="#welcome" className="flex flex-col items-center opacity-70 hover:opacity-100 transition-opacity">
-          <span className="text-xs sm:text-sm mb-1 sm:mb-2">{t.hero.scrollDown}</span>
-          <ChevronDown className="h-6 w-6 sm:h-7 sm:w-7" />
-        </a>
-      </div>
-      
       {/* Royal ornamental divider - elegant design */}
       <div className="absolute bottom-0 left-0 right-0 h-40 sm:h-48 pointer-events-none flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
