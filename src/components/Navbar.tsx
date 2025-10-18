@@ -6,8 +6,8 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import lazuliLogo from "@/assets/lazuli-logo.webp";
-import hotelLogo from "@/assets/hotel-logo.webp";
+import hotelLogoDark from "@/assets/hotel-logo-dark.webp";
+import hotelLogoLight from "@/assets/hotel-logo-light.webp";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 export default function Navbar() {
   const {
@@ -32,6 +32,17 @@ export default function Navbar() {
     name: t.nav.contact,
     path: "/contact"
   }];
+  
+  useEffect(() => {
+    const preloadImages = () => {
+      const darkImg = new Image();
+      darkImg.src = hotelLogoDark;
+      const lightImg = new Image();
+      lightImg.src = hotelLogoLight;
+    };
+    preloadImages();
+  }, []);
+  
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 20;
@@ -78,16 +89,13 @@ export default function Navbar() {
           {/* Logo - Center */}
           <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex items-center">
             <img 
-              src={hotelLogo} 
+              src={isDark ? hotelLogoLight : hotelLogoDark} 
               alt="Grand Hotel Continental"
               width="258"
               height="48"
               loading="eager"
               fetchPriority="high"
-              className={cn(
-                "h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300",
-                !isDark && "invert brightness-0"
-              )}
+              className="h-10 sm:h-12 md:h-14 w-auto object-contain"
             />
           </Link>
 
