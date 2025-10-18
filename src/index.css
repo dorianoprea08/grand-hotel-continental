@@ -116,6 +116,36 @@
     @apply bg-card/80 backdrop-blur-lg border border-border rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-primary/10;
   }
   
+  /* Hotel Logo Styling */
+  .hotel-logo-text {
+    font-family: 'Cinzel', 'Cormorant Garamond', 'Playfair Display', serif;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+  }
+  
+  /* Light mode: dark/golden text */
+  .light .hotel-logo-text {
+    color: hsl(214 70% 20%);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Dark mode: white/light-gold text */
+  .hotel-logo-text {
+    color: hsl(40 27% 95%);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Star rating colors */
+  .hotel-logo-stars {
+    color: hsl(41 90% 55%);
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  }
+  
+  .light .hotel-logo-stars {
+    color: hsl(41 85% 50%);
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
+  }
+  
   /* Premium luxury animations */
   @keyframes fadeInUp {
     from {

@@ -4,7 +4,7 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
-import hotelEntrance from "@/assets/hotel-entrance.jpg";
+import heroImage from "@/assets/luxury-hero.webp";
 export default function HeroSection() {
   const {
     t
@@ -24,14 +24,14 @@ export default function HeroSection() {
   return <section className="relative h-screen overflow-hidden">
       {/* Background image with parallax */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
-      backgroundImage: `url(${hotelEntrance})`,
+      backgroundImage: `url(${heroImage})`,
       transform: `translateY(${backgroundY}px)`,
       backgroundPosition: `center ${50 + scrollY * 0.05}%`,
       willChange: 'transform'
     }} />
       
       {/* Enhanced gradient overlay for better contrast */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-background" />
       
       {/* Content */}
       <div className="relative h-full flex flex-col justify-center items-center text-center px-4 sm:px-6" style={{

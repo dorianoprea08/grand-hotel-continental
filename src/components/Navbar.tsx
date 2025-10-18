@@ -6,8 +6,6 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import lazuliLogo from "@/assets/lazuli-logo.webp";
-import hotelLogo from "@/assets/hotel-logo.webp";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 export default function Navbar() {
   const {
@@ -15,7 +13,6 @@ export default function Navbar() {
   } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isDark, setIsDark] = useState(false);
   const navLinks = [{
     name: t.nav.home,
     path: "/"
@@ -42,23 +39,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
-
-  useEffect(() => {
-    const checkTheme = () => {
-      const isLight = document.documentElement.classList.contains("light");
-      setIsDark(!isLight);
-    };
-    
-    checkTheme();
-    
-    const observer = new MutationObserver(checkTheme);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"]
-    });
-    
-    return () => observer.disconnect();
-  }, []);
   return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-lg shadow-sm border-b", scrolled ? "py-3 shadow-md" : "py-5")}>
       <nav className="container">
         <div className="flex justify-between items-center">
@@ -76,19 +56,19 @@ export default function Navbar() {
           </div>
 
           {/* Logo - Center */}
-          <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex items-center">
-            <img 
-              src={hotelLogo} 
-              alt="Grand Hotel Continental"
-              width="258"
-              height="48"
-              loading="eager"
-              fetchPriority="high"
-              className={cn(
-                "h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300",
-                !isDark && "invert brightness-0"
-              )}
-            />
+          <Link 
+            to="/" 
+            className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center justify-center px-2"
+            aria-label="Grand Hotel Continental - Five Star Hotel"
+          >
+            <div className="text-center flex flex-col items-center">
+              <h1 className="hotel-logo-text text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold tracking-wide uppercase leading-tight whitespace-nowrap">
+                Grand Hotel Continental
+              </h1>
+              <div className="flex items-center justify-center mt-1 sm:mt-1.5" role="img" aria-label="Five star rating">
+                <span className="hotel-logo-stars text-[10px] sm:text-xs md:text-sm tracking-wider" aria-hidden="true">★★★★★</span>
+              </div>
+            </div>
           </Link>
 
           {/* Right Side Spacer */}
