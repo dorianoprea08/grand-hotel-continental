@@ -13,6 +13,10 @@ import {
 } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { useLanguage } from "@/contexts/LanguageContext";
+import deluxeSuite from "@/assets/deluxe-suite.webp";
+import presidentialSuite from "@/assets/presidential-suite.webp";
+import juniorSuite from "@/assets/junior-suite.webp";
+import luxuryBedroom from "@/assets/luxury-bedroom.webp";
 
 // All rooms and suites data
 const allApartments: ApartmentProps[] = [
@@ -23,7 +27,7 @@ const allApartments: ApartmentProps[] = [
     price: 180,
     capacity: 2,
     size: 42,
-    image: "src/assets/deluxe-suite.jpg",
+    image: deluxeSuite,
     location: "Calea Victoriei View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },
@@ -34,7 +38,7 @@ const allApartments: ApartmentProps[] = [
     price: 280,
     capacity: 3,
     size: 61,
-    image: "src/assets/presidential-suite.jpg",
+    image: presidentialSuite,
     location: "City View",
     features: ["Wi-Fi", "Living Area", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -45,7 +49,7 @@ const allApartments: ApartmentProps[] = [
     price: 220,
     capacity: 2,
     size: 46,
-    image: "src/assets/junior-suite.jpg",
+    image: juniorSuite,
     location: "Courtyard View",
     features: ["Wi-Fi", "Espresso Machine", "Lounge", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -56,7 +60,7 @@ const allApartments: ApartmentProps[] = [
     price: 140,
     capacity: 2,
     size: 26,
-    image: "src/assets/luxury-bedroom.jpg",
+    image: luxuryBedroom,
     location: "Courtyard View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -67,7 +71,7 @@ const allApartments: ApartmentProps[] = [
     price: 190,
     capacity: 2,
     size: 38,
-    image: "src/assets/deluxe-suite.jpg",
+    image: deluxeSuite,
     location: "Calea Victoriei View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Twin Beds"]
   },
@@ -78,7 +82,7 @@ const allApartments: ApartmentProps[] = [
     price: 200,
     capacity: 2,
     size: 35,
-    image: "src/assets/junior-suite.jpg",
+    image: juniorSuite,
     location: "City View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },
