@@ -87,6 +87,8 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -97,11 +99,24 @@
   img {
     content-visibility: auto;
   }
+  
+  @media (max-width: 768px) {
+    img[loading="eager"] {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 @layer components {
   .container {
     @apply px-4 md:px-6 lg:px-8 mx-auto max-w-7xl;
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      @apply px-0;
+    }
   }
   
   .btn-primary {

@@ -21,12 +21,13 @@ export default function HeroSection() {
   // Calculate parallax effect
   const backgroundY = scrollY * 0.5;
   const contentY = scrollY * 0.2;
-  return <section className="relative h-screen overflow-hidden">
+  return <section className="relative h-screen overflow-hidden -mx-4 sm:mx-0">
       {/* Background image with parallax */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
       backgroundImage: `url(${hotelEntrance})`,
       transform: `translateY(${backgroundY}px)`,
       backgroundPosition: `center ${50 + scrollY * 0.05}%`,
+      backgroundSize: 'cover',
       willChange: 'transform'
     }} />
       
@@ -34,7 +35,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-background" />
       
       {/* Content */}
-      <div className="relative h-full flex flex-col justify-center items-center text-center px-4 sm:px-6" style={{
+      <div className="relative h-full flex flex-col justify-center items-center text-center px-6 sm:px-8 md:px-12" style={{
       transform: `translateY(${contentY}px)`,
       willChange: 'transform'
     }}>
@@ -51,11 +52,11 @@ export default function HeroSection() {
           <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto px-2 animate-fade-in-up [animation-delay:400ms]">
             {t.hero.description}
           </p>
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0 animate-fade-in-up [animation-delay:600ms]">
-            <Button asChild size="lg" variant="heroSolid" className="w-full sm:w-auto sm:min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-primary/40 h-12 sm:h-11 text-base sm:text-lg">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 w-full max-w-md sm:max-w-none sm:w-auto px-0 animate-fade-in-up [animation-delay:600ms]">
+            <Button asChild size="lg" variant="heroSolid" className="w-full sm:w-auto sm:min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-primary/40 h-12 sm:h-11 text-base sm:text-lg font-semibold">
               <Link to="/booking">{t.hero.bookStay}</Link>
             </Button>
-            <Button asChild variant="hero" size="lg" className="w-full sm:w-auto sm:min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-white/20 h-12 sm:h-11 text-base sm:text-lg">
+            <Button asChild variant="hero" size="lg" className="w-full sm:w-auto sm:min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px] hover:shadow-xl hover:shadow-white/20 h-12 sm:h-11 text-base sm:text-lg font-semibold">
               <Link to="/apartments">{t.hero.exploreApartments}</Link>
             </Button>
           </div>
