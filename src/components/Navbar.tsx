@@ -59,9 +59,9 @@ export default function Navbar() {
     
     return () => observer.disconnect();
   }, []);
-  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-lg shadow-sm border-b", scrolled ? "py-3 shadow-md" : "py-5")}>
-      <nav className="container">
-        <div className="flex justify-between items-center">
+  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-lg shadow-sm border-b", scrolled ? "py-2 sm:py-3 shadow-md" : "py-3 sm:py-5")}>
+      <nav className="container px-3 sm:px-4">
+        <div className="flex justify-between items-center relative">
           {/* Hamburger Menu - Left */}
           <div className="flex items-center">
             <Button 
@@ -76,7 +76,7 @@ export default function Navbar() {
           </div>
 
           {/* Logo - Center */}
-          <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex items-center">
+          <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">
             <img 
               src={hotelLogo} 
               alt="Grand Hotel Continental"
@@ -85,10 +85,17 @@ export default function Navbar() {
               loading="eager"
               fetchPriority="high"
               className={cn(
-                "h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300",
+                "h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain transition-all duration-300",
                 !isDark && "invert brightness-0"
               )}
             />
+            <div className="flex gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-primary fill-current" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              ))}
+            </div>
           </Link>
 
           {/* Right Side Spacer */}

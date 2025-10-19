@@ -33,7 +33,7 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
   
   return (
     <div 
-      className="rounded-lg sm:rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 bg-card group"
+      className="rounded-lg sm:rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 bg-card group mx-0"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -49,6 +49,7 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
             "w-full h-full object-cover transition-transform duration-700",
             isHovered ? "scale-110" : "scale-100"
           )}
+          style={{ aspectRatio: '4/3' }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70 flex items-end p-4 sm:p-6 transition-opacity duration-300">
           <div className="w-full">
