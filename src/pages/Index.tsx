@@ -1,5 +1,3 @@
-import heroImage from "@/assets/hero-1.jpg"; // ajustează dacă numele diferă
-
 export default function Index() {
   return (
     <div className="space-y-10 sm:space-y-12 lg:space-y-16">
@@ -7,10 +5,10 @@ export default function Index() {
       <section className="bg-background">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 items-center">
-            {/* IMAGINEA */}
+            {/* IMAGINEA (din public/) */}
             <div className="order-1 md:order-none">
               <img
-                src={heroImage}
+                src="/hero-1.jpg"
                 alt="Grand Hotel Continental - exterior at night"
                 className="w-full h-auto rounded-2xl object-cover aspect-[16/9] md:aspect-auto md:h-[520px]"
                 loading="eager"
@@ -24,16 +22,12 @@ export default function Index() {
               <p className="text-xs sm:text-sm tracking-[0.18em] uppercase text-muted-foreground">
                 Historic elegance meets modern luxury
               </p>
-
-              <h1 className="heading-1 font-semibold">
+              <h1 className="leading-tight font-semibold text-[clamp(1.6rem,4.8vw,2.75rem)]">
                 Your Sanctuary in the Heart of Bucharest
               </h1>
-
-              <p className="lead text-muted-foreground max-w-prose">
-                Experience two centuries of refined hospitality on iconic Calea Victoriei, where
-                heritage and contemporary comfort create your perfect Bucharest escape.
+              <p className="text-sm sm:text-base text-muted-foreground max-w-prose">
+                Experience two centuries of refined hospitality on iconic Calea Victoriei...
               </p>
-
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-1">
                 <a href="/booking" className="w-full sm:w-auto">
                   <button className="w-full sm:w-auto h-11 sm:h-12 px-5 sm:px-6 rounded-full font-medium bg-primary text-primary-foreground">
@@ -51,15 +45,15 @@ export default function Index() {
         </div>
       </section>
 
-      {/* INTRO / COPY */}
+      {/* INTRO */}
       <section className="py-2">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="heading-2 mb-3">Discover Your Refined Escape</h2>
-          <p className="lead text-muted-foreground max-w-3xl">
-            Lovingly restored to preserve its timeless elegance, every detail of our boutique hotel
-            reflects our commitment to your comfort — from classic architecture to modern amenities.
+          <h2 className="text-[clamp(1.25rem,3.2vw,2rem)] font-semibold mb-3">
+            Discover Your Refined Escape
+          </h2>
+          <p className="text-sm sm:text-base text-muted-foreground max-w-3xl">
+            Lovingly restored to preserve its timeless elegance...
           </p>
-
           <div className="mt-6">
             <a href="/about">
               <button className="h-11 sm:h-12 px-5 sm:px-6 rounded-full bg-primary text-primary-foreground">
