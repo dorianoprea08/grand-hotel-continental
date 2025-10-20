@@ -1,17 +1,18 @@
 type Room = { id: string; name: string; desc: string; image: string };
 
-// Exemplu simplu – înlocuiește cu datele tale
 const rooms: Room[] = [
-  { id: "1", name: "Classic Room", desc: "Timeless comfort & style", image: "/rooms/room-1.jpg" },
-  { id: "2", name: "Deluxe Suite", desc: "Spacious elegance", image: "/rooms/room-2.jpg" },
-  { id: "3", name: "Executive Suite", desc: "Refined luxury", image: "/rooms/room-3.jpg" },
+  { id: "1", name: "Classic Room", desc: "Timeless comfort & style", image: "/hero-1.jpg" },
+  { id: "2", name: "Deluxe Suite", desc: "Spacious elegance", image: "/hero-1.jpg" },
+  { id: "3", name: "Executive Suite", desc: "Refined luxury", image: "/hero-1.jpg" },
 ];
 
 export default function Apartments() {
   return (
     <section className="py-10 sm:py-12 lg:py-16">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="heading-2 mb-6 sm:mb-8">Discover Our Rooms</h1>
+        <h1 className="text-[clamp(1.25rem,3.2vw,2rem)] font-semibold mb-6 sm:mb-8">
+          Discover Our Rooms
+        </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
           {rooms.map((room) => (
@@ -19,7 +20,7 @@ export default function Apartments() {
               <img
                 src={room.image}
                 alt={room.name}
-                className="w-full h-auto object-cover aspect-[16/9]"
+                className="w-full object-cover aspect-[16/9]"
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
