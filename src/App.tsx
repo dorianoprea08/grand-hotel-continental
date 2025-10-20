@@ -1,42 +1,35 @@
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+// Importă paginile tale reale.
+// Dacă unele fișiere nu există, comentează-le temporar.
+import Home from "./pages/Index";
 import Apartments from "./pages/Apartments";
-import BookingPage from "./pages/BookingPage";
 import Gallery from "./pages/Gallery";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Amenities from "./pages/Amenities";
-import NotFound from "./pages/NotFound";
-import { LanguageProvider } from "./contexts/LanguageContext";
 
-// Create a react-query client
-const queryClient = new QueryClient();
+// (Opțional) Dacă ai Navbar/Footer, le poți păstra aici
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <LanguageProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/apartments" element={<Apartments />} />
-            <Route path="/booking" element={<BookingPage />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/amenities" element={<Amenities />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </LanguageProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+export default function App() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Adaugă/menține rutele care există efectiv în proiectul tău */}
+          <Route path="/apartments" element={<Apartments />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
 
-export default App;
+          {/* Fallback: orice rută necunoscută → Home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
+}
