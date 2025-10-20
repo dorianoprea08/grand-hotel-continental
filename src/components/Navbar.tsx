@@ -1,6 +1,7 @@
 import { Menu, Star } from "lucide-react";
-import LanguageSelector from "@/components/LanguageSelector";
-import ThemeToggle from "@/components/ThemeToggle";
+// Folosește importuri relative, nu aliasuri:
+import LanguageSelector from "./LanguageSelector";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   return (
