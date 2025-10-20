@@ -18,7 +18,12 @@ export default {
 				'2xl': '1400px'
 			}
 		},
-		extend: {
+    extend: {
+      fontFamily: {
+        // Custom royal style font family for text-based logo.
+        // Cinzel provides a classic, deluxe serif look suitable for luxury branding.
+        royale: ['"Cinzel"', 'serif'],
+      },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
