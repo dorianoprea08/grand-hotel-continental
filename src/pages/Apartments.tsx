@@ -1,269 +1,36 @@
+type Room = { id: string; name: string; desc: string; image: string };
 
-import { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import ApartmentCard, { ApartmentProps } from "@/components/ApartmentCard";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Slider } from "@/components/ui/slider";
-import { useLanguage } from "@/contexts/LanguageContext";
-
-// Import apartment images as modules so Vite can bundle them correctly.  Referencing
-// images with a string path (e.g. "src/assets/deluxe-suite.jpg") does not work
-// at runtime because those paths are resolved relative to the built output.  By
-// importing the files here we obtain the resolved URL that can be passed to
-// the `ApartmentCard` component.  Without these imports the images for the
-// different rooms will not load and will appear broken.
-import deluxeSuiteImg from "@/assets/deluxe-suite.jpg";
-import presidentialSuiteImg from "@/assets/presidential-suite.jpg";
-import juniorSuiteImg from "@/assets/junior-suite.jpg";
-import luxuryBedroomImg from "@/assets/luxury-bedroom.jpg";
-
-// All rooms and suites data
-const allApartments: ApartmentProps[] = [
-  {
-    id: "1",
-    name: "Deluxe Room",
-    description: "Elegant 34-42 sqm room perfect for refined taste, featuring classic décor and modern comforts.",
-    price: 180,
-    capacity: 2,
-    size: 42,
-    image: deluxeSuiteImg,
-    location: "Calea Victoriei View",
-    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
-  },
-  {
-    id: "2",
-    name: "Senior Apartment",
-    description: "Luxurious 61 sqm suite representing five-star elegance with city views and classic furnishings.",
-    price: 280,
-    capacity: 3,
-    size: 61,
-    image: presidentialSuiteImg,
-    location: "City View",
-    features: ["Wi-Fi", "Living Area", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
-  },
-  {
-    id: "3",
-    name: "Junior Apartment",
-    description: "Sophisticated 46 sqm space with solid wood furniture, espresso machine, and lounge area.",
-    price: 220,
-    capacity: 2,
-    size: 46,
-    image: juniorSuiteImg,
-    location: "Courtyard View",
-    features: ["Wi-Fi", "Espresso Machine", "Lounge", "Safe", "Air Conditioning", "Smart TV"]
-  },
-  {
-    id: "4",
-    name: "Standard Room",
-    description: "Comfortable 19-26 sqm room perfect for any traveler, with complimentary WiFi and minibar.",
-    price: 140,
-    capacity: 2,
-    size: 26,
-    image: luxuryBedroomImg,
-    location: "Courtyard View",
-    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
-  },
-  {
-    id: "5",
-    name: "Deluxe Twin Room",
-    description: "Elegant room with two separate beds, perfect for friends or colleagues. Classic design and modern amenities.",
-    price: 190,
-    capacity: 2,
-    size: 38,
-    image: deluxeSuiteImg,
-    location: "Calea Victoriei View",
-    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Twin Beds"]
-  },
-  {
-    id: "6",
-    name: "Superior Room",
-    description: "Premium finishes and attention to detail, ideal for a comfortable stay in central Bucharest.",
-    price: 200,
-    capacity: 2,
-    size: 35,
-    image: juniorSuiteImg,
-    location: "City View",
-    features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
-  },
+// Exemplu simplu – înlocuiește cu datele tale
+const rooms: Room[] = [
+  { id: "1", name: "Classic Room", desc: "Timeless comfort & style", image: "/rooms/room-1.jpg" },
+  { id: "2", name: "Deluxe Suite", desc: "Spacious elegance", image: "/rooms/room-2.jpg" },
+  { id: "3", name: "Executive Suite", desc: "Refined luxury", image: "/rooms/room-3.jpg" },
 ];
 
 export default function Apartments() {
-  const { t } = useLanguage();
-  const [filteredApartments, setFilteredApartments] = useState<ApartmentProps[]>(allApartments);
-  const [capacityFilter, setCapacityFilter] = useState<string>("all");
-  const [locationFilter, setLocationFilter] = useState<string>("all");
-  const [priceRange, setPriceRange] = useState<number[]>([100, 350]);
-  
-  useEffect(() => {
-    // Scroll to top when component mounts
-    window.scrollTo(0, 0);
-  }, []);
-  
-  // Apply filters
-  useEffect(() => {
-    let result = allApartments;
-    
-    // Filter by capacity
-    if (capacityFilter !== "all") {
-      const capacity = parseInt(capacityFilter);
-      result = result.filter(apt => apt.capacity >= capacity);
-    }
-    
-    // Filter by location
-    if (locationFilter !== "all") {
-      result = result.filter(apt => apt.location === locationFilter);
-    }
-    
-    // Filter by price range
-    result = result.filter(apt => apt.price >= priceRange[0] && apt.price <= priceRange[1]);
-    
-    setFilteredApartments(result);
-  }, [capacityFilter, locationFilter, priceRange]);
-  
-  // Get unique locations for filter
-  const locations = ["all", ...new Set(allApartments.map(apt => apt.location))];
-  
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      
-      <main className="flex-1 pt-20">
-        {/* Header Section */}
-        <section className="relative py-20 bg-gradient-to-r from-secondary to-background overflow-hidden">
-          <div className="container relative z-10">
-            <div className="max-w-3xl mx-auto text-center animate-fade-in">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                {t.apartments.title}
-              </h1>
-              <p className="text-muted-foreground text-lg mb-6">
-                {t.apartments.subtitle}
-              </p>
-            </div>
-          </div>
-          
-          {/* Decorative elements */}
-          <div className="absolute bottom-0 right-0 w-1/2 h-1/2 opacity-10">
-            <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-primary/50 blur-3xl" />
-            <div className="absolute top-10 right-40 w-48 h-48 rounded-full bg-sea-light blur-3xl" />
-          </div>
-        </section>
-        
-        {/* Filter Section */}
-        <section className="py-8 border-b">
-          <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
-              {/* Capacity Filter */}
-              <div>
-                <label className="block text-sm font-medium mb-2">
-                  {t.apartments.filters.guests}
-                </label>
-                <Select value={capacityFilter} onValueChange={setCapacityFilter}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder={t.apartments.filters.guests} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">{t.apartments.filters.anyGuests}</SelectItem>
-                    <SelectItem value="1">{t.apartments.filters.onePlus}</SelectItem>
-                    <SelectItem value="2">{t.apartments.filters.twoPlus}</SelectItem>
-                    <SelectItem value="3">{t.apartments.filters.threePlus}</SelectItem>
-                    <SelectItem value="4">{t.apartments.filters.fourPlus}</SelectItem>
-                  </SelectContent>
-                </Select>
+    <section className="py-10 sm:py-12 lg:py-16">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="heading-2 mb-6 sm:mb-8">Discover Our Rooms</h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
+          {rooms.map((room) => (
+            <article key={room.id} className="rounded-2xl overflow-hidden border">
+              <img
+                src={room.image}
+                alt={room.name}
+                className="w-full h-auto object-cover aspect-[16/9]"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <div className="p-4 sm:p-5">
+                <h3 className="text-base sm:text-lg font-semibold">{room.name}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground">{room.desc}</p>
               </div>
-              
-              {/* Location Filter */}
-              <div>
-                <label className="block text-sm font-medium mb-2">
-                  {t.apartments.filters.location}
-                </label>
-                <Select value={locationFilter} onValueChange={setLocationFilter}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder={t.apartments.filters.location} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">{t.apartments.filters.allLocations}</SelectItem>
-                    {locations.filter(loc => loc !== "all").map(location => (
-                      <SelectItem key={location} value={location}>{location}</SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              {/* Price Range Filter */}
-              <div>
-                <label className="block text-sm font-medium mb-2">
-                  {t.apartments.filters.priceRange}: ${priceRange[0]} - ${priceRange[1]}
-                </label>
-                <Slider
-                  defaultValue={[100, 350]}
-                  min={100}
-                  max={350}
-                  step={10}
-                  value={priceRange}
-                  onValueChange={setPriceRange}
-                  className="my-4"
-                />
-              </div>
-            </div>
-            
-            <div className="flex justify-between items-center mt-6 animate-fade-in [animation-delay:200ms]">
-              <p className="text-muted-foreground">
-                {t.apartments.filters.showing} {filteredApartments.length} {t.apartments.filters.of} {allApartments.length} {t.apartments.filters.accommodations}
-              </p>
-              <Button 
-                variant="outline" 
-                onClick={() => {
-                  setCapacityFilter("all");
-                  setLocationFilter("all");
-                  setPriceRange([100, 350]);
-                }}
-              >
-                {t.apartments.filters.resetFilters}
-              </Button>
-            </div>
-          </div>
-        </section>
-        
-        {/* Apartments Grid */}
-        <section className="section">
-          <div className="container">
-            {filteredApartments.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredApartments.map((apartment, index) => (
-                  <div key={apartment.id} className="animate-fade-in" style={{ animationDelay: `${(index + 1) * 100}ms` }}>
-                    <ApartmentCard apartment={apartment} />
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-12 animate-fade-in">
-                <h3 className="text-xl font-semibold mb-2">{t.apartments.filters.noMatch}</h3>
-                <p className="text-muted-foreground mb-6">{t.apartments.filters.adjustFilters}</p>
-                <Button 
-                  variant="outline" 
-                  onClick={() => {
-                    setCapacityFilter("all");
-                    setLocationFilter("all");
-                    setPriceRange([100, 350]);
-                  }}
-                >
-                  {t.apartments.filters.resetFilters}
-                </Button>
-              </div>
-            )}
-          </div>
-        </section>
-      </main>
-      
-      <Footer />
-    </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
