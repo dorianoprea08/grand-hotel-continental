@@ -6,8 +6,13 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import lazuliLogo from "@/assets/lazuli-logo.webp";
-import hotelLogo from "@/assets/hotel-logo.webp";
+// Note: The original Lazuli logo was unused.  The navigation bar now uses
+// a text-based logo instead, so this import has been removed.
+// Replace the image-based logo with a simple text logo.  We import the Star icon
+// from lucide-react to render five decorative stars underneath the hotel name,
+// reinforcing the five-star rating.  Using text allows the logo to
+// automatically adapt to dark/light themes without image manipulation.
+import { Star } from "lucide-react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 export default function Navbar() {
   const {
@@ -32,6 +37,16 @@ export default function Navbar() {
     name: t.nav.contact,
     path: "/contact"
   }];
+
+  // Generate the star icons used in the text-based logo.  This array is
+  // rendered below beneath the hotel name.  Each star uses the primary
+  // color and scales responsively via tailwind classes.
+  const stars = Array.from({ length: 5 }).map((_, index) => (
+    <Star
+      key={index}
+      className="h-3 w-3 sm:h-3.5 sm:w-3.5 md:h-4 md:w-4 text-primary"
+    />
+  ));
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 20;
@@ -76,19 +91,16 @@ export default function Navbar() {
           </div>
 
           {/* Logo - Center */}
-          <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex items-center">
-            <img 
-              src={hotelLogo} 
-              alt="Grand Hotel Continental"
-              width="258"
-              height="48"
-              loading="eager"
-              fetchPriority="high"
-              className={cn(
-                "h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300",
-                !isDark && "invert brightness-0"
-              )}
-            />
+          <Link to="/" className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center text-center no-underline">
+            {/* Hotel name rendered as text in a custom royal font.  The text sizes
+                scale responsively across breakpoints for better legibility. */}
+            <span className="font-royale text-lg sm:text-xl md:text-2xl leading-none">
+              Grand Hotel Continental
+            </span>
+            {/* Five-star rating icons below the hotel name */}
+            <div className="flex space-x-0.5 mt-0.5">
+              {stars}
+            </div>
           </Link>
 
           {/* Right Side Spacer */}

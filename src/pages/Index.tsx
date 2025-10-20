@@ -13,6 +13,15 @@ import luxuryLobby from "@/assets/luxury-lobby.jpg";
 import luxuryBedroom from "@/assets/luxury-bedroom.jpg";
 import luxuryRestaurant from "@/assets/luxury-restaurant.jpg";
 
+// Import featured room images.  Without importing these assets the
+// string-based paths in the `featuredApartments` array will not resolve
+// correctly when the app is built.  See `src/pages/Apartments.tsx` for
+// additional details on why this is necessary.
+import deluxeSuiteImg from "@/assets/deluxe-suite.jpg";
+import presidentialSuiteImg from "@/assets/presidential-suite.jpg";
+import juniorSuiteImg from "@/assets/junior-suite.jpg";
+import luxuryBedroomImg from "@/assets/luxury-bedroom.jpg";
+
 // Featured rooms data
 const featuredApartments: ApartmentProps[] = [
   {
@@ -22,7 +31,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 180,
     capacity: 2,
     size: 42,
-    image: "src/assets/deluxe-suite.jpg",
+    image: deluxeSuiteImg,
     location: "Calea Victoriei View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   },
@@ -33,7 +42,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 280,
     capacity: 3,
     size: 61,
-    image: "src/assets/presidential-suite.jpg",
+    image: presidentialSuiteImg,
     location: "City View",
     features: ["Wi-Fi", "Living Area", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -44,7 +53,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 220,
     capacity: 2,
     size: 46,
-    image: "src/assets/junior-suite.jpg",
+    image: juniorSuiteImg,
     location: "Courtyard View",
     features: ["Wi-Fi", "Espresso Machine", "Lounge", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -55,7 +64,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 140,
     capacity: 2,
     size: 26,
-    image: "src/assets/luxury-bedroom.jpg",
+    image: luxuryBedroomImg,
     location: "Courtyard View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV"]
   },
@@ -66,7 +75,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 190,
     capacity: 2,
     size: 38,
-    image: "src/assets/deluxe-suite.jpg",
+    image: deluxeSuiteImg,
     location: "Calea Victoriei View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Twin Beds"]
   },
@@ -77,7 +86,7 @@ const featuredApartments: ApartmentProps[] = [
     price: 200,
     capacity: 2,
     size: 35,
-    image: "src/assets/junior-suite.jpg",
+    image: juniorSuiteImg,
     location: "City View",
     features: ["Wi-Fi", "Minibar", "Safe", "Air Conditioning", "Smart TV", "Premium Bath"]
   }
